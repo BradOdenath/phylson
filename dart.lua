@@ -79,13 +79,6 @@ semicolonoscopyz = function(staytmnt)
 	end
 	return staytmnt
 end
-
-taboutosometabracknacklets = function(staytmnt)
-	for i,v in pairs(staytmnt) do
-		
-	end
-end
-
 --[[
 split = function(str, splitter)
 	local atoms = {}
@@ -97,29 +90,41 @@ split = function(str, splitter)
 	return atoms
 end
 ]]
-stanzatements = function(stanza)
+stanzatements = function(stanza, pre_stanza_statements)
+	local stanza_statements = {}
+	if (pre_stanza_statements) then
+		stanza_statements = pre_stanza_statements
+	else
+		--print('nil_value: dart_file_generator/stanzatements/arg/pre_stanza_statements')
+	end
+	
 	if (stanza) then 
-		local stanza_statements = string.gmatch(stanza, '%a+')
-		return stanza_statements
+		local first = string.sub(stanza, string.find(stanza, '\n'))
+		if (first) then
+			table.insert(stanza_statements, first)
+			print(tostring(first))
+			stanzatements(string.sub(stanza, string.len(first)), pre_stanza_statements)
+		else
+			print('nil_value: dart_file_generator/stanzatements/var/first')
+		end
 	else
 		print('nil_value: dart_file_generator/stanzatements/arg/stanza') 
-		return {}
 	end
+	return stanza_statements
 end
 
 semicoloniyzanza = function(stanza)
 	local stanza_statements = stanzatements(stanza)
 	if stanza_statements then
 		local out_stanza = ''
-		
-		for i, stanzatement in stanza_statements do
+		for stanzatement in stanza_statements do
 			if (stanzatement) then
 				out_stanza = (
 					out_stanza
 						..semicolonoscopyz(stanzatement)
 				)
 			else
-				print('nil_value: dart_file_generator/semicoloniyzanza/var/'..tostring(i))
+				print('nil_value: dart_file_generator/semicoloniyzanza/var/stanzatement')
 			end
 			out_stanza = (
 				out_stanza
@@ -223,7 +228,7 @@ getaboffset = function(stanza_of_statements, offset)
 	return taboffset
 end
 
-format_stanzatement = function(stanza_of_statements)
+taboutosometabracknacklets = function(stanza_of_statements)
 	if (stanza_of_statements) then
 		local tab_offset = getaboffset(stanza_of_statements)
 		if (tab_offset > 0) then
@@ -231,6 +236,15 @@ format_stanzatement = function(stanza_of_statements)
 				stanza_of_statements = dindent_string(stanza_of_statements)
 			end
 		end
+	else
+		print('nil_value: dart_file_generator/taboutosometabracknacklets/arg/staytmnt')
+	end
+	return stanza_of_statements
+end
+
+format_stanzatement = function(stanza_of_statements)
+	stanza_of_statements = taboutosometabracknacklets(stanza_of_statements)
+	if (stanza_of_statements) then
 		stanza_of_statements = 
 			semicoloniyzanza(
 				indent_string(
