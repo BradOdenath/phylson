@@ -1,4 +1,4 @@
-
+--
 
 code_components = {
 --	comment_statement = 	[[//]];
@@ -9,6 +9,8 @@ code_components = {
 	left_parenthesis = 		[[(]];
 	right_parenthesis = 	[[)]];
 	finish_statement =		[[;]];
+	left_square_bracket =	'[';
+	right_square_bracket = 	']';
 }
 
 -- Put quotes arounds a string value

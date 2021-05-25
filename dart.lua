@@ -100,7 +100,6 @@ dart_class_data = function(class_data)
 						..dart_components.finish_statement
 				)
 			else
-				
 				strLine = (
 					strLine
 						..'\n\t'
@@ -161,12 +160,8 @@ dart_class = function(class_name, class_data)
 	end
 end
 
-
-print(
-	dart_class(
+dart_demo_class_data = dart_class(
 		demo_class.class_name, 
 		demo_class.class_data
 	)
-)
-
 
