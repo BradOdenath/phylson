@@ -1,5 +1,7 @@
 zero = 0
 
+require "essentials/essentials"
+
 demo_class = {
 	class_name = 'DartObj';
 	class_extends = {};
@@ -35,14 +37,13 @@ dart_components = {
 	comment_statement = 	[[//]];
 	file_extension = 		[[.dart]];
 	class = 				[[class]];
-	left_bracket = 			[[{]];
-	right_bracket = 		[[}]];
-	left_parenthesis = 		[[(]];
-	right_parenthesis = 	[[)]];
+--	left_bracket = 			[[{]];
+--	right_bracket = 		[[}]];
+--	left_parenthesis = 		[[(]];
+--	right_parenthesis = 	[[)]];
 	finish_statement =		[[;]];
 }
 
-require "essentials/essentials"
 
 dart_class_data = function(class_data)
 	local outAtr = ''
@@ -67,15 +68,15 @@ dart_class_data = function(class_data)
 						..v.data_type
 						..' '
 						..tostring(i) 
-						..dart_components.left_parenthesis
+						..code_components.left_parenthesis
 						..commacommacommacommacomma(v.data_parameters)
-						..dart_components.right_parenthesis
+						..code_components.right_parenthesis
 						..' '
-						..dart_components.left_bracket
+						..code_components.left_bracket
 						..'\n'
 						..format_stanzatement(v.data_value)
 						..'\n\t'
-						..dart_components.right_bracket
+						..code_components.right_bracket
 				)
 				isFnc = true
 			elseif (v.data_value == "String") then
@@ -140,7 +141,7 @@ dart_class = function(class_name, class_data)
 				..' '
 				..class_name
 				..' '
-				..dart_components.left_bracket
+				..code_components.left_bracket
 				..'\n\t'
 				..dart_components.comment_statement
 				..' File: '
@@ -148,7 +149,7 @@ dart_class = function(class_name, class_data)
 				..dart_components.file_extension
 				..dart_class_data(class_data)
 				..'\n'
-				..dart_components.right_bracket
+				..code_components.right_bracket
 		) 
 	else
 		if (class_name == nil) then

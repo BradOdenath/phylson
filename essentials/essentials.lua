@@ -1,7 +1,7 @@
 
 
 code_components = {
-	comment_statement = 	[[//]];
+--	comment_statement = 	[[//]];
 --	file_extension = 		[[.dart]];
 --	class = 				[[class]];
 	left_bracket = 			[[{]];
