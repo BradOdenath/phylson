@@ -23,7 +23,7 @@ demo_class = {
 			data_type = 'var';
 			data_parameters = {'derpaderp, adf'};
 			data_value = [[
-				if (adf) {
+				if (adf != null) {
 					derpaderp += adf;
 				} 
 				
@@ -165,3 +165,4 @@ dart_demo_class_data = dart_class(
 		demo_class.class_data
 	)
 
+print(dart_demo_class_data)
