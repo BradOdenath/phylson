@@ -3,6 +3,7 @@ zero = 0
 require "essentials/essentials"
 
 demo_class = {
+	class_abstract = false
 	class_name = 'JavaObj';
 	class_extends = {};
 	class_implements = {};
@@ -34,6 +35,7 @@ demo_class = {
 }
 
 java_components = {
+	abstract = 				[[abstract]];
 	comment_statement = 	[[//]];
 	file_extension = 		[[.java]];
 	class = 				[[class]];
@@ -44,6 +46,19 @@ java_components = {
 	finish_statement =		[[;]];
 }
 
+java_statements = {
+	variable_increment_statement = [[var += var]];
+	variable_decrement_statement = [[var -= var]];
+	if_statement = {
+		start_statement = [[if (condition) {]];
+		end_statement = [[}]];
+	};
+	for_statement = {
+		start_statement = [[for (declare_incrementer, condition, incrementer_change) {]];
+		end_statement = [[}]];
+	};
+	
+}
 
 java_class_data = function(class_data)
 	local outAtr = ''
@@ -79,7 +94,7 @@ java_class_data = function(class_data)
 						..code_components.right_bracket
 				)
 				isFnc = true
-			elseif (v.data_value == "String") then
+			elseif (v.data_type == "String") then
 				strLine = (
 					strLine
 						..'\n\t'
@@ -133,23 +148,31 @@ java_class_data = function(class_data)
 	return (outAtr..outFnc)
 end
 
-java_class = function(class_name, class_data) 
-	if (class_name and class_data) then
-		return (
-			java_components.class
+java_class = function(tree_class_data) 
+	local outStr = ''
+	if (tree_class_data) then
+		if (tree_class_data.class_abstract) then
+			outStr = (
+				outStr
+					..java_components.abstract
+			)
+		end
+		outStr = (
+			outstr
+				..java_components.class
 				..' '
-				..class_name
+				..tree_class_data.class_name
 				..' '
 				..code_components.left_bracket
 				..'\n\t'
 				..java_components.comment_statement
 				..' File: '
-				..class_name
+				..tree_class_data.class_name
 				..java_components.file_extension
-				..java_class_data(class_data)
+				..java_class_data(tree_class_data.class_data)
 				..'\n'
 				..code_components.right_bracket
-		) 
+		)
 	else
 		if (class_name == nil) then
 			print('nil_value: java_file_generator/java_class/arg/class_name')
@@ -158,11 +181,11 @@ java_class = function(class_name, class_data)
 			print('nil_value: java_file_generator/java_class/arg/class_data')
 		end
 	end
+	return outStr
 end
 
 java_demo_class_data = java_class(
-		demo_class.class_name, 
-		demo_class.class_data
-	)
+	demo_class -- Class Data
+)
 
 print(java_demo_class_data)

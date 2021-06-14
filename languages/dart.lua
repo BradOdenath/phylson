@@ -78,8 +78,8 @@ dart_class_data = function(class_data)
 						..'\n\t'
 						..code_components.right_bracket
 				)
-				isFnc = true
-			elseif (v.data_value == "String") then
+				isFnc = true	
+			elseif (v.data_type'== "String") then
 				strLine = (
 					strLine
 						..'\n\t'
