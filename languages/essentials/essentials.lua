@@ -27,7 +27,11 @@ print_table = function(table_data)
 						print('i: '..tostring(i)..'\t| v:'..tostring(v))
 					end
 				else
-					print('nil_value: essentials/print_table/arg'..code_components.left_bracket..tostring(i)..code_components.right_bracket..'/v')
+					print('nil_value: essentials/print_table/arg'
+						..code_components.left_bracket
+						..tostring(i)
+						..code_components.right_bracket
+						..'/v')
 				end
 			end
 		end
