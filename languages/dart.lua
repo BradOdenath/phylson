@@ -1,6 +1,7 @@
-zero = 0
+local es = require "essentialz.essentialz"
+module('es')
 
-require "essentials/essentials"
+zero = 0
 
 demo_class = {
 	class_name = 'DartObj';
@@ -9,7 +10,7 @@ demo_class = {
 	class_data = {
 		str = {
 			data_type = 'String';
-			data_value = 'sssttrrrrr';
+			data_value = 'print_debug_debug';
 		}; 
 		dubbl = {
 			data_type = 'double';
@@ -46,6 +47,7 @@ dart_components = {
 
 
 dart_class_data = function(class_data)
+	--local es = require "essentialz/essentialz"
 	local outAtr = ''
 	local outFnc = ''
 	if (class_data) then
@@ -53,7 +55,7 @@ dart_class_data = function(class_data)
 			local isFnc = false
 			local strLine = ''
 			if (v.data_parameters)  then
-				--print(tostring(v.data_value))
+				--print_debug(tostring(v.data_value))
 				
 				strLine = (
 					strLine
@@ -79,7 +81,7 @@ dart_class_data = function(class_data)
 						..code_components.right_bracket
 				)
 				isFnc = true	
-			elseif (v.data_type'== "String") then
+			elseif (v.data_type == "String") then
 				strLine = (
 					strLine
 						..'\n\t'
@@ -96,7 +98,7 @@ dart_class_data = function(class_data)
 						..' '
 						..tostring(i)
 						..' = '
-						..stringify(v.data_value)
+						..es.stringify(v.data_value)
 						..dart_components.finish_statement
 				)
 			else
@@ -122,47 +124,47 @@ dart_class_data = function(class_data)
 			end
 			if (isFnc == true) then
 				outFnc = (outFnc..'\n'..strLine)
-				--print(outFnc)
+				--print_debug(outFnc)
 			else
 				outAtr = (outAtr..'\n'..strLine)
 			end
 		end
 	else
-		print('nil_value: dart_file_generator/dart_class_data/arg/class_data')
+		es.print_debug('nil_value: dart_file_generator/dart_class_data/arg/class_data')
 	end
 	return (outAtr..outFnc)
 end
 
-dart_class = function(class_name, class_data) 
-	if (class_name and class_data) then
+dart_class = function(tree_class_data) 
+	--local es = require "essentialz/essentialz"
+	if (tree_class_data) then
 		return (
 			dart_components.class
 				..' '
-				..class_name
+				..tree_class_data.class_name
 				..' '
 				..code_components.left_bracket
 				..'\n\t'
 				..dart_components.comment_statement
 				..' File: '
-				..class_name
+				..tree_class_data.class_name
 				..dart_components.file_extension
-				..dart_class_data(class_data)
+				..dart_class_data(tree_class_data.class_data)
 				..'\n'
 				..code_components.right_bracket
 		) 
 	else
-		if (class_name == nil) then
-			print('nil_value: dart_file_generator/dart_class/arg/class_name')
-		end
-		if (class_data == nil) then
-			print('nil_value: dart_file_generator/dart_class/arg/class_data')
-		end
+		es.print_debug('nil_value: dart_file_generator/dart_class/arg/tree_class_data')
 	end
 end
 
-dart_demo_class_data = dart_class(
-		demo_class.class_name, 
-		demo_class.class_data
-	)
+main = function()
+	dart_demo_class_data = dart_class(
+			demo_class
+		)
 
-print(dart_demo_class_data)
+	print(dart_demo_class_data)
+	return dart_demo_class_data
+end
+
+main()

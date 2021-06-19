@@ -1,6 +1,4 @@
-zero = 0
-
-require "essentials/essentials"
+require "essentialz/essentialz"
 
 demo_class = {
 	class_name = 'GoObj';
@@ -57,18 +55,18 @@ go_class_data = function(class_data)
 			local isFnc = false
 			local strLine = ''
 			if (v.data_parameters)  then
-				--print(tostring(v.data_value))
+				--print_debug(tostring(v.data_value))
 				
 				strLine = (
 					strLine
-						..'\n\t'
+						..'\n'
 						..go_components.comment_statement
 						..' Declare function '
 						..tostring(i)
 						..' and return data type "'
 						..v.data_type
 						..'".'
-						..'\n\t'
+						..'\n'
 						..v.data_type
 						..' '
 						..tostring(i) 
@@ -79,7 +77,7 @@ go_class_data = function(class_data)
 						..code_components.left_bracket
 						..'\n'
 						..format_stanzatement(v.data_value)
-						..'\n\t'
+						..'\n'
 						..code_components.right_bracket
 				)
 				isFnc = true
@@ -148,13 +146,13 @@ go_class_data = function(class_data)
 			end
 			if (isFnc == true) then
 				outFnc = (outFnc..'\n'..strLine)
-				--print(outFnc)
+				--print_debug(outFnc)
 			else
 				outAtr = (outAtr..'\n'..strLine)
 			end
 		end
 	else
-		print('nil_value: go_file_generator/go_class_data/arg/class_data')
+		print_debug('nil_value: go_file_generator/go_class_data/arg/class_data')
 	end
 	return ({outAtr,outFnc})
 end
@@ -183,10 +181,10 @@ go_class = function(class_name, class_data)
 		) 
 	else
 		if (class_name == nil) then
-			print('nil_value: go_file_generator/go_class/arg/class_name')
+			print_debug('nil_value: go_file_generator/go_class/arg/class_name')
 		end
 		if (class_data == nil) then
-			print('nil_value: go_file_generator/go_class/arg/class_data')
+			print_debug('nil_value: go_file_generator/go_class/arg/class_data')
 		end
 	end
 end

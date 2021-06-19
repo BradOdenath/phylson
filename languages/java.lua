@@ -1,9 +1,9 @@
 zero = 0
 
-require "essentials/essentials"
+require "essentialz/essentialz"
 
 demo_class = {
-	class_abstract = false
+	class_abstract = false;
 	class_name = 'JavaObj';
 	class_extends = {};
 	class_implements = {};
@@ -68,7 +68,7 @@ java_class_data = function(class_data)
 			local isFnc = false
 			local strLine = ''
 			if (v.data_parameters)  then
-				--print(tostring(v.data_value))
+				--print_debug(tostring(v.data_value))
 				
 				strLine = (
 					strLine
@@ -137,13 +137,13 @@ java_class_data = function(class_data)
 			end
 			if (isFnc == true) then
 				outFnc = (outFnc..'\n'..strLine)
-				--print(outFnc)
+				--print_debug(outFnc)
 			else
 				outAtr = (outAtr..'\n'..strLine)
 			end
 		end
 	else
-		print('nil_value: java_file_generator/java_class_data/arg/class_data')
+		print_debug('nil_value: java_file_generator/java_class_data/arg/class_data')
 	end
 	return (outAtr..outFnc)
 end
@@ -158,7 +158,7 @@ java_class = function(tree_class_data)
 			)
 		end
 		outStr = (
-			outstr
+			outStr
 				..java_components.class
 				..' '
 				..tree_class_data.class_name
@@ -175,10 +175,10 @@ java_class = function(tree_class_data)
 		)
 	else
 		if (class_name == nil) then
-			print('nil_value: java_file_generator/java_class/arg/class_name')
+			print_debug('nil_value: java_file_generator/java_class/arg/class_name')
 		end
 		if (class_data == nil) then
-			print('nil_value: java_file_generator/java_class/arg/class_data')
+			print_debug('nil_value: java_file_generator/java_class/arg/class_data')
 		end
 	end
 	return outStr
