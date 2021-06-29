@@ -4,6 +4,7 @@ module('es')
 zero = 0
 
 demo_class = {
+	class_is_a = class_type.class;
 	class_name = 'DartObj';
 	class_extends = {};
 	class_implements = {};
@@ -45,6 +46,9 @@ dart_components = {
 	finish_statement =		[[;]];
 }
 
+dart_what_is_a_class = function(class_is_a)
+	
+end
 
 dart_class_data = function(class_data)
 	--local es = require "essentialz/essentialz"

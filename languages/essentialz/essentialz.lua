@@ -1,9 +1,12 @@
 --
 
+class_types = {
+	class	=	'class';
+	interface = 'interface';
+	abstract = 'abstract';
+}
+
 code_components = {
---	comment_statement = 	[[//]];
---	file_extension = 		[[.dart]];
---	class = 				[[class]];
 	left_bracket = 			[[{]];
 	right_bracket = 		[[}]];
 	left_parenthesis = 		[[(]];
@@ -12,6 +15,22 @@ code_components = {
 	left_square_bracket =	'[';
 	right_square_bracket = 	']';
 }
+
+default_class_is_a = class_types.class
+
+what_is_a_class = function(class_is_a) 
+	if (class_is_a) then
+		for i,v in pairs(class_types) do
+			if (v == class_is_a) then
+				return class_is_a
+			end
+		end
+		print('dif_value: essentials/what_is_a_class/arg/class_is_a: '..tostring(class_is_a))
+	else
+		print('nil_value: essentials/what_is_a_class/arg/class_is_a')
+	end
+	return default_class_is_a
+end
 
 print_table = function(table_data)
 	if (table_data) then
@@ -256,6 +275,7 @@ format_stanzatement = function(stanza_of_statements)
 	else
 		print('nil_value: essentials/format_stanzatement/arg/stanza_of_statements')
 	end
+	
 	return stanza_of_statements
 	
 end
