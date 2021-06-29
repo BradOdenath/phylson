@@ -72,18 +72,18 @@ java_class_data = function(class_data)
 						..tostring(i)
 						..' as data type "'
 						..v.data_type
-						..'" and initialize the value as "'
+						..'" and initialize the value as {'
 						..commacommacommacommacomma(v.data_value)
-						..'".'
+						..'}.'
 						..'\n\t'
 						..v.data_type 
 						..' '
 						..tostring(i)
 						..' = '
-						..stringify(commacommacommacommacomma(v.data_value))
+						..commacommacommacommacomma(v.data_value)
 						..java_components.finish_statement
 				)
-			elseif (v.data_type == "String") then
+			elseif (type(v.data_value) == "string") then
 				strLine = (
 					strLine
 						..'\n\t'

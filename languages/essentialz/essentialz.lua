@@ -98,11 +98,15 @@ end
 -- Put quotes arounds a string value
 stringify = function(str)
 	if (str) then
-		return ([["]]..str..[["]])
+		if (type(str) == 'string') then
+			return ([["]]..str..[["]])
+		else
+			print('dif_value: essentials/stringify/arg/str: '..tostring(str))
+		end
 	else
 		print('nil_value: essentials/stringify/arg/str')
-		return str
 	end
+	return str
 end
 
 -- Turn a table into a list with commas
@@ -110,7 +114,7 @@ commacommacommacommacomma = function(data_table)
 	local outStr = ''
 	if (data_table) then
 		for i,v in pairs(data_table) do
-			outStr = (outStr..v)
+			outStr = (outStr..stringify(v))
 			if (i < #data_table) then
 				outStr = (outStr..', ')
 			end
