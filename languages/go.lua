@@ -1,40 +1,4 @@
 require "essentialz/essentialz"
-
-demo_class = {
-	class_name = 'GoObj';
-	class_extends = {};
-	class_implements = {};
-	class_data = {
-		str = {
-			data_type = 'string';
-			data_value = 'sssttrrrrr';
-		}; 
-		dubbl = {
-			data_type = 'double';
-			data_value = 13.37;
-		};
-		ihnt = {
-			data_type = 'int';
-			data_value = 5;
-		};
-		ihntegers = {
-			data_type = 'int';
-			data_value = {4,5,6};
-		};
-		fuhnktchyon = {
-			data_type = 'var';
-			data_parameters = {'derpaderp, adf'};
-			data_value = [[
-				if (adf) {
-					derpaderp += adf;
-				} 
-				
-				return (derpaderp);
-			]];
-		};
-	};
-}
-
 go_components = {
 	comment_statement = 	[[// ]];
 	file_extension = 		[[.go]];

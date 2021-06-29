@@ -18,6 +18,42 @@ code_components = {
 
 default_class_is_a = class_types.class
 
+demo_class = {
+	class_is_a = default_class_is_a;
+	class_name = 'Obj';
+	class_extends = {};
+	class_implements = {};
+	class_data = {
+		str = {
+			data_type = 'string';
+			data_value = 'sssttrrrrr';
+		}; 
+		dubbl = {
+			data_type = 'double';
+			data_value = 13.37;
+		};
+		ihnt = {
+			data_type = 'int';
+			data_value = 5;
+		};
+		ihntegers = {
+			data_type = 'int';
+			data_value = {4,5,6};
+		};
+		fuhnktchyon = {
+			data_type = 'var';
+			data_parameters = {'derpaderp, adf'};
+			data_value = [[
+				if (adf) {
+					derpaderp += adf;
+				} 
+				
+				return (derpaderp);
+			]];
+		};
+	};
+}
+
 what_is_a_class = function(class_is_a) 
 	if (class_is_a) then
 		for i,v in pairs(class_types) do

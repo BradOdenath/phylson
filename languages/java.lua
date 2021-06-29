@@ -2,37 +2,6 @@ zero = 0
 
 require "essentialz/essentialz"
 
-demo_class = {
-	class_abstract = false;
-	class_name = 'JavaObj';
-	class_extends = {};
-	class_implements = {};
-	class_data = {
-		str = {
-			data_type = 'String';
-			data_value = 'sssttrrrrr';
-		}; 
-		dubbl = {
-			data_type = 'double';
-			data_value = 13.37;
-		};
-		ihnt = {
-			data_type = 'int';
-			data_value = 5;
-		};
-		fuhnktchyon = {
-			data_type = 'var';
-			data_parameters = {'derpaderp, adf'};
-			data_value = [[
-				if (adf != null) {
-					derpaderp += adf;
-				} 
-				
-				return (derpaderp);
-			]];
-		};
-	};
-}
 
 java_components = {
 	abstract = 				[[abstract]];
@@ -94,6 +63,26 @@ java_class_data = function(class_data)
 						..code_components.right_bracket
 				)
 				isFnc = true
+			elseif (type(v.data_value) == "table") then
+				strLine = (
+					strLine
+						..'\n\t'
+						..java_components.comment_statement
+						..' Declare attribute '
+						..tostring(i)
+						..' as data type "'
+						..v.data_type
+						..'" and initialize the value as "'
+						..commacommacommacommacomma(v.data_value)
+						..'".'
+						..'\n\t'
+						..v.data_type 
+						..' '
+						..tostring(i)
+						..' = '
+						..stringify(commacommacommacommacomma(v.data_value))
+						..java_components.finish_statement
+				)
 			elseif (v.data_type == "String") then
 				strLine = (
 					strLine

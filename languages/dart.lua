@@ -3,38 +3,6 @@ module('es')
 
 zero = 0
 
-demo_class = {
-	class_is_a = class_type.class;
-	class_name = 'DartObj';
-	class_extends = {};
-	class_implements = {};
-	class_data = {
-		str = {
-			data_type = 'String';
-			data_value = 'print_debug_debug';
-		}; 
-		dubbl = {
-			data_type = 'double';
-			data_value = 13.37;
-		};
-		ihnt = {
-			data_type = 'int';
-			data_value = 5;
-		};
-		fuhnktchyon = {
-			data_type = 'var';
-			data_parameters = {'derpaderp, adf'};
-			data_value = [[
-				if (adf != null) {
-					derpaderp += adf;
-				} 
-				
-				return (derpaderp);
-			]];
-		};
-	};
-}
-
 dart_components = {
 	comment_statement = 	[[//]];
 	file_extension = 		[[.dart]];
@@ -85,6 +53,26 @@ dart_class_data = function(class_data)
 						..code_components.right_bracket
 				)
 				isFnc = true	
+			elseif (v.data_type == "table") then
+				strLine = (
+					strLine
+						..'\n\t'
+						..dart_components.comment_statement
+						..' Declare attribute '
+						..tostring(i)
+						..' as data type "'
+						..v.data_type
+						..'" and initialize the value as "'
+						..commacommacommacommacomma(v.data_value)
+						..'".'
+						..'\n\t'
+						..v.data_type 
+						..' '
+						..tostring(i)
+						..' = '
+						..es.stringify(commacommacommacommacomma(v.data_value))
+						..dart_components.finish_statement
+				)
 			elseif (v.data_type == "String") then
 				strLine = (
 					strLine
