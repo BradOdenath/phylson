@@ -16,6 +16,9 @@ table_requires = function(fyle_name)
 		
 		local fyle_content = file_content(fyle_name)
 		
+		if fyle_content ~= nil then
+			print(tostring(fyle_content))
+		end
 		
 	else
 		print('nil_value: file_concat/table_requires/arg/fyle_name')
