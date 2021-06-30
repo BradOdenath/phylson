@@ -72,9 +72,9 @@ java_class_data = function(class_data)
 						..tostring(i)
 						..' as data type "'
 						..v.data_type
-						..'" and initialize the value as {'
+						..'" and initialize the value as "{'
 						..commacommacommacommacomma(v.data_value)
-						..'}.'
+						..'}".'
 						..'\n\t'
 						..v.data_type 
 						..' '
