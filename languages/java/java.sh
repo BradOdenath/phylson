@@ -1,11 +1,12 @@
 ### Add tmp directory
-if [ ! -d "/tmp" ]
+
+if [ -d "/essentialz" ]
 then
-	echo "tmp does not exist."
-else
-	rm -rf tmp/
+	rm -rf essentialz/
 fi
-mkdir tmp
+
+cp -r ../../essentialz ./
+
 ls
 
 lua java.lua

@@ -77,10 +77,14 @@ java_class_data = function(class_data)
 						..'}".'
 						..'\n\t'
 						..v.data_type 
+						..code_components.left_square_bracket
+						..code_components.right_square_bracket
 						..' '
 						..tostring(i)
 						..' = '
+						..code_components.left_bracket
 						..commacommacommacommacomma(v.data_value)
+						..code_components.right_bracket
 						..java_components.finish_statement
 				)
 			elseif (type(v.data_value) == "string") then
