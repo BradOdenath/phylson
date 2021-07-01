@@ -1,8 +1,9 @@
 ### Add tmp directory
 
-if [ -d "/essentialz" ]
+if [ -d "./essentialz" ]
 then
 	rm -rf essentialz/
+	ls
 fi
 
 cp -r ../../essentialz ./
