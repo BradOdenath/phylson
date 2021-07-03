@@ -1,5 +1,6 @@
-require "languages/dart"
-require "languages/java"
+require "languages/java/java"
+require "languages/go/go"
 
-print(dart_demo_class_data)
 print(java_demo_class_data)
+
+print(go_demo_class_data)

@@ -1,4 +1,5 @@
 require "essentialz/essentialz"
+
 go_components = {
 	comment_statement = 	[[// ]];
 	file_extension = 		[[.go]];
@@ -122,9 +123,10 @@ go_class_data = function(class_data)
 end
 
 go_class = function(class_name, class_data) 
+	local outStr = ''
 	if (class_name and class_data) then
 		local cd = go_class_data(class_data)
-		return (
+		outStr = (
 			go_components.tipe
 				..' '
 				..class_name
@@ -151,14 +153,15 @@ go_class = function(class_name, class_data)
 			print_debug('nil_value: go_file_generator/go_class/arg/class_data')
 		end
 	end
+	return outStr
 end
 
 
-print(
-	go_class(
+go_demo_class_data = function()
+	return go_class(
 		demo_class.class_name, 
 		demo_class.class_data
 	)
-)
+end
 
-
+print(go_demo_class_data)

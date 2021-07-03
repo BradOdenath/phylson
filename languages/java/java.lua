@@ -2,16 +2,11 @@ zero = 0
 
 require "essentialz/essentialz"
 
-
 java_components = {
 	abstract = 				[[abstract]];
 	comment_statement = 	[[//]];
 	file_extension = 		[[.java]];
 	class = 				[[class]];
---	left_bracket = 			[[{]];
---	right_bracket = 		[[}]];
---	left_parenthesis = 		[[(]];
---	right_parenthesis = 	[[)]];
 	finish_statement =		[[;]];
 }
 
@@ -25,8 +20,7 @@ java_statements = {
 	for_statement = {
 		start_statement = [[for (declare_incrementer, condition, incrementer_change) {]];
 		end_statement = [[}]];
-	};
-	
+	};	
 }
 
 java_class_data = function(class_data)
@@ -181,4 +175,4 @@ java_demo_class_data = java_class(
 	demo_class -- Class Data
 )
 
-print(java_demo_class_data)
+--print(java_demo_class_data)
