@@ -1,5 +1,5 @@
-local es = require "essentialz.essentialz"
-module('es')
+require "essentialz.essentialz"
+
 
 zero = 0
 
@@ -7,10 +7,6 @@ dart_components = {
 	comment_statement = 	[[//]];
 	file_extension = 		[[.dart]];
 	class = 				[[class]];
---	left_bracket = 			[[{]];
---	right_bracket = 		[[}]];
---	left_parenthesis = 		[[(]];
---	right_parenthesis = 	[[)]];
 	finish_statement =		[[;]];
 }
 
@@ -70,7 +66,7 @@ dart_class_data = function(class_data)
 						..' '
 						..tostring(i)
 						..' = '
-						..es.stringify(commacommacommacommacomma(v.data_value))
+						..stringify(commacommacommacommacomma(v.data_value))
 						..dart_components.finish_statement
 				)
 			elseif (v.data_type == "String") then
@@ -90,7 +86,7 @@ dart_class_data = function(class_data)
 						..' '
 						..tostring(i)
 						..' = '
-						..es.stringify(v.data_value)
+						..stringify(v.data_value)
 						..dart_components.finish_statement
 				)
 			else
@@ -146,7 +142,7 @@ dart_class = function(tree_class_data)
 				..code_components.right_bracket
 		) 
 	else
-		es.print_debug('nil_value: dart_file_generator/dart_class/arg/tree_class_data')
+		print_debug('nil_value: dart_file_generator/dart_class/arg/tree_class_data')
 	end
 end
 

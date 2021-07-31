@@ -1,1 +1,1 @@
-echo 'main'
+lua main.lua

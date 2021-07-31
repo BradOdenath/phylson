@@ -148,6 +148,8 @@ java_class = function(tree_class_data)
 			outStr
 				..java_components.class
 				..' '
+				
+				
 				..tree_class_data.class_name
 				..' '
 				..code_components.left_bracket
@@ -175,4 +177,4 @@ java_demo_class_data = java_class(
 	demo_class -- Class Data
 )
 
---print(java_demo_class_data)
+	print(java_demo_class_data)

@@ -1,5 +1,13 @@
 --
 
+debugger = true
+
+print_debug = function(statement)
+	if (debugger) then
+		print(statement)
+	end
+end
+
 class_types = {
 	class	=	'class';
 	interface = 'interface';
