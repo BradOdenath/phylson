@@ -23,6 +23,8 @@ local LC3_OP_CODE_DICTIONARY = {
 	RESERVED	= {'1101'};						--20
 }
 
+
+
 local DEFAULT_PROGRAM_COUNTER = 12288 
 local DEFAULT_CC = 'Z'
 
@@ -31,16 +33,20 @@ local R0, R1, R2, R3, R4, R5, R6, R7, PC, IR, CC
 local HEXIDECIMAL_TO_BINARY = function(hexidecimal_value)
 	local decimal_value = tonumber(hexidecimal_value)
 	local binary_value = ''
-
+	
+	
+	
 end
 
 local BINARY_TO_HEXIDECIMAL = function(binary_value)
 	local hexidecimal_to_binary = ''
-	local 
-	for i = 1, #binary_value do
+	local reversed_binary_value
+	for i = #binary_value, 1, -1 do
 		
 	end	
 end
+
+
 
 local ADD_0 = function(DR, SR1, SR2)
 	--Formula: DR = SR1 + SR2

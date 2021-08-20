@@ -1,21 +1,73 @@
-require "essentialz.essentialz"
-
-
 zero = 0
 
+require "essentialz/essentialz"
+
+
 dart_components = {
+	abstract = 				[[abstract]];
 	comment_statement = 	[[//]];
 	file_extension = 		[[.dart]];
 	class = 				[[class]];
 	finish_statement =		[[;]];
 }
 
-dart_what_is_a_class = function(class_is_a)
+dart_conditions = {
+	greater_than_condition = [[var1 > var2]];
+	lesser_than_condition = [[var1 < var2]];
+	greater_than_or_equal_to_condition = [[var1 >= var2]];
+	lesser_than_or_equal_to = [[var1 <= var2]];
+	equal_to = [[var1 == var2]];
+	not_equal_to = [[var1 != var2]];
+	is = [[var1 is var2]];
+	not_is = [[var1 is! var2]];
 	
-end
+	not_condition = [[!(condition1)]];
+	
+	and_conditions = [[condition1 && condition2]];
+	or_conditions = [[condition1 || condition2]];
+	
+}
+
+
+
+dart_statements = {
+
+	variable_operand_statement = [[var1 operand= var2]];
+
+	variable_assignment_simple_statement = [[var1 = (assignment_var2)]];
+	variable_assignment_if_null_statement =  [[var1 = var2]];
+	variable_assignment_addition_statement = [[var1 += var2]];
+	variable_assignment_subtract_statement = [[var1 -= var2]];
+	variable_assignment_multiply_statement = [[var1 *= var2]];
+	variable_assignment_division_statement = [[var1 /= var2]];	
+
+	variable_arithmetic_addition_statement = [[var1 = var2 + var3]];
+	variable_arithmetic_subtract_statement = [[var1 = var2 - var3]];
+	--variable_arithmetic_unary_minus_statement = [[var1 = var2 -expr var3]];
+	variable_arithmetic_multiply_statement = [[var1 = var2 * var3]];
+	variable_arithmetic_division_statement = [[var1 = var2 / var3]];
+	variable_arithmetic_division_integer_return_statement = [[var1 = var2 ~/ var3]];
+	variable_arithmetic_division_remainder_statement = [[var1 = var2 % var3]];
+	variable_arithmetic_increment_statement = [[var1++]];
+	variable_arithmetic_decrement_statement = [[var1--]];
+	
+	inline_if_statement = [[(condition1) ? statement1 : statement2]];
+	inline_non_null_if_statement = [[var1 ?? var2]];
+	
+	if_statement = {
+		start_statement = [[if (condition1) {]];
+		end_statement = [[}]];
+	};
+	
+	for_statement = {
+		start_statement = [[for (declare_incrementer, condition1, incrementer_change) {]];
+		end_statement = [[}]];
+	};
+ 	
+}
+
 
 dart_class_data = function(class_data)
-	--local es = require "essentialz/essentialz"
 	local outAtr = ''
 	local outFnc = ''
 	if (class_data) then
@@ -29,8 +81,11 @@ dart_class_data = function(class_data)
 					strLine
 						..'\n\t'
 						..dart_components.comment_statement
-						..' Declare function '
-						..tostring(i)
+						..' Declare '
+						..tostring(i)						
+						..'as a '
+						..v.data_privacy
+						..' function '
 						..' and return data type "'
 						..v.data_type
 						..'".'
@@ -48,8 +103,8 @@ dart_class_data = function(class_data)
 						..'\n\t'
 						..code_components.right_bracket
 				)
-				isFnc = true	
-			elseif (v.data_type == "table") then
+				isFnc = true
+			elseif (type(v.data_value) == "table") then
 				strLine = (
 					strLine
 						..'\n\t'
@@ -58,18 +113,22 @@ dart_class_data = function(class_data)
 						..tostring(i)
 						..' as data type "'
 						..v.data_type
-						..'" and initialize the value as "'
+						..'" and initialize the value as "{'
 						..commacommacommacommacomma(v.data_value)
-						..'".'
+						..'}".'
 						..'\n\t'
 						..v.data_type 
+						..code_components.left_square_bracket
+						..code_components.right_square_bracket
 						..' '
 						..tostring(i)
 						..' = '
-						..stringify(commacommacommacommacomma(v.data_value))
+						..code_components.left_bracket
+						..commacommacommacommacomma(v.data_value)
+						..code_components.right_bracket
 						..dart_components.finish_statement
 				)
-			elseif (v.data_type == "String") then
+			elseif (type(v.data_value) == "string") then
 				strLine = (
 					strLine
 						..'\n\t'
@@ -118,17 +177,28 @@ dart_class_data = function(class_data)
 			end
 		end
 	else
-		es.print_debug('nil_value: dart_file_generator/dart_class_data/arg/class_data')
+		print_debug('nil_value: dart_file_generator/dart_class_data/arg/class_data')
 	end
 	return (outAtr..outFnc)
 end
 
 dart_class = function(tree_class_data) 
-	--local es = require "essentialz/essentialz"
+	local outStr = ''
 	if (tree_class_data) then
-		return (
-			dart_components.class
+		if (tree_class_data.class_abstract) then
+			outStr = (
+				outStr
+					..dart_components.abstract
+			)
+		end
+		outStr = (
+			outStr
+--				..dart_permissions.public
+--				..' '
+				..dart_components.class
 				..' '
+				
+				
 				..tree_class_data.class_name
 				..' '
 				..code_components.left_bracket
@@ -140,19 +210,20 @@ dart_class = function(tree_class_data)
 				..dart_class_data(tree_class_data.class_data)
 				..'\n'
 				..code_components.right_bracket
-		) 
+		)
 	else
-		print_debug('nil_value: dart_file_generator/dart_class/arg/tree_class_data')
+		if (class_name == nil) then
+			print_debug('nil_value: dart_file_generator/dart_class/arg/class_name')
+		end
+		if (class_data == nil) then
+			print_debug('nil_value: dart_file_generator/dart_class/arg/class_data')
+		end
 	end
+	return outStr
 end
 
-main = function()
-	dart_demo_class_data = dart_class(
-			demo_class
-		)
+dart_demo_class_data = dart_class(
+	demo_class -- Class Data
+)
 
 	print(dart_demo_class_data)
-	return dart_demo_class_data
-end
-
-main()

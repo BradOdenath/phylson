@@ -8,10 +8,32 @@ print_debug = function(statement)
 	end
 end
 
+language_contains_statement_methodology = function(statements, statement)
+	for statement_method, statement_methodology in pairs(statements) do
+		if (statement == tostring(statement_method)) then
+			return true
+		end
+	end
+	return false
+end
+
 class_types = {
 	class	=	'class';
 	interface = 'interface';
 	abstract = 'abstract';
+}
+
+operands = {
+	'+';
+	'-';
+	'*';
+	'/';
+}
+
+code_permissions = {
+	private = 'private';
+	protected = 'protected';
+	public = 'public';
 }
 
 code_components = {
@@ -22,6 +44,7 @@ code_components = {
 	finish_statement =		[[;]];
 	left_square_bracket =	'[';
 	right_square_bracket = 	']';
+	private_indicator = 	'_';
 }
 
 default_class_is_a = class_types.class
@@ -31,24 +54,30 @@ demo_class = {
 	class_name = 'Obj';
 	class_extends = {};
 	class_implements = {};
+	class_privacy = code_permissions.public;
 	class_data = {
 		str = {
+			data_privacy = code_permissions.public;
 			data_type = 'string';
 			data_value = 'sssttrrrrr';
 		}; 
 		dubbl = {
+			data_privacy = code_permissions.public;
 			data_type = 'double';
 			data_value = 13.37;
 		};
 		ihnt = {
+			data_privacy = code_permissions.public;
 			data_type = 'int';
 			data_value = 5;
 		};
 		ihntegers = {
+			data_privacy = code_permissions.public;
 			data_type = 'int';
 			data_value = {4,5,6};
 		};
 		fuhnktchyon = {
+			data_privacy = code_permissions.public;
 			data_type = 'var';
 			data_parameters = {'derpaderp, adf'};
 			data_value = [[
@@ -61,6 +90,22 @@ demo_class = {
 		};
 	};
 }
+
+pre_permissions_syntax = function(prublivacte, public_string, private_string)
+	if (prublivacte) then
+		return private_string
+	else
+		return public_string
+	end
+end
+
+pre_permission = function(prublivacte)
+	return pre_permissions_syntax(
+		prublivacte, 
+		'', 
+		code_components.private_indicator
+	)
+end
 
 what_is_a_class = function(class_is_a) 
 	if (class_is_a) then
@@ -122,7 +167,7 @@ commacommacommacommacomma = function(data_table)
 	local outStr = ''
 	if (data_table) then
 		for i,v in pairs(data_table) do
-			outStr = (outStr..stringify(v))
+			outStr = (outStr..tostring(v))
 			if (i < #data_table) then
 				outStr = (outStr..', ')
 			end

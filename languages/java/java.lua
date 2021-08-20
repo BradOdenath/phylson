@@ -2,6 +2,12 @@ zero = 0
 
 require "essentialz/essentialz"
 
+java_permissions = {
+	private = 'private';
+	protected = 'protected';
+	public = 'public';
+}
+
 java_components = {
 	abstract = 				[[abstract]];
 	comment_statement = 	[[//]];
@@ -146,6 +152,8 @@ java_class = function(tree_class_data)
 		end
 		outStr = (
 			outStr
+				..java_permissions.public
+				..' '
 				..java_components.class
 				..' '
 				
