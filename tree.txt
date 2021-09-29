@@ -1,0 +1,73 @@
+.
+├── essentialz
+│   └── essentialz.lua
+├── file_concat
+│   └── file_concat.lua
+├── github
+│   ├── clean.sh
+│   └── commit.sh
+├── languages
+│   ├── brainfuck
+│   │   ├── brainfuck.lua
+│   │   └── brainfuck.sh
+│   ├── c
+│   │   ├── c.lua
+│   │   └── c.sh
+│   ├── cobol
+│   │   ├── cobol.lua
+│   │   └── cobol.sh
+│   ├── cplusplus
+│   │   ├── cplusplus.lua
+│   │   └── cplusplus.sh
+│   ├── css
+│   │   ├── css.lua
+│   │   └── css.sh
+│   ├── dart
+│   │   ├── dart.lua
+│   │   ├── dart.sh
+│   │   └── pryslya
+│   ├── go
+│   │   ├── go.lua
+│   │   └── go.sh
+│   ├── html
+│   │   ├── html.lua
+│   │   └── html.sh
+│   ├── java
+│   │   ├── java.lua
+│   │   └── java.sh
+│   ├── javascript
+│   │   ├── javascript.lua
+│   │   └── javascript.sh
+│   ├── language_import.sh
+│   ├── languages.lua
+│   ├── languages.sh
+│   ├── lc3op
+│   │   ├── instruction_console
+│   │   ├── lc3op.lua
+│   │   └── lc3op.sh
+│   ├── lua
+│   │   ├── lua.lua
+│   │   └── lua.sh
+│   ├── pseudocode
+│   │   ├── pseudocode.lua
+│   │   └── pseudocode.sh
+│   ├── python
+│   │   ├── python.lua
+│   │   └── python.sh
+│   ├── r
+│   │   ├── r.lua
+│   │   └── r.sh
+│   ├── sanskrit
+│   │   ├── sanskirt.lua
+│   │   └── sanskrit.sh
+│   ├── typescript
+│   │   ├── typescript.lua
+│   │   └── typescript.sh
+│   └── xml
+│       ├── xml.lua
+│       └── xml.sh
+├── main.lua
+├── main.sh
+└── tree.txt
+
+22 directories, 48 files
