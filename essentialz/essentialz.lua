@@ -1,4 +1,5 @@
 --
+zero = 0
 
 debugger = true
 
@@ -79,7 +80,18 @@ demo_class = {
 		fuhnktchyon = {
 			data_privacy = code_permissions.public;
 			data_type = 'var';
-			data_parameters = {'derpaderp, adf'};
+			data_parameters = {
+				derpaderp = {
+					data_privacy = code_permissions.public;
+					data_type = 'int';
+					data_value = 5;
+				}, 
+				asdf = {
+					data_privacy = code_permissions.public;
+					data_type = 'int';
+					data_value = 5;
+				}
+			};
 			data_value = [[
 				if (adf) {
 					derpaderp += adf;
@@ -90,6 +102,7 @@ demo_class = {
 		};
 	};
 }
+
 
 pre_permissions_syntax = function(prublivacte, public_string, private_string)
 	if (prublivacte) then
@@ -151,7 +164,7 @@ end
 -- Put quotes arounds a string value
 stringify = function(str)
 	if (str) then
-		if (type(str) == 'string') then
+		if (type(string.lower(str)) == string.lower('string')) then
 			return ([["]]..str..[["]])
 		else
 			print('dif_value: essentials/stringify/arg/str: '..tostring(str))
@@ -162,15 +175,19 @@ stringify = function(str)
 	return str
 end
 
+
+contras = {ol = "a"; e = "b"}
 -- Turn a table into a list with commas
 commacommacommacommacomma = function(data_table)
-	local outStr = ''
-	if (data_table) then
-		for i,v in pairs(data_table) do
-			outStr = (outStr..tostring(v))
-			if (i < #data_table) then
+	local contra, outStr = contras.ol, ''
+	if (data_table ~= nil) then
+		for i,v in pairs(data_table) do			
+			if (contra == contras.e) then
 				outStr = (outStr..', ')
+			else
+				contra = contras.e
 			end
+			outStr = (outStr..tostring(v))
 		end
 	else
 		print('nil_value: essentials/commacommacommacommacomma/arg/data_table')
@@ -187,6 +204,16 @@ semicolonoscopyz = function(staytmnt)
 		print('nil_value: essentials/semicolonoscopyz/arg/staytmnt')
 	end
 	return staytmnt
+end
+
+i_table = function(taybl)
+	local eyes = {}
+	
+	for i,v in pairs(taybl) do
+		table.insert(eyes, tostring(i))
+	end
+	
+	return eyes
 end
 
 --[[
@@ -274,13 +301,13 @@ nodent_string = function(str)
 end
 
 tab_newline_count = function(stanza_of_statements, offset)
-	local tnc = zero
+	local tnc
 	
 	if (offset) then
 		tnc = offset
 	else
 		print('nil_value: essentials/tab_newline_count/offset')
-		--tnc = zero
+		tnc = zero
 	end
 	
 	if (stanza_of_statements) then
@@ -302,22 +329,22 @@ tab_newline_count = function(stanza_of_statements, offset)
 end
 
 getaboffset = function(stanza_of_statements, offset)
-	local taboffset = zero
+	local taboffset
+	
+	if (offset) then
+		taboffset = offset
+	else
+		print('nil_value: essentials/gettaboffset/offset')
+		taboffset = zero
+	end
 	
 	if (stanza_of_statements) then
 		
-		if (offset) then
-			taboffset = offset
-		else
-			print('nil_value: essentials/getaboffset/arg/offset')
-			--taboffset = zero
-		end
-		
-		local tab_newline_count_a = tab_newline_count(stanza_of_statements)
+		local tab_newline_count_a = tab_newline_count(stanza_of_statements,taboffset)
 		
 		local stanza_of_statements = dindent_string(stanza_of_statements)
 
-		local tab_newline_count_b = tab_newline_count(stanza_of_statements)
+		local tab_newline_count_b = tab_newline_count(stanza_of_statements,taboffset)
 		if (tab_newline_count_a and tab_newline_count_b) then		
 			if (tab_newline_count_a <= tab_newline_count_b) then
 				return getaboffset(stanza_of_statements, taboffset)
@@ -363,12 +390,10 @@ format_stanzatement = function(stanza_of_statements)
 							stanza_of_statements
 						--)
 					)
-				)			
+				)
 			--)
 	else
 		print('nil_value: essentials/format_stanzatement/arg/stanza_of_statements')
 	end
-	
 	return stanza_of_statements
-	
 end

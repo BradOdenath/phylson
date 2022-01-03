@@ -1,6 +1,6 @@
 require "essentialz/essentialz"
 
-go_components = {
+local go_components = {
 	comment_statement = 	[[// ]];
 	file_extension = 		[[.go]];
 	tipe = 					[[type]];
@@ -12,9 +12,13 @@ go_components = {
 }
 
 
-go_class_data = function(class_data)
-	local outAtr = ''
-	local outFnc = ''
+local go_data_valufy = function(data_value)
+	return i_table(data_value)
+end
+
+local go_class_data = function(class_data)
+	local outAtr, outFnc = '', ''
+	print(class_data)
 	if (class_data) then
 		for i,v in pairs(class_data) do
 			local isFnc = false
@@ -26,8 +30,10 @@ go_class_data = function(class_data)
 					strLine
 						..'\n'
 						..go_components.comment_statement
-						..' Declare function '
+						..' Declare function as'
 						..tostring(i)
+						.." with "
+						..table.getn(
 						..' and return data type "'
 						..v.data_type
 						..'".'
@@ -66,7 +72,7 @@ go_class_data = function(class_data)
 						..v.data_type
 						..' '
 						..code_components.left_bracket
-						..stringify(commacommacommacommacomma(v.data_value))
+						..commacommacommacommacomma(go_data_valufy(v.data_value))
 						..code_components.right_bracket
 				)
 			elseif (v.data_type == 'string') then
@@ -81,7 +87,7 @@ go_class_data = function(class_data)
 						..'" and initialize the value as "'
 						..v.data_value
 						..'".'
-						..'\n\t'
+						..'\n\t' 
 						..v.data_type 
 						..' '
 						..tostring(i)
@@ -119,13 +125,14 @@ go_class_data = function(class_data)
 	else
 		print_debug('nil_value: go_file_generator/go_class_data/arg/class_data')
 	end
-	return ({outAtr,outFnc})
+	return ({ atr = outAtr, fnc = outFnc })
 end
 
-go_class = function(class_name, class_data) 
+local go_class = function(class_name, class_data) 
 	local outStr = ''
 	if (class_name and class_data) then
 		local cd = go_class_data(class_data)
+		print(cd)
 		outStr = (
 			go_components.tipe
 				..' '
@@ -139,11 +146,11 @@ go_class = function(class_name, class_data)
 				..' File: '
 				..class_name
 				..go_components.file_extension
-				..cd[1]
+				..cd.atr
 				..'\n'
 				..code_components.right_bracket
 				..'\n'
-				..cd[2]
+				..cd.fnc
 		) 
 	else
 		if (class_name == nil) then
@@ -156,12 +163,13 @@ go_class = function(class_name, class_data)
 	return outStr
 end
 
+local go_demo_class = demo_class
 
-go_demo_class_data = function()
-	return go_class(
-		demo_class.class_name, 
-		demo_class.class_data
-	)
-end
+local go_demo_class_data = go_class(
+	go_demo_class.class_name, 
+	go_demo_class.class_data
+)
+
 
 print(go_demo_class_data)
+print('go')
