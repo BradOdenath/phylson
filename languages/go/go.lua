@@ -5,6 +5,7 @@ local go_components = {
 	file_extension = 		[[.go]];
 	tipe = 					[[type]];
 	struct = 				[[struct]];
+	func = 					[[func]];
 --	left_bracket = 			[[{]];
 --	right_bracket = 		[[}]];
 --	left_parenthesis = 		[[(]];
@@ -12,8 +13,20 @@ local go_components = {
 }
 
 
-local go_data_valufy = function(data_value)
-	return i_table(data_value)
+local go_parametersersersersers = function(parameterererererer_table)
+	if (parameterererererer_table) then
+		local parametersersersersers = {}
+		local outStr = ''
+		for i,v in pairs(parameterererererer_table) do
+			table.insert(parametersersersersers, (tostring(i)..' :'..v.data_type))
+		end
+		
+		outStr = commacommacommacommacomma(parametersersersersers)
+
+		return outStr
+	else
+		print_debug('nil_value: go/go_parametersersersersers/arg/parametererererer_table')
+	end
 end
 
 local go_class_data = function(class_data)
@@ -30,20 +43,25 @@ local go_class_data = function(class_data)
 					strLine
 						..'\n'
 						..go_components.comment_statement
-						..' Declare function as'
+						..' Declare function as '
 						..tostring(i)
-						.." with "
-						..table.getn(
+						.." with parameters: "
+						..commacommacommacommacomma(i_table(v.data_parameters))
 						..' and return data type "'
 						..v.data_type
 						..'".'
-						..'\n'
-						..v.data_type
+						..'\n' 
+						..go_components.func
 						..' '
-						..tostring(i) 
 						..code_components.left_parenthesis
-						..commacommacommacommacomma(v.data_parameters)
+						..go_parametersersersersers(v.data_parameters)
 						..code_components.right_parenthesis
+						..' '
+						..tostring(i)
+						..code_components.left_parenthesis
+						..code_components.right_parenthesis
+						..' '
+						..v.data_type 
 						..' '
 						..code_components.left_bracket
 						..'\n'
@@ -72,7 +90,7 @@ local go_class_data = function(class_data)
 						..v.data_type
 						..' '
 						..code_components.left_bracket
-						..commacommacommacommacomma(go_data_valufy(v.data_value))
+						..commacommacommacommacomma(i_table(v.data_value))
 						..code_components.right_bracket
 				)
 			elseif (v.data_type == 'string') then

@@ -79,7 +79,7 @@ demo_class = {
 		};
 		fuhnktchyon = {
 			data_privacy = code_permissions.public;
-			data_type = 'var';
+			data_type = 'int';
 			data_parameters = {
 				derpaderp = {
 					data_privacy = code_permissions.public;
@@ -103,9 +103,6 @@ demo_class = {
 	};
 }
 
-data_type_values = function(data_values)
-
-end
 
 pre_permissions_syntax = function(prublivacte, public_string, private_string)
 	if (prublivacte) then
@@ -178,6 +175,15 @@ stringify = function(str)
 	return str
 end
 
+string_to_table = function(str)
+	local taybl = {}
+	for i = 1, #str do
+		table.insert(taybl, string.sub(str,i,i))
+	end
+	return taybl
+end
+
+string_to_table('asdf')
 
 contras = {ol = "a"; e = "b"}
 -- Turn a table into a list with commas
@@ -209,14 +215,19 @@ semicolonoscopyz = function(staytmnt)
 	return staytmnt
 end
 
+--- TODO: Convert to Binary Bits
 i_table = function(taybl)
-	local eyes = {}
-	
-	for i,v in pairs(taybl) do
-		table.insert(eyes, tostring(i))
+	if (taybl) then
+		local eyes = {}
+		
+		for i,v in pairs(taybl) do
+			table.insert(eyes, tostring(i))
+		end
+		
+		return eyes
+	else
+		
 	end
-	
-	return eyes
 end
 
 --[[
