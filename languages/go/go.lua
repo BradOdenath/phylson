@@ -52,17 +52,17 @@ local go_class_data = function(class_data)
 						..'".'
 						..'\n' 
 						..go_components.func
-						..' '
+						..code_components.space
 						..code_components.left_parenthesis
 						..go_parametersersersersers(v.data_parameters)
 						..code_components.right_parenthesis
-						..' '
+						..code_components.space
 						..tostring(i)
 						..code_components.left_parenthesis
 						..code_components.right_parenthesis
-						..' '
+						..code_components.space
 						..v.data_type 
-						..' '
+						..code_components.space
 						..code_components.left_bracket
 						..'\n'
 						..format_stanzatement(v.data_value)
@@ -84,11 +84,11 @@ local go_class_data = function(class_data)
 						..'".'
 						..'\n\t'
 						..tostring(i)
-						..' '
+						..code_components.space
 						..code_components.left_square_bracket
 						..code_components.right_square_bracket
 						..v.data_type
-						..' '
+						..code_components.space
 						..code_components.left_bracket
 						..commacommacommacommacomma(i_table(v.data_value))
 						..code_components.right_bracket
@@ -107,9 +107,9 @@ local go_class_data = function(class_data)
 						..'".'
 						..'\n\t' 
 						..v.data_type 
-						..' '
+						..code_components.space
 						..tostring(i)
-						..' '
+						..code_components.space
 						..stringify(v.data_value)
 				)
 			else
@@ -127,9 +127,9 @@ local go_class_data = function(class_data)
 						..'".'
 						..'\n\t'
 						..v.data_type 
-						..' '
+						..code_components.space
 						..tostring(i)
-						..' '
+						..code_components.space
 						..v.data_value
 				)
 			end
@@ -153,11 +153,11 @@ local go_class = function(class_name, class_data)
 		print(cd)
 		outStr = (
 			go_components.tipe
-				..' '
+				..code_components.space
 				..class_name
-				..' '
+				..code_components.space
 				..go_components.struct
-				..' '
+				..code_components.space
 				..code_components.left_bracket
 				..'\n\t'
 				..go_components.comment_statement

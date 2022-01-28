@@ -52,30 +52,34 @@ code_components = {
 }
 
 code_components._code_component = function(der)
-	return (
-		code_components.space
-			..tostring(der)
-			..code_components.space
-	) 
-end
-
-code_components.colon_component = function() 
-	return (code_components
-		._code_component(
-			code_components.colon
-		)
-	)
-end
-
-code_components.equals_component = function()
-	return (code_components
-		._code_component(
+		return (
 			code_components.space
+				..tostring(der)
+				..code_components.space
 		)
-	)
 end
 
-code_components.bracketify = function()
+code_components.colon_component = (
+		code_components
+			._code_component(
+				code_components.colon
+		)
+	)
+
+code_components.equals_component = (
+		code_components
+			._code_component(
+				code_components.equals
+		)
+	)
+
+code_components.bracketify = function(ayoooo)
+	return (
+		code_components.left_square_bracket
+			..ayoooo
+			..code_components.right_square_bracket
+	)
+end
 
 default_class_is_a = class_types.class
 
