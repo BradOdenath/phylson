@@ -24,9 +24,8 @@ end
 
 python_class = function(class_data)
 	local outAtr, outFnc = '', ''
-	print(class_data)
 	if (class_data) then
-		for i,v in pairs(class_data) do 
+		for i,v in pairs(class_data.class_data) do 
 			local isFnc = false
 			local strLine = ''
 			if (v.data_parameters) then
@@ -51,9 +50,10 @@ python_class = function(class_data)
 						..code_components.right_parenthesis
 						..code_components.colon
 						..'\n'
+						..v.data_value
 				)
 				isFnc = true
-			elseif (type(v.data_value == 'table')) then
+			elseif (type(v.data_value) == 'table') then
 				strLine = (
 					strLine
 						..'\n\t'
@@ -76,9 +76,7 @@ python_class = function(class_data)
 							..code_components.equals_component
 							..code_components.bracketify(
 								commacommacommacommacomma(
-									i_table(
-										v.data_value
-									)
+									v.data_value
 								)
 							)
 				end
@@ -86,11 +84,11 @@ python_class = function(class_data)
 				strLine = (
 					strLine
 						..'\n\t'
-						..go_components.comment_statement
+						..python_components.comment_statement
 						..' Declare attribute '
 						..tostring(i)
 						..' as data type "'
-						..v.data_type
+						..tostring(v.data_type)
 						'" and initialize the value as "'
 						..v.data_value
 						..'".'
@@ -114,15 +112,18 @@ python_class = function(class_data)
 			end
 		end
 		outAtr = (
-			python_components.dataclass
+			python_components.type_hint
 				..'\n'
 				..python_components.class
-				..indent_string(outAtr)
+				..code_components.space
+				..class_data.class_name
+				..code_components.colon
+				..outAtr
 			)
 	else
 		print_debug('python_file_generator/python_class_data/arg/class_data')
 	end 
-	return ( { atr = outAtr, fnc = outFnc } )
+	return ( outAtr..outFnc )
 end
 
 local python_demo_class = demo_class
@@ -131,5 +132,5 @@ local python_demo_class_data = python_class(
 	python_demo_class
 )
 
-print(python_demo_class_data)
-print('python')
+print_debug(python_demo_class_data)
+print_debug('python')

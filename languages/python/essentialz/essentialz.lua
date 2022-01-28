@@ -160,9 +160,9 @@ what_is_a_class = function(class_is_a)
 				return class_is_a
 			end
 		end
-		print('dif_value: essentials/what_is_a_class/arg/class_is_a: '..tostring(class_is_a))
+		print_debug('dif_value: essentials/what_is_a_class/arg/class_is_a: '..tostring(class_is_a))
 	else
-		print('nil_value: essentials/what_is_a_class/arg/class_is_a')
+		print_debug('nil_value: essentials/what_is_a_class/arg/class_is_a')
 	end
 	return default_class_is_a
 end
@@ -172,16 +172,16 @@ print_table = function(table_data)
 		if (type(table_data) == 'table') then
 			for i,v in pairs(table_data) do
 				if (type(i) ~= 'number') then
-					print(tostring(i))
+					print_debug(tostring(i))
 				end
 				if (v) then
 					if (type(v) == 'table') then
 						print_table(v)
 					else
-						print('i: '..tostring(i)..'\t| v:'..tostring(v))
+						print_debug('i: '..tostring(i)..'\t| v:'..tostring(v))
 					end
 				else
-					print('nil_value: essentials/print_table/arg'
+					print_debug('nil_value: essentials/print_table/arg'
 						..code_components.left_bracket
 						..tostring(i)
 						..code_components.right_bracket
@@ -190,7 +190,7 @@ print_table = function(table_data)
 			end
 		end
 	else
-		print('nil_value: essentials/print_table/arg/table_data')
+		print_debug('nil_value: essentials/print_table/arg/table_data')
 	end
 end
 
@@ -200,10 +200,10 @@ stringify = function(str)
 		if (type(string.lower(str)) == string.lower('string')) then
 			return ([["]]..str..[["]])
 		else
-			print('dif_value: essentials/stringify/arg/str: '..tostring(str))
+			print_debug('dif_value: essentials/stringify/arg/str: '..tostring(str))
 		end
 	else
-		print('nil_value: essentials/stringify/arg/str')
+		print_debug('nil_value: essentials/stringify/arg/str')
 	end
 	return str
 end
@@ -222,17 +222,21 @@ contras = {ol = "a"; e = "b"}
 -- Turn a table into a list with commas
 commacommacommacommacomma = function(data_table)
 	local contra, outStr = contras.ol, ''
-	if (data_table ~= nil) then
-		for i,v in pairs(data_table) do			
-			if (contra == contras.e) then
-				outStr = (outStr..', ')
-			else
-				contra = contras.e
+	if (data_table) then
+		if (type(data_table) == "table") then
+			for i,v in pairs(data_table) do			
+				if (contra == contras.e) then
+					outStr = (outStr..', ')
+				else
+					contra = contras.e
+				end
+				outStr = (outStr..tostring(v))
 			end
-			outStr = (outStr..tostring(v))
+		else
+			print_debug('der_type: essentialz/commacommacommacommacomma/arg/data_table')
 		end
 	else
-		print('nil_value: essentials/commacommacommacommacomma/arg/data_table')
+		print_debug('nil_value: essentials/commacommacommacommacomma/arg/data_table')
 	end
 	return outStr
 end
@@ -243,7 +247,7 @@ semicolonoscopyz = function(staytmnt)
 			return (staytmnt..code_components.finish_statement)
 		end
 	else
-		print('nil_value: essentials/semicolonoscopyz/arg/staytmnt')
+		print_debug('nil_value: essentials/semicolonoscopyz/arg/staytmnt')
 	end
 	return staytmnt
 end
@@ -259,7 +263,21 @@ i_table = function(taybl)
 		
 		return eyes
 	else
+		print_debug('nil_value: essentialz/i_table/arg/taybl')
+	end
+end
+
+value_table = function(taybl)
+	if (taybl) then
+		local values = {}
 		
+		for i,v in pairs(taybl) do
+			table.insert(values, tostring(v))
+		end
+		
+		return values
+	else
+		print_debug('nil_value: essentialz/value_table/arg/taybl')
 	end
 end
 
@@ -270,7 +288,7 @@ split = function(str, splitter)
 	
 	
 	local iterations = string.gmatch(str, '%a+')
-	print(iterations)
+	print_debug(iterations)
 	return atoms
 end
 ]]
@@ -279,20 +297,20 @@ stanzatements = function(stanza, pre_stanza_statements)
 	if (pre_stanza_statements) then
 		stanza_statements = pre_stanza_statements
 	else
-		--print('nil_value: essentials/stanzatements/arg/pre_stanza_statements')
+		--print_debug('nil_value: essentials/stanzatements/arg/pre_stanza_statements')
 	end
 	
 	if (stanza) then 
 		local first = string.sub(stanza, string.find(stanza, '\n'))
 		if (first) then
 			table.insert(stanza_statements, first)
-			print(tostring(first))
+			print_debug(tostring(first))
 			stanzatements(string.sub(stanza, string.len(first)), pre_stanza_statements)
 		else
-			print('nil_value: essentials/stanzatements/var/first')
+			print_debug('nil_value: essentials/stanzatements/var/first')
 		end
 	else
-		print('nil_value: essentials/stanzatements/arg/stanza') 
+		print_debug('nil_value: essentials/stanzatements/arg/stanza') 
 	end
 	return stanza_statements
 end
@@ -308,7 +326,7 @@ semicoloniyzanza = function(stanza)
 						..semicolonoscopyz(stanzatement)
 				)
 			else
-				print('nil_value: essentials/semicoloniyzanza/var/stanzatement')
+				print_debug('nil_value: essentials/semicoloniyzanza/var/stanzatement')
 			end
 			out_stanza = (
 				out_stanza
@@ -317,7 +335,7 @@ semicoloniyzanza = function(stanza)
 		end
 		return out_stanza
 	else
-		print('nil_value: essentials/semicoloniyzanza/var/stanza_statements')
+		print_debug('nil_value: essentials/semicoloniyzanza/var/stanza_statements')
 		return stanza
 	end
 	
@@ -327,7 +345,7 @@ indent_string = function(str)
 	if (str) then
 		return ('\t'..string.gsub(str, '\n', '\n\t'))
 	else
-		print('nil_value: essentials/indent_string/arg/str')
+		print_debug('nil_value: essentials/indent_string/arg/str')
 	end
 end
 
@@ -335,7 +353,7 @@ dindent_string = function(str)
 	if (str) then
 		return string.gsub(str, '\t\n', '\n')
 	else
-		print('nil_value: essentials/dindent_string/arg/str')
+		print_debug('nil_value: essentials/dindent_string/arg/str')
 	end
 end
 
@@ -343,7 +361,15 @@ nodent_string = function(str)
 	if (str) then
 		return string.gsub(str, '\t', '')	
 	else
-		print('nil_value: essentials/nodent_string/arg/str')
+		print_debug('nil_value: essentials/nodent_string/arg/str')
+	end
+end
+
+ondent_string = function(str)
+	if (str) then
+		return string.gsub(nodent_string(str), '\t', '')
+	else
+		print_debug('nil-value: essentialz/ondent_string/arg/str')
 	end
 end
 
@@ -353,7 +379,7 @@ tab_newline_count = function(stanza_of_statements, offset)
 	if (offset) then
 		tnc = offset
 	else
-		print('nil_value: essentials/tab_newline_count/offset')
+		print_debug('nil_value: essentials/tab_newline_count/offset')
 		tnc = zero
 	end
 	
@@ -361,15 +387,15 @@ tab_newline_count = function(stanza_of_statements, offset)
 		local first
 		if pcall(function() 
 			first = string.len(string.sub(stanza_of_statements, string.find(stanza_of_statements, '\t\n')))
-			--print('first: '..tostring(first))
+			--print_debug('first: '..tostring(first))
 		end) then
 			tnc = tnc + 1
 			tab_newline_count(string.sub(stanza_of_statements, first), tnc)
 		else
-			print('nil_value: essentials/tab_newline_count/first')
+			print_debug('nil_value: essentials/tab_newline_count/first')
 		end
 	else
-		print('nil_value: essentials/tab_newline_count/stanza_of_statements')
+		print_debug('nil_value: essentials/tab_newline_count/stanza_of_statements')
 	end
 	
 	return tnc
@@ -381,7 +407,7 @@ getaboffset = function(stanza_of_statements, offset)
 	if (offset) then
 		taboffset = offset
 	else
-		print('nil_value: essentials/gettaboffset/offset')
+		print_debug('nil_value: essentials/gettaboffset/offset')
 		taboffset = zero
 	end
 	
@@ -398,14 +424,14 @@ getaboffset = function(stanza_of_statements, offset)
 			end
 		else
 			if (tab_newline_count_a == nil) then
-				print('nil_value: essentials/getaboffset/var/tab_newline_count_a')
+				print_debug('nil_value: essentials/getaboffset/var/tab_newline_count_a')
 			end
 			if (tab_newline_count_b == nil) then
-				print('nil_value: essentials/getaboffset/var/tab_newline_count_b')
+				print_debug('nil_value: essentials/getaboffset/var/tab_newline_count_b')
 			end
 		end
 	else
-		print('nil_value: essentials/getaboffset/arg/stanza_of_statements')
+		print_debug('nil_value: essentials/getaboffset/arg/stanza_of_statements')
 		return zero
 	end
 	
@@ -421,7 +447,7 @@ taboutosometabracknacklets = function(stanza_of_statements)
 			end
 		end
 	else
-		print('nil_value: essentials/taboutosometabracknacklets/arg/staytmnt')
+		print_debug('nil_value: essentials/taboutosometabracknacklets/arg/staytmnt')
 	end
 	return stanza_of_statements
 end
@@ -440,7 +466,7 @@ format_stanzatement = function(stanza_of_statements)
 				)
 			--)
 	else
-		print('nil_value: essentials/format_stanzatement/arg/stanza_of_statements')
+		print_debug('nil_value: essentials/format_stanzatement/arg/stanza_of_statements')
 	end
 	return stanza_of_statements
 end
