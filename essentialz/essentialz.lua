@@ -46,7 +46,36 @@ code_components = {
 	left_square_bracket =	'[';
 	right_square_bracket = 	']';
 	private_indicator = 	'_';
+	colon =					':';
+	equals =				'=';
+	space = 				' ';
 }
+
+code_components._code_component = function(der)
+	return (
+		code_components.space
+			..tostring(der)
+			..code_components.space
+	) 
+end
+
+code_components.colon_component = function() 
+	return (code_components
+		._code_component(
+			code_components.colon
+		)
+	)
+end
+
+code_components.equals_component = function()
+	return (code_components
+		._code_component(
+			code_components.space
+		)
+	)
+end
+
+code_components.bracketify = function()
 
 default_class_is_a = class_types.class
 
@@ -162,7 +191,7 @@ print_table = function(table_data)
 end
 
 -- Put quotes arounds a string value
-stringify = function(str)
+stringify = function(str)     
 	if (str) then
 		if (type(string.lower(str)) == string.lower('string')) then
 			return ([["]]..str..[["]])

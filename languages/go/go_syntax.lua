@@ -1,5 +1,4 @@
-
-java_conditions = {
+go_comparison_operators {
 	greater_than_condition = [[var1 > var2]];
 	lesser_than_condition = [[var1 < var2]];
 	greater_than_or_equal_to_condition = [[var1 >= var2]];
@@ -21,7 +20,7 @@ java_conditions = {
 	
 } 
 
-java_statements = {
+go_statements = {
 
 	variable_operand_statement = [[var1 operand= var2]];
 
@@ -74,11 +73,3 @@ java_statements = {
 		end_statement = [[}]];
 	};	
 }
-
-var_syntax = 'var'
-
-decipher_string = function()
-	for i,v in pairs(string) do
-		
-	end
-end
