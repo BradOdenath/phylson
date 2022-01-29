@@ -81,6 +81,11 @@ python_class = function(class_data)
 							)
 				end
 			else
+				local isStr = python_is_string(v.data_type)
+				local dataValue 
+				if (isStr) then
+					dataValue = stringify(data_value)
+				end
 				strLine = (
 					strLine
 						..'\n\t'
@@ -88,10 +93,10 @@ python_class = function(class_data)
 						..' Declare attribute '
 						..tostring(i)
 						..' as data type "'
-						..tostring(v.data_type)
-						'" and initialize the value as "'
-						..v.data_value
-						..'".'
+						..v.data_type
+						..'" and initialize the value as '
+						..(dataValue or v.data_value)
+						..'.'
 						..'\n\t'
 						..python_is_string_but_data_type(v.data_type)
 						..code_components.colon_component

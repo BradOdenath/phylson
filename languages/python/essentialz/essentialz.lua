@@ -241,6 +241,10 @@ commacommacommacommacomma = function(data_table)
 	return outStr
 end
 
+desemicolonoscoz = function(staytmnt)
+	return string.gsub(staytmnt, code_components.finish_statement, [[]])
+end
+
 semicolonoscopyz = function(staytmnt)
 	if (staytmnt) then
 		if (string.find(staytmnt, code_components.finish_statement) == nil) then
