@@ -51,7 +51,7 @@ csharp_parametersersersersersers = function(parameterererererer_table)
 		local parametersersersersersers = {}
 		local outStr = ''
 		for i,v in pairs(parameterererererer_table) do
-			table.insert(parametersersersersersers, (v.data_type..code_components.space..tostring(i))) --- TODO: 
+			table.insert(parametersersersersersers, (v.data_type..code_components.space..v.data_value)) --- TODO: 
 		end
 		
 		outStr = commacommacommacommacomma(parametersersersersersers)
@@ -109,12 +109,18 @@ csharp_class_data = function(class_data)
 						..code_components.parenthesisify(				
 							commacommacommacommacomma(
 								csharp_parametersersersersersers(
-									v.data_paramters
+									v.data_parameters
 								)
 							)
 						)
+						..code_components.space
+						..code_components.bracketify(
+							'\n\t'
+								..v.data_value
+						)
 				)
-			elseif (type(v.data_value) == "table") then
+			elseif (type(v.data_value) == "table" and (v.data_object_signal == nil)) then
+				print_debug('table')
 				strLine = (
 					strLine
 						..'\n\t'
@@ -145,9 +151,12 @@ csharp_class_data = function(class_data)
 				)
 				if (v.data_value) then
 					strLine = (
-						strLine
+						strLine										
 							..code_components.equals_component
-							..commacommacommacommacomma(v.data_value)
+							..code_components.bracketify(
+								commacommacommacommacomma(v.data_value)
+							)
+							..code_components.finish_statement
 					)
 				end
 			else --string, char, numbers
@@ -160,7 +169,7 @@ csharp_class_data = function(class_data)
 						..' as data type '
 						..stringify(v.data_type)
 						..' and initialize the value as '
-						..stringify(v.data_value)
+						..tostringify(v.data_value)
 						..'.'
 						..'\n\t'
 						..v.data_privacy
@@ -212,7 +221,7 @@ csharp_class_data = function(class_data)
 		end
 		--outData = table.sort(outData)
 		for i,v in pairs(outData) do
-			outStr = (outStr..v)
+			outStr = (outStr..'\n'..v)
 		end
 		return outStr
 	else
@@ -257,5 +266,4 @@ csharp_demo_class_data = csharp_class(
 	demo_class
 )
 
-print(csharp_demo_class_data)
 print(csharp_demo_class_data)

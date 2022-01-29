@@ -28,6 +28,9 @@ debugger = true
 print_debug = function(statement)
 	if (debugger) then
 		print(statement)
+		pcall(function()
+			error(statement)
+		end)
 	end
 end
 
@@ -165,8 +168,28 @@ charify = function(chr)
 	return (ify(chr,code_components.char_component))
 end
 
-objectify = function(obj)
-	return (erererererer_(obj, ''))
+objectify = function(parameterererererer_table)
+	if (parameterererererer_table) then
+		local parametersersersersersers = {}
+		local outStr = ''
+		for i,v in pairs(parameterererererer_table) do
+			table.insert(parametersersersersersers, 
+				(v.data_type
+					..code_components._code_component(
+						tostring(i)
+					))
+					..code_components.equals_component
+					..tostringify(v.data_value)
+					..code_components.finish_statement
+			) --- TODO: 
+		end
+		
+		outStr = commacommacommacommacomma(parametersersersersersers)
+		
+		return outStr
+	else
+		print_debug('nil_value: csharp/csharp_parametersersersersersers/arg/parameterererererer_table')
+	end
 end
 
 tostringify = function(ngi)
@@ -174,11 +197,13 @@ tostringify = function(ngi)
 	if (type(ngi) == "number") then
 		out = (tostring(ngi))
 	elseif (type(ngi) == "string") then
-		out = (stringify(ngi))
-	elseif (type(ngi) == "char") then
-		out = (charify(ngi))
+		if (#ngi > 1) then
+			out = (stringify(ngi))
+		else
+			out = (charify(ngi))
+		end
 	elseif (type(ngi) == "table") then
-		out = (bracketify(commacommacommacommacomma(ngi)))
+		out = (code_components.bracketify(commacommacommacommacomma(ngi)))
 	else
 		out = (objectify(ngi))
 	end
@@ -245,6 +270,7 @@ demo_class = {
 			data_value = 'a';
 		};
 		ohbjhct = {
+			data_object_signal = true;
 			data_privacy = code_permissions.protected;
 			data_type = "Ooobbbjjjeeecccttt";
 			data_value = {
