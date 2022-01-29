@@ -17,6 +17,7 @@ csharp_components = {
 	finish_statement = 		[[;]];	
 	set =					[[set]];
 	get = 					[[get]];	
+	new	=					[[new]];			
 }
 
 csharp_components.if_value_null_then_component = (
@@ -107,10 +108,8 @@ csharp_class_data = function(class_data)
 						)
 						..tostring(i)
 						..code_components.parenthesisify(				
-							commacommacommacommacomma(
-								csharp_parametersersersersersers(
-									v.data_parameters
-								)
+							csharp_parametersersersersersers(
+								v.data_parameters
 							)
 						)
 						..code_components.space
@@ -120,7 +119,6 @@ csharp_class_data = function(class_data)
 						)
 				)
 			elseif (type(v.data_value) == "table" and (v.data_object_signal == nil)) then
-				print_debug('table')
 				strLine = (
 					strLine
 						..'\n\t'
@@ -182,6 +180,17 @@ csharp_class_data = function(class_data)
 					strLine = (
 						strLine
 							..code_components.equals_component
+					)
+					if (v.data_object_signal) then
+						strLine = (
+							strLine
+								..csharp_components.new
+								..code_components.space
+								..v.data_type
+						)
+					end
+					strLine = (
+						strLine
 							..tostringify(v.data_value)
 							..csharp_components.finish_statement
 					)

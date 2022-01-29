@@ -192,6 +192,27 @@ objectify = function(parameterererererer_table)
 	end
 end
 
+thisequalsthatersersersersersers = function(parameterererererer_table)
+	if (parameterererererer_table) then
+		local parametersersersersersers = {}
+		local outStr = ''
+		for i,v in pairs(parameterererererer_table) do
+			local its_an_rv = (v.data_type..code_components.space..tostring(i))
+			if (v.data_value) then
+				its_an_rv = (its_an_rv..code_components.equals_component..v.data_value)
+			end
+			print(its_an_rv)
+			table.insert(parametersersersersersers, its_an_rv) --- TODO: 
+		end
+		
+		outStr = commacommacommacommacomma(parametersersersersersers)
+		
+		return outStr
+	else
+		print_debug('nil_value: csharp/csharp_parametersersersersersers/arg/parameterererererer_table')
+	end
+end
+
 tostringify = function(ngi)
 	local out
 	if (type(ngi) == "number") then
@@ -203,31 +224,11 @@ tostringify = function(ngi)
 			out = (charify(ngi))
 		end
 	elseif (type(ngi) == "table") then
-		out = (code_components.bracketify(commacommacommacommacomma(ngi)))
+		out = (code_components.parenthesisify(thisequalsthatersersersersersers(ngi)))
 	else
 		out = (objectify(ngi))
 	end
 	return out
-end
-
-thisequalsthatersersersersersers = function(parameterererererer_table)
-	if (parameterererererer_table) then
-		local parametersersersersersers = {}
-		local outStr = ''
-		for i,v in pairs(parameterererererer_table) do
-			local its_an_rv = (v.data_type..code_components.space..tostring(i))
-			if (v.data_value) then
-				its_an_rv = (code_components.equals_component..v.data_value)
-			end
-			table.insert(parametersersersersersers, its_an_rv) --- TODO: 
-		end
-		
-		outStr = commacommacommacommacomma(parametersersersersersers)
-		
-		return outStr
-	else
-		print_debug('nil_value: csharp/csharp_parametersersersersersers/arg/parameterererererer_table')
-	end
 end
 
 default_class_is_a = class_types.class
