@@ -1,6 +1,13 @@
 --
 zero = 0
 
+test_file = function(name, extension, content)
+	local file = io.open((name..extension), "w+")
+	io.output(file)
+	io.write(content)
+	io.close(file)
+end
+
 zpcall = function(...) 
 	local funcs = table.pack(...)
 	local _status, _response = {}, {}

@@ -225,8 +225,16 @@ dart_class = function(tree_class_data)
 	return outStr
 end
 
+dart_demo_class = demo_class
+
 dart_demo_class_data = dart_class(
-	demo_class -- Class Data
+	dart_demo_class -- Class Data
 )
 
-	print(dart_demo_class_data)
+print(dart_demo_class_data)	
+
+test_file(
+	demo_class.class_name, 
+	dart_components.file_extension, 
+	dart_demo_class_data
+)

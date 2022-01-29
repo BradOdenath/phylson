@@ -276,3 +276,9 @@ csharp_demo_class_data = csharp_class(
 )
 
 print(csharp_demo_class_data)
+
+test_file(
+	demo_class.class_name, 
+	csharp_components.file_extension, 
+	csharp_demo_class_data
+)

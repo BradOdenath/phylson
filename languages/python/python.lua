@@ -2,7 +2,7 @@ require "essentialz/essentialz"
 
 local python_components = {
 	comment_statement = [[#]];
-	file_extension = [[.python]];
+	file_extension = [[.py]];
 	type_hint = '@dataclass';
 	tipe = [[type]];
 	class = [[class]]; -- todo: fix this
@@ -139,3 +139,9 @@ local python_demo_class_data = python_class(
 
 print_debug(python_demo_class_data)
 print_debug('python')
+
+test_file(
+	python_demo_class.class_name, 
+	python_components.file_extension, 
+	python_demo_class_data
+)

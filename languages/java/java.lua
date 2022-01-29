@@ -188,8 +188,16 @@ java_class = function(tree_class_data)
 	return outStr
 end
 
+java_demo_class = demo_class
+
 java_demo_class_data = java_class(
-	demo_class -- Class Data
+	java_demo_class -- Class Data
 )
 
-	print(java_demo_class_data)
+print(java_demo_class_data)	
+
+test_file(
+	java_demo_class.class_name, 
+	java_components.file_extension, 
+	java_demo_class_data
+)
