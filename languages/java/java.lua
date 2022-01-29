@@ -37,6 +37,8 @@ java_class_data = function(class_data)
 						..v.data_type
 						..'".'
 						..'\n\t'
+						..v.data_privacy
+						..' '
 						..v.data_type
 						..' '
 						..tostring(i) 

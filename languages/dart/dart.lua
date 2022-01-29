@@ -52,7 +52,7 @@ dart_statements = {
 	inline_if_statement = [[(condition1) ? statement1 : statement2]];
 	inline_non_null_if_statement = [[var1 ?? var2]];
 	
-	set_statement = [[set var1(arg1) var1 = arg1;]]];
+	set_statement = [[set var1(arg1) var1 = arg1;]];
 	get_statement = [[type_var1 get var1 => this.var1]];
 	
 	variable_declaration_statement = [[Type1 var1]];
