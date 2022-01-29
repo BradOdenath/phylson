@@ -1,10 +1,10 @@
 --
 zero = 0
 
-local zpcall = function(...) 
+zpcall = function(...) 
 	local funcs = table.pack(...)
 	local _status, _response = {}, {}
-	local count = table.getn(funcs)
+	local count = #funcs
 	for i,v in pairs(funcs) do
 		local __status, __response = pcall(function() v() end)
 		--print(__status)
@@ -121,10 +121,27 @@ end
 code_components.parenthesisify = function(aatawer)
 	return (
 		code_components.left_parenthesis
-			..ayoooo
+			..aatawer
 			..code_components.right_parenthesis
 	)
 end
+
+--[[
+erererererer_ = function(parameterererererer_table, erererererer)
+	if (parameterererererer_table) then
+		local parametersersersersersers = {}
+		local outStr = ''
+		for i,v in pairs(parameterererererer_table) do
+			table.insert(parametersersersersersers, erererererer) --- TODO: 
+		end
+		
+		outStr = commacommacommacommacomma(parametersersersersersers)
+		
+		return outStr
+	else
+		print_debug('nil_value: csharp/csharp_parametersersersersersers/arg/parameterererererer_table')
+	end
+end]]
 
 ify = function(str,ing)     
 	if (str) then
@@ -148,26 +165,36 @@ charify = function(chr)
 	return (ify(chr,code_components.char_component))
 end
 
-tostringify = function(ngi)
-	if (type(ngi) == "number") then
-		return tostring(ngi)
-	elseif (type(ngi) == "string") then
-		return (stringify(ngi))
-	elseif (type(ngi) == "char") then
-		return (charify(ngi))
-	elseif (type(ngi) == "table") then
-		return ()
-	else
-		return 
-	end
+objectify = function(obj)
+	return (erererererer_(obj, ''))
 end
 
-erererererer_ = function(parameterererererer_table, erererererer)
+tostringify = function(ngi)
+	local out
+	if (type(ngi) == "number") then
+		out = (tostring(ngi))
+	elseif (type(ngi) == "string") then
+		out = (stringify(ngi))
+	elseif (type(ngi) == "char") then
+		out = (charify(ngi))
+	elseif (type(ngi) == "table") then
+		out = (bracketify(commacommacommacommacomma(ngi)))
+	else
+		out = (objectify(ngi))
+	end
+	return out
+end
+
+thisequalsthatersersersersersers = function(parameterererererer_table)
 	if (parameterererererer_table) then
 		local parametersersersersersers = {}
 		local outStr = ''
 		for i,v in pairs(parameterererererer_table) do
-			table.insert(parametersersersersersers, pcall(function() erererererer end) --- TODO: 
+			local its_an_rv = (v.data_type..code_components.space..tostring(i))
+			if (v.data_value) then
+				its_an_rv = (code_components.equals_component..v.data_value)
+			end
+			table.insert(parametersersersersersers, its_an_rv) --- TODO: 
 		end
 		
 		outStr = commacommacommacommacomma(parametersersersersersers)
@@ -178,20 +205,10 @@ erererererer_ = function(parameterererererer_table, erererererer)
 	end
 end
 
-thisequalsthatersersersersersers = function(parameterererererer_table)
-	local its_an_rv = (v.data_type..code_components.space..tostring(i))
-	if (v.data_value)
-		its_an_rv = (code_components.equals_component..v.data_value)
-	end
-	its_an_rv = (parameterererererer_table,erererererer_(its_an_rv))
-	return (its_an_rv)
-end
-
-
-
 default_class_is_a = class_types.class
 
 demo_class = {
+	class_privacy = code_permissions.public;
 	class_is_a = default_class_is_a;
 	class_name = 'Obj';
 	class_extends = {};
@@ -238,16 +255,16 @@ demo_class = {
 				};
 				syeklacigameerht = {
 					data_privacy = code_permissions.protected;
-					data_type = 'int'
+					data_type = 'int';
 					data_value = 3;
 				};
 				kaseudahs = {
 					data_privacy = code_permissions.privacy;
-					data_type = 'int'
+					data_type = 'int';
 					data_value = 74;
 				};
 			};
-		}
+		};
 		fuhnktchyon = {
 			data_privacy = code_permissions.public;
 			data_type = 'int';

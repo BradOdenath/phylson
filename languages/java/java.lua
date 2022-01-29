@@ -168,8 +168,6 @@ java_class = function(tree_class_data)
 				..' '
 				..java_components.class
 				..' '
-				
-				
 				..tree_class_data.class_name
 				..' '
 				..code_components.left_bracket
@@ -184,10 +182,7 @@ java_class = function(tree_class_data)
 		)
 	else
 		if (class_name == nil) then
-			print_debug('nil_value: java_file_generator/java_class/arg/class_name')
-		end
-		if (class_data == nil) then
-			print_debug('nil_value: java_file_generator/java_class/arg/class_data')
+			print_debug('nil_value: java_file_generator/java_class/arg/tree_class_data')
 		end
 	end
 	return outStr
