@@ -31,6 +31,11 @@ operands = {
 	'/';
 }
 
+data_type = {
+	arg = 'arg';
+	par = 'parameter';
+}
+
 code_permissions = {
 	private = 'private';
 	protected = 'protected';
@@ -49,6 +54,8 @@ code_components = {
 	colon =					':';
 	equals =				'=';
 	space = 				' ';
+	char_component = 		[[']];
+	string_component = 		[["]];
 }
 
 code_components._code_component = function(der)
@@ -81,6 +88,14 @@ code_components.bracketify = function(ayoooo)
 	)
 end
 
+code_components.parenthesisify = function(aatawer)
+	return (
+		code_components.left_parenthesis
+			..ayoooo
+			..code_components.right_parenthesis
+	)
+end
+
 default_class_is_a = class_types.class
 
 demo_class = {
@@ -90,15 +105,19 @@ demo_class = {
 	class_implements = {};
 	class_privacy = code_permissions.public;
 	class_data = {
-		str = {
+		sthr = {
 			data_privacy = code_permissions.public;
 			data_type = 'string';
 			data_value = 'sssttrrrrr';
 		}; 
 		dubbl = {
-			data_privacy = code_permissions.public;
+			data_privacy = code_permissions.protected;
 			data_type = 'double';
 			data_value = 13.37;
+			public_member_funcs = {
+				set_mutator = true;
+				get_accessor = true;
+			};
 		};
 		ihnt = {
 			data_privacy = code_permissions.public;
@@ -109,6 +128,11 @@ demo_class = {
 			data_privacy = code_permissions.public;
 			data_type = 'int';
 			data_value = {4,5,6};
+		};
+		chyr = {
+			data_privacy = code_permissions.private;
+			data_type = 'char';
+			data_value = 'a'
 		};
 		fuhnktchyon = {
 			data_privacy = code_permissions.public;
@@ -194,11 +218,10 @@ print_table = function(table_data)
 	end
 end
 
--- Put quotes arounds a string value
-stringify = function(str)     
+ify = function(str,ing)     
 	if (str) then
 		if (type(string.lower(str)) == string.lower('string')) then
-			return ([["]]..str..[["]])
+			return (ing..str..ing)
 		else
 			print_debug('dif_value: essentials/stringify/arg/str: '..tostring(str))
 		end
@@ -206,6 +229,15 @@ stringify = function(str)
 		print_debug('nil_value: essentials/stringify/arg/str')
 	end
 	return str
+end
+
+-- Put quotes arounds a string value
+stringify = function(str)
+	return (ify(str,code_components.string_component))
+end
+
+charify = function(chr)
+	return (ify(chr,code_components.char_component))
 end
 
 string_to_table = function(str)
@@ -239,6 +271,12 @@ commacommacommacommacomma = function(data_table)
 		print_debug('nil_value: essentials/commacommacommacommacomma/arg/data_table')
 	end
 	return outStr
+end
+
+
+
+desemicolonoscoz = function(staytmnt)
+	return string.gsub(staytmnt, code_components.finish_statement, [[]])
 end
 
 semicolonoscopyz = function(staytmnt)

@@ -5,7 +5,7 @@ local python_components = {
 	file_extension = [[.python]];
 	type_hint = '@dataclass';
 	tipe = [[type]];
-	class = [[class]];
+	class = [[class]]; -- todo: fix this
 	func = [[def]];
 	stryng = [[str]];
 }
@@ -74,7 +74,7 @@ python_class = function(class_data)
 					strLine = 
 						strLine
 							..code_components.equals_component
-							..code_components.bracketify(
+							..code_components.square_bracketify(
 								commacommacommacommacomma(
 									v.data_value
 								)

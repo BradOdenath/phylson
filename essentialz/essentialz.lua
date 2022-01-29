@@ -1,6 +1,28 @@
 --
 zero = 0
 
+local zpcall = function(...) 
+	local funcs = table.pack(...)
+	local _status, _response = {}, {}
+	local count = table.getn(funcs)
+	for i,v in pairs(funcs) do
+		local __status, __response = pcall(function() v() end)
+		--print(__status)
+		if (__status) then
+			--print('Successfully ran pcall #'..tostring(i))
+			return {
+				status = {__status}, 
+				response = {__response}
+			}
+		else
+			_status[i] = __status
+			_response[i] = __response
+		end
+	end
+	--print('zpcall function count = '..tostring(count))
+	return {status = _status, response = _response}
+end
+
 debugger = true
 
 print_debug = function(statement)
@@ -31,6 +53,11 @@ operands = {
 	'/';
 }
 
+data_type = {
+	arg = 'arg';
+	par = 'parameter';
+}
+
 code_permissions = {
 	private = 'private';
 	protected = 'protected';
@@ -49,6 +76,8 @@ code_components = {
 	colon =					':';
 	equals =				'=';
 	space = 				' ';
+	char_component = 		[[']];
+	string_component = 		[["]];
 }
 
 code_components._code_component = function(der)
@@ -73,13 +102,92 @@ code_components.equals_component = (
 		)
 	)
 
-code_components.bracketify = function(ayoooo)
+code_components.square_bracketify = function(ayoooo)
 	return (
 		code_components.left_square_bracket
 			..ayoooo
 			..code_components.right_square_bracket
 	)
 end
+
+code_components.bracketify = function(ayoooo)
+	return (
+		code_components.left_bracket
+			..ayoooo
+			..code_components.right_bracket
+	)
+end
+
+code_components.parenthesisify = function(aatawer)
+	return (
+		code_components.left_parenthesis
+			..ayoooo
+			..code_components.right_parenthesis
+	)
+end
+
+ify = function(str,ing)     
+	if (str) then
+		if (type(string.lower(str)) == string.lower('string')) then
+			return (ing..str..ing)
+		else
+			print_debug('dif_value: essentials/stringify/arg/str: '..tostring(str))
+		end
+	else
+		print_debug('nil_value: essentials/stringify/arg/str')
+	end
+	return str
+end
+
+-- Put quotes arounds a string value
+stringify = function(str)
+	return (ify(str,code_components.string_component))
+end
+
+charify = function(chr)
+	return (ify(chr,code_components.char_component))
+end
+
+tostringify = function(ngi)
+	if (type(ngi) == "number") then
+		return tostring(ngi)
+	elseif (type(ngi) == "string") then
+		return (stringify(ngi))
+	elseif (type(ngi) == "char") then
+		return (charify(ngi))
+	elseif (type(ngi) == "table") then
+		return ()
+	else
+		return 
+	end
+end
+
+erererererer_ = function(parameterererererer_table, erererererer)
+	if (parameterererererer_table) then
+		local parametersersersersersers = {}
+		local outStr = ''
+		for i,v in pairs(parameterererererer_table) do
+			table.insert(parametersersersersersers, pcall(function() erererererer end) --- TODO: 
+		end
+		
+		outStr = commacommacommacommacomma(parametersersersersersers)
+		
+		return outStr
+	else
+		print_debug('nil_value: csharp/csharp_parametersersersersersers/arg/parameterererererer_table')
+	end
+end
+
+thisequalsthatersersersersersers = function(parameterererererer_table)
+	local its_an_rv = (v.data_type..code_components.space..tostring(i))
+	if (v.data_value)
+		its_an_rv = (code_components.equals_component..v.data_value)
+	end
+	its_an_rv = (parameterererererer_table,erererererer_(its_an_rv))
+	return (its_an_rv)
+end
+
+
 
 default_class_is_a = class_types.class
 
@@ -90,15 +198,19 @@ demo_class = {
 	class_implements = {};
 	class_privacy = code_permissions.public;
 	class_data = {
-		str = {
+		sthr = {
 			data_privacy = code_permissions.public;
 			data_type = 'string';
 			data_value = 'sssttrrrrr';
 		}; 
 		dubbl = {
-			data_privacy = code_permissions.public;
+			data_privacy = code_permissions.protected;
 			data_type = 'double';
 			data_value = 13.37;
+			public_member_funcs = {
+				set_mutator = true;
+				get_accessor = true;
+			};
 		};
 		ihnt = {
 			data_privacy = code_permissions.public;
@@ -110,6 +222,32 @@ demo_class = {
 			data_type = 'int';
 			data_value = {4,5,6};
 		};
+		chyr = {
+			data_privacy = code_permissions.private;
+			data_type = 'char';
+			data_value = 'a';
+		};
+		ohbjhct = {
+			data_privacy = code_permissions.protected;
+			data_type = "Ooobbbjjjeeecccttt";
+			data_value = {
+				ayderparreserda = {
+					data_privacy = code_permissions.public;
+					data_type = 'int';
+					data_value = 4;
+				};
+				syeklacigameerht = {
+					data_privacy = code_permissions.protected;
+					data_type = 'int'
+					data_value = 3;
+				};
+				kaseudahs = {
+					data_privacy = code_permissions.privacy;
+					data_type = 'int'
+					data_value = 74;
+				};
+			};
+		}
 		fuhnktchyon = {
 			data_privacy = code_permissions.public;
 			data_type = 'int';
@@ -118,12 +256,12 @@ demo_class = {
 					data_privacy = code_permissions.public;
 					data_type = 'int';
 					data_value = 5;
-				}, 
+				}; -- ... ,
 				asdf = {
 					data_privacy = code_permissions.public;
 					data_type = 'int';
 					data_value = 5;
-				}
+				};
 			};
 			data_value = [[
 				if (adf) {
@@ -194,20 +332,6 @@ print_table = function(table_data)
 	end
 end
 
--- Put quotes arounds a string value
-stringify = function(str)     
-	if (str) then
-		if (type(string.lower(str)) == string.lower('string')) then
-			return ([["]]..str..[["]])
-		else
-			print_debug('dif_value: essentials/stringify/arg/str: '..tostring(str))
-		end
-	else
-		print_debug('nil_value: essentials/stringify/arg/str')
-	end
-	return str
-end
-
 string_to_table = function(str)
 	local taybl = {}
 	for i = 1, #str do
@@ -240,6 +364,8 @@ commacommacommacommacomma = function(data_table)
 	end
 	return outStr
 end
+
+
 
 desemicolonoscoz = function(staytmnt)
 	return string.gsub(staytmnt, code_components.finish_statement, [[]])

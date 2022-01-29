@@ -49,8 +49,6 @@ code_components = {
 	colon =					':';
 	equals =				'=';
 	space = 				' ';
-	char_component = 		[[']];
-	string_component = 		[["]];
 }
 
 code_components._code_component = function(der)
@@ -92,7 +90,7 @@ demo_class = {
 	class_implements = {};
 	class_privacy = code_permissions.public;
 	class_data = {
-		sthr = {
+		str = {
 			data_privacy = code_permissions.public;
 			data_type = 'string';
 			data_value = 'sssttrrrrr';
@@ -111,11 +109,6 @@ demo_class = {
 			data_privacy = code_permissions.public;
 			data_type = 'int';
 			data_value = {4,5,6};
-		};
-		chyr = {
-			data_privacy = code_permissions.private;
-			data_type = 'char';
-			data_value = 'a'
 		};
 		fuhnktchyon = {
 			data_privacy = code_permissions.public;
@@ -201,10 +194,11 @@ print_table = function(table_data)
 	end
 end
 
-ify = function(str,ing)     
+-- Put quotes arounds a string value
+stringify = function(str)     
 	if (str) then
 		if (type(string.lower(str)) == string.lower('string')) then
-			return (ing..str..ing)
+			return ([["]]..str..[["]])
 		else
 			print_debug('dif_value: essentials/stringify/arg/str: '..tostring(str))
 		end
@@ -212,15 +206,6 @@ ify = function(str,ing)
 		print_debug('nil_value: essentials/stringify/arg/str')
 	end
 	return str
-end
-
--- Put quotes arounds a string value
-stringify = function(str)
-	return (ify(str,code_components.string_component))
-end
-
-charify = function(chr)
-	return (ify(chr,code_components.char_component))
 end
 
 string_to_table = function(str)
@@ -489,3 +474,186 @@ format_stanzatement = function(stanza_of_statements)
 	end
 	return stanza_of_statements
 end
+
+require "essentialz/essentialz"
+
+java_permissions = {
+	private = 'private';
+	protected = 'protected';
+	public = 'public';
+}
+
+java_components = {
+	abstract = 				[[abstract]];
+	comment_statement = 	[[//]];
+	file_extension = 		[[.java]];
+	class = 				[[class]];
+	finish_statement =		[[;]];
+}
+
+
+java_class_data = function(class_data)
+	local outAtr = ''
+	local outFnc = ''
+	if (class_data) then
+		for i,v in pairs(class_data) do
+			local isFnc = false
+			local strLine = ''
+			if (v.data_parameters)  then
+				--print_debug(tostring(v.data_value))
+				
+				strLine = (
+					strLine
+						..'\n\t'
+						..java_components.comment_statement
+						..' Declare function '
+						..tostring(i)
+						..' and return data type "'
+						..v.data_type
+						..'".'
+						..'\n\t'
+						..v.data_privacy
+						..' '
+						..v.data_type
+						..' '
+						..tostring(i) 
+						..code_components.left_parenthesis
+						..commacommacommacommacomma(v.data_parameters)
+						..code_components.right_parenthesis
+						..' '
+						..code_components.left_bracket
+						..'\n'
+						..format_stanzatement(v.data_value)
+						..'\n\t'
+						..code_components.right_bracket
+				)
+				isFnc = true
+			elseif (type(v.data_value) == "table") then
+				strLine = (
+					strLine
+						..'\n\t'
+						..java_components.comment_statement
+						..' Declare attribute '
+						..tostring(i)
+						..' as data type "'
+						..v.data_type
+						..'" and initialize the value as "{'
+						..commacommacommacommacomma(v.data_value)
+						..'}".'
+						..'\n\t'
+						..v.data_privacy
+						..' '
+						..v.data_type 
+						..code_components.left_square_bracket
+						..code_components.right_square_bracket
+						..' '
+						..tostring(i)
+						..' = '
+						..code_components.left_bracket
+						..commacommacommacommacomma(v.data_value)
+						..code_components.right_bracket
+						..java_components.finish_statement
+				)
+			elseif (type(v.data_value) == "string") then
+				strLine = (
+					strLine
+						..'\n\t'
+						..java_components.comment_statement
+						..' Declare attribute '
+						..tostring(i)
+						..' as data type "'
+						..v.data_type
+						..'" and initialize the value as "'
+						..v.data_value
+						..'".'
+						..'\n\t'
+						..v.data_privacy
+						..' '
+						..v.data_type 
+						..' '
+						..tostring(i)
+						..' = '
+						..stringify(v.data_value)
+						..java_components.finish_statement
+				)
+			else
+				strLine = (
+					strLine
+						..'\n\t'
+						..java_components.comment_statement
+						..' Declare attribute '
+						..tostring(i)
+						..' as data type "'
+						..v.data_type
+						..'" and initialize the value as "'
+						..v.data_value
+						..'".'
+						..'\n\t'
+						..v.data_privacy
+						..' '
+						..v.data_type 
+						..' '
+						..tostring(i)
+						..' = '
+						..v.data_value
+						..java_components.finish_statement
+				)
+			end
+			if (isFnc == true) then
+				outFnc = (outFnc..'\n'..strLine)
+				--print_debug(outFnc)
+			else
+				outAtr = (outAtr..'\n'..strLine)
+			end
+		end
+	else
+		print_debug('nil_value: java_file_generator/java_class_data/arg/class_data')
+	end
+	return (outAtr..outFnc)
+end
+
+java_class = function(tree_class_data) 
+	local outStr = ''
+	if (tree_class_data) then
+		if (tree_class_data.class_abstract) then
+			outStr = (
+				outStr
+					..java_components.abstract
+			)
+		end
+		outStr = (
+			outStr
+				..java_permissions.public
+				..' '
+				..java_components.class
+				..' '
+				
+				
+				..tree_class_data.class_name
+				..' '
+				..code_components.left_bracket
+				..'\n\t'
+				..java_components.comment_statement
+				..' File: '
+				..tree_class_data.class_name
+				..java_components.file_extension
+				..java_class_data(tree_class_data.class_data)
+				..'\n'
+				..code_components.right_bracket
+		)
+	else
+		if (class_name == nil) then
+			print_debug('nil_value: java_file_generator/java_class/arg/class_name')
+		end
+		if (class_data == nil) then
+			print_debug('nil_value: java_file_generator/java_class/arg/class_data')
+		end
+	end
+	return outStr
+end
+
+java_demo_class_data = java_class(
+	demo_class -- Class Data
+)
+
+	print(java_demo_class_data)

@@ -1,5 +1,3 @@
-zero = 0
-
 require "essentialz/essentialz"
 
 java_permissions = {
@@ -97,10 +95,28 @@ java_class_data = function(class_data)
 						..v.data_type 
 						..' '
 						..tostring(i)
-						..' = '
-						..stringify(v.data_value)
-						..java_components.finish_statement
 				)
+				if (v.data_value) then
+					strLine = (
+						strLine
+							..code_components.equals_component
+					)
+					if (v.data_type == "char") then
+						strLine = (
+							strLine
+								..charify(v.data_value)
+						)
+					else
+						strLine = (
+							strLine
+								..stringify(v.data_value)
+						)
+					end
+					strLine = (
+						strLine
+							..java_components.finish_statement
+					)
+				end
 			else
 				strLine = (
 					strLine
