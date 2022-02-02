@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hartmann_pipelines/.lua
+lua hartmann_pipelines.lua

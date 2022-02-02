@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua krypton/.lua
+lua krypton.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua zapotec_xanaguía/.lua
+lua zapotec_xanaguía.lua

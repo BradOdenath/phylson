@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua viper/.lua
+lua viper.lua

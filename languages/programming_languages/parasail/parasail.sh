@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua parasail/.lua
+lua parasail.lua

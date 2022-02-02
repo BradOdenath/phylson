@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua stateflow/.lua
+lua stateflow.lua

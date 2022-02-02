@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_boholano/.lua
+lua latin_boholano.lua

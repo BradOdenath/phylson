@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua amiga_e/.lua
+lua amiga_e.lua

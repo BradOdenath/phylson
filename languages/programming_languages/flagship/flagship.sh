@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua flagship/.lua
+lua flagship.lua

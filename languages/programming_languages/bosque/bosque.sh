@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua bosque/.lua
+lua bosque.lua

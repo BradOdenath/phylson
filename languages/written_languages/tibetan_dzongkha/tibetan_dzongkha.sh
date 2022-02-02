@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua tibetan_dzongkha/.lua
+lua tibetan_dzongkha.lua

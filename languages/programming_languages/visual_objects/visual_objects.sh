@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua visual_objects/.lua
+lua visual_objects.lua

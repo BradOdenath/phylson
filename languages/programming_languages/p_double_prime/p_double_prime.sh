@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua p_double_prime/.lua
+lua p_double_prime.lua

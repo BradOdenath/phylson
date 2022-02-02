@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua japanese/.lua
+lua japanese.lua

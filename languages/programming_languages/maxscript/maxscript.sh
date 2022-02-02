@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua maxscript/.lua
+lua maxscript.lua

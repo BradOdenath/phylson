@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua yoix/.lua
+lua yoix.lua

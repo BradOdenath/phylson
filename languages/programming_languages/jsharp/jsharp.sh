@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua jsharp/.lua
+lua jsharp.lua

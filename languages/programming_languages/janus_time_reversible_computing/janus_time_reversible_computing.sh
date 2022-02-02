@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua janus_time_reversible_computing/.lua
+lua janus_time_reversible_computing.lua

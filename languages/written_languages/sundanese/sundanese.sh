@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua sundanese/.lua
+lua sundanese.lua

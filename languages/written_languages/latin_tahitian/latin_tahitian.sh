@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_tahitian/.lua
+lua latin_tahitian.lua

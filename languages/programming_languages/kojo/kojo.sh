@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kojo/.lua
+lua kojo.lua

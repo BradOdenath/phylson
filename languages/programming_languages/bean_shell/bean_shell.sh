@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua bean_shell/.lua
+lua bean_shell.lua

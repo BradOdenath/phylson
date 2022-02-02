@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua sinhala_elu/.lua
+lua sinhala_elu.lua

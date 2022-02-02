@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua prograph/.lua
+lua prograph.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua cyclone/.lua
+lua cyclone.lua

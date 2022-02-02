@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua language_h/.lua
+lua language_h.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua powerbuilder/.lua
+lua powerbuilder.lua

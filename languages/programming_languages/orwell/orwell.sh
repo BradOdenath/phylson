@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua orwell/.lua
+lua orwell.lua

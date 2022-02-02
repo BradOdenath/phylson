@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_volapuk/.lua
+lua latin_volapuk.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kana-ryukyuan/.lua
+lua kana-ryukyuan.lua

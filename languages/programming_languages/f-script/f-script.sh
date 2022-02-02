@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua f-script/.lua
+lua f-script.lua

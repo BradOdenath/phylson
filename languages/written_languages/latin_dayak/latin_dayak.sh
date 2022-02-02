@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_dayak/.lua
+lua latin_dayak.lua

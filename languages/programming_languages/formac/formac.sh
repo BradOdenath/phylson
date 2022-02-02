@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua formac/.lua
+lua formac.lua

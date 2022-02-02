@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua adenine/.lua
+lua adenine.lua

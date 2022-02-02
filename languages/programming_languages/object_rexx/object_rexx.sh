@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua object_rexx/.lua
+lua object_rexx.lua

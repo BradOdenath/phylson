@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua telugu/.lua
+lua telugu.lua

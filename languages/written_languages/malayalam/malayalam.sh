@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua malayalam/.lua
+lua malayalam.lua

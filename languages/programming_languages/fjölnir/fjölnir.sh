@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua fjölnir/.lua
+lua fjölnir.lua

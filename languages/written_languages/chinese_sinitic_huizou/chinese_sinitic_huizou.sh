@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua chinese_sinitic_huizou/.lua
+lua chinese_sinitic_huizou.lua

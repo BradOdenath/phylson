@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua tibetan_sherpa/.lua
+lua tibetan_sherpa.lua

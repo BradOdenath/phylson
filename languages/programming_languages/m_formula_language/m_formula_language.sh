@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua m_formula_language/.lua
+lua m_formula_language.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua greek_gaulish/.lua
+lua greek_gaulish.lua

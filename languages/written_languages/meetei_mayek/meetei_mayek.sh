@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua meetei_mayek/.lua
+lua meetei_mayek.lua

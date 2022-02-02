@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ucsd_pascal/.lua
+lua ucsd_pascal.lua

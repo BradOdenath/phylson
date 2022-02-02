@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hack/.lua
+lua hack.lua

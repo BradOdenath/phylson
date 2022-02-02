@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kulitan_kampampangan/.lua
+lua kulitan_kampampangan.lua

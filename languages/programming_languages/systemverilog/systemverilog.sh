@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua systemverilog/.lua
+lua systemverilog.lua

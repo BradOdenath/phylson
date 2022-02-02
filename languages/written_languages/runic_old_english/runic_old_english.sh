@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua runic_old_english/.lua
+lua runic_old_english.lua

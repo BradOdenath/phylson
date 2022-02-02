@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mixtec_trique/.lua
+lua mixtec_trique.lua

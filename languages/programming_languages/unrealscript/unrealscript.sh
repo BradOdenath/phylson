@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua unrealscript/.lua
+lua unrealscript.lua

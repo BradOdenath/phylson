@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua tagbanwa_palawan/.lua
+lua tagbanwa_palawan.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua gujarati/.lua
+lua gujarati.lua

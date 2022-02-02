@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua nahuat_hieroglyphs_nahuatl/.lua
+lua nahuat_hieroglyphs_nahuatl.lua

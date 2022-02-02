@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ogham_british_latin/.lua
+lua ogham_british_latin.lua

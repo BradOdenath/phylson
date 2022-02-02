@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua join_java/.lua
+lua join_java.lua

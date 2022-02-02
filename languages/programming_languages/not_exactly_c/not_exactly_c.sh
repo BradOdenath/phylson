@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua not_exactly_c/.lua
+lua not_exactly_c.lua

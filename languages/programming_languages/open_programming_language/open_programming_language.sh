@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua open_programming_language/.lua
+lua open_programming_language.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hebrew_judeo-tunisian_arabic/.lua
+lua hebrew_judeo-tunisian_arabic.lua

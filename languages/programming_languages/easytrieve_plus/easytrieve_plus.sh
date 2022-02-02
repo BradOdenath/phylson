@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua easytrieve_plus/.lua
+lua easytrieve_plus.lua

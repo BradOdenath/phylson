@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_ndebele_northern/.lua
+lua latin_ndebele_northern.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_banjar/.lua
+lua latin_banjar.lua

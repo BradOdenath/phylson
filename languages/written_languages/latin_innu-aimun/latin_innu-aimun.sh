@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_innu-aimun/.lua
+lua latin_innu-aimun.lua

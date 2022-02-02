@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua quantum_computation_language/.lua
+lua quantum_computation_language.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua uniface/.lua
+lua uniface.lua

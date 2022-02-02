@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua visual_foxpro/.lua
+lua visual_foxpro.lua

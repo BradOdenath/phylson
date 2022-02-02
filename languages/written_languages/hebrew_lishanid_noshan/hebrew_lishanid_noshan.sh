@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hebrew_lishanid_noshan/.lua
+lua hebrew_lishanid_noshan.lua

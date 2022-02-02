@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua cayenne/.lua
+lua cayenne.lua

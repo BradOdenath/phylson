@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua openedge_advanced_business_language/.lua
+lua openedge_advanced_business_language.lua

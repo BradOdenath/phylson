@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua leke_eastern_pwo/.lua
+lua leke_eastern_pwo.lua

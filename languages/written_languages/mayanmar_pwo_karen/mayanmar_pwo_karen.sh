@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mayanmar_pwo_karen/.lua
+lua mayanmar_pwo_karen.lua

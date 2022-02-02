@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua pascal/.lua
+lua pascal.lua

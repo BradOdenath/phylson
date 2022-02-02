@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mongolian_old_uyghur/.lua
+lua mongolian_old_uyghur.lua

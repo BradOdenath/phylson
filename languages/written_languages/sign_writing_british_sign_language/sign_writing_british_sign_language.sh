@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua sign_writing_british_sign_language/.lua
+lua sign_writing_british_sign_language.lua

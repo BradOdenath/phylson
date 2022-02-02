@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua gnu_gulie/.lua
+lua gnu_gulie.lua

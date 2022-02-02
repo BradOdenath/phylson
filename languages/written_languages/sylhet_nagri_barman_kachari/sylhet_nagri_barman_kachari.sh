@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua sylhet_nagri_barman_kachari/.lua
+lua sylhet_nagri_barman_kachari.lua

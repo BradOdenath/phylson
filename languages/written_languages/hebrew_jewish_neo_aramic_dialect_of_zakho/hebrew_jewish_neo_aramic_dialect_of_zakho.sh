@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hebrew_jewish_neo_aramic_dialect_of_zakho/.lua
+lua hebrew_jewish_neo_aramic_dialect_of_zakho.lua

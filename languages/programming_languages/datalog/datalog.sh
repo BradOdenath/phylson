@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua datalog/.lua
+lua datalog.lua

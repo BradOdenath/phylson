@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua lilypond/.lua
+lua lilypond.lua

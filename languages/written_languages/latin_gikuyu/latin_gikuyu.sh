@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_gikuyu/.lua
+lua latin_gikuyu.lua

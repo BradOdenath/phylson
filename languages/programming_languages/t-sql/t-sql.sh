@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua t-sql/.lua
+lua t-sql.lua

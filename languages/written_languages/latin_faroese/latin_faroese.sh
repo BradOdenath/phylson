@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_faroese/.lua
+lua latin_faroese.lua

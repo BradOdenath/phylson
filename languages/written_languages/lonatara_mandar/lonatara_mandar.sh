@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua lonatara_mandar/.lua
+lua lonatara_mandar.lua

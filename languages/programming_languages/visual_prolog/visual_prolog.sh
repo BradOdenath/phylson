@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua visual_prolog/.lua
+lua visual_prolog.lua

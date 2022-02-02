@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua myanmar_mon/.lua
+lua myanmar_mon.lua

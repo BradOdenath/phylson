@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua miranda/.lua
+lua miranda.lua

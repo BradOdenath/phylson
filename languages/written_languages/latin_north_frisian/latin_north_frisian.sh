@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_north_frisian/.lua
+lua latin_north_frisian.lua

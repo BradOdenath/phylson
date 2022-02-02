@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua math-matic/.lua
+lua math-matic.lua

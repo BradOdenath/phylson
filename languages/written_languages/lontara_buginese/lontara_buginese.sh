@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua lontara_buginese/.lua
+lua lontara_buginese.lua

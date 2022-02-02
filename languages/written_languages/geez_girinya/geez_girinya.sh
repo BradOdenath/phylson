@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua geez_girinya/.lua
+lua geez_girinya.lua

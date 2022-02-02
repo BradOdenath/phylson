@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua lingo/.lua
+lua lingo.lua

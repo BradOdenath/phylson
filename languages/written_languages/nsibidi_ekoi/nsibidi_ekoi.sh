@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua nsibidi_ekoi/.lua
+lua nsibidi_ekoi.lua

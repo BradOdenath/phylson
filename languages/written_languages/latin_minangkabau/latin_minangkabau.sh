@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_minangkabau/.lua
+lua latin_minangkabau.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua promal/.lua
+lua promal.lua

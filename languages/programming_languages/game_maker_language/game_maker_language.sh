@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua game_maker_language/.lua
+lua game_maker_language.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua euphoria/.lua
+lua euphoria.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua scratch/.lua
+lua scratch.lua

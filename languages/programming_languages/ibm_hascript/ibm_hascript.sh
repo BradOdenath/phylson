@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ibm_hascript/.lua
+lua ibm_hascript.lua

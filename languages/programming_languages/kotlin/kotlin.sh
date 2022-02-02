@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kotlin/.lua
+lua kotlin.lua

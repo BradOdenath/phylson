@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua pizza/.lua
+lua pizza.lua

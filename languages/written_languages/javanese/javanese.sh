@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua javanese/.lua
+lua javanese.lua

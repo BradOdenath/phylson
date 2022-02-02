@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua batch_file/.lua
+lua batch_file.lua

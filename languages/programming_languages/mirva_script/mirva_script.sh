@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mirva_script/.lua
+lua mirva_script.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mesoamerican_maya_izta/.lua
+lua mesoamerican_maya_izta.lua

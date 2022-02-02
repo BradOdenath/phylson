@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua orca_modula-2/.lua
+lua orca_modula-2.lua

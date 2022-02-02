@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ocaml/.lua
+lua ocaml.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua swift_apple/.lua
+lua swift_apple.lua

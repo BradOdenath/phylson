@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua unicon/.lua
+lua unicon.lua

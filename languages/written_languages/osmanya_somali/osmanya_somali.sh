@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua osmanya_somali/.lua
+lua osmanya_somali.lua

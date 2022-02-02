@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua draco/.lua
+lua draco.lua

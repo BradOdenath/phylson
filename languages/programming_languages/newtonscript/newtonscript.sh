@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua newtonscript/.lua
+lua newtonscript.lua

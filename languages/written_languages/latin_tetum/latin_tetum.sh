@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_tetum/.lua
+lua latin_tetum.lua

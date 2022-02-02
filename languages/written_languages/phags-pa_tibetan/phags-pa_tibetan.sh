@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua phags-pa_tibetan/.lua
+lua phags-pa_tibetan.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua franz_lisp/.lua
+lua franz_lisp.lua

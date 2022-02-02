@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua khmer/.lua
+lua khmer.lua

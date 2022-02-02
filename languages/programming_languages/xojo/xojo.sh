@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua xojo/.lua
+lua xojo.lua

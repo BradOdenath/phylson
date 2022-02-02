@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_oromo/.lua
+lua latin_oromo.lua

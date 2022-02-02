@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua squeak/.lua
+lua squeak.lua

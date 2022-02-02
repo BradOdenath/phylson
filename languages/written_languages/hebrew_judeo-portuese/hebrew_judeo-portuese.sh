@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hebrew_judeo-portuese/.lua
+lua hebrew_judeo-portuese.lua

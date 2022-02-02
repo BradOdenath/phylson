@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua joule/.lua
+lua joule.lua

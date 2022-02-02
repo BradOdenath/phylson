@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua pov-ray_sdl/.lua
+lua pov-ray_sdl.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua munda_sorang_sompeng_sora/.lua
+lua munda_sorang_sompeng_sora.lua

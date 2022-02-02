@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mumps/.lua
+lua mumps.lua

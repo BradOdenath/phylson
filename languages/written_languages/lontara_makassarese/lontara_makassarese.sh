@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua lontara_makassarese/.lua
+lua lontara_makassarese.lua

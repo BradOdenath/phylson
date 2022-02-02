@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua netrexx/.lua
+lua netrexx.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua lyapas/.lua
+lua lyapas.lua

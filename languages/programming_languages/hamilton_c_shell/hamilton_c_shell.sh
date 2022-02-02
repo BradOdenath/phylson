@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hamilton_c_shell/.lua
+lua hamilton_c_shell.lua

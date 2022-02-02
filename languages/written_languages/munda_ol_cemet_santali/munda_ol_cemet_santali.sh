@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua munda_ol_cemet_santali/.lua
+lua munda_ol_cemet_santali.lua

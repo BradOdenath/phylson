@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua tamil_saurashtra/.lua
+lua tamil_saurashtra.lua

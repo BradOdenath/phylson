@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua aldor/.lua
+lua aldor.lua

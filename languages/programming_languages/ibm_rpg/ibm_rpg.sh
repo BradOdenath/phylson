@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ibm_rpg/.lua
+lua ibm_rpg.lua

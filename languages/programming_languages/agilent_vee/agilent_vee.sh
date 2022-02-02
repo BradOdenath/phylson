@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua agilent_vee/.lua
+lua agilent_vee.lua

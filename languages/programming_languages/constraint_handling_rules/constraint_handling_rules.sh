@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua constraint_handling_rules/.lua
+lua constraint_handling_rules.lua

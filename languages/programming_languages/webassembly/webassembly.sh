@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua webassembly/.lua
+lua webassembly.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua omnimark/.lua
+lua omnimark.lua

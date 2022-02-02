@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_moldovan/.lua
+lua latin_moldovan.lua

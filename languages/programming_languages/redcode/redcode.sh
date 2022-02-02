@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua redcode/.lua
+lua redcode.lua

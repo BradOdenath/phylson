@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua simulink/.lua
+lua simulink.lua

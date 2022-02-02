@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua munda_warang_citi_ho/.lua
+lua munda_warang_citi_ho.lua

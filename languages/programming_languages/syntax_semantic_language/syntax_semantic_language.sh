@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua syntax_semantic_language/.lua
+lua syntax_semantic_language.lua

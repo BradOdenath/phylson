@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua octave/.lua
+lua octave.lua

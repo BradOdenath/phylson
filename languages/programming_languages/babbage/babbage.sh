@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua babbage/.lua
+lua babbage.lua

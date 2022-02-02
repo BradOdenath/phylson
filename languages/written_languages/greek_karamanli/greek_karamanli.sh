@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua greek_karamanli/.lua
+lua greek_karamanli.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua oxygene/.lua
+lua oxygene.lua

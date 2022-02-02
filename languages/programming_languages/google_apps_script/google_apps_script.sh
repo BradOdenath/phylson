@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua google_apps_script/.lua
+lua google_apps_script.lua

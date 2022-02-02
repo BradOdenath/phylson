@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua sail/.lua
+lua sail.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua clojure/.lua
+lua clojure.lua

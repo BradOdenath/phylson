@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua tamil_badaga/.lua
+lua tamil_badaga.lua

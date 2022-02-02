@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ratfor/.lua
+lua ratfor.lua

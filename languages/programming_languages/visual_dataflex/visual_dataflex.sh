@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua visual_dataflex/.lua
+lua visual_dataflex.lua

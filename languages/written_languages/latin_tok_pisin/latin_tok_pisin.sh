@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_tok_pisin/.lua
+lua latin_tok_pisin.lua

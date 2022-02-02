@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua zapotec_san_baltázar_loxicha/.lua
+lua zapotec_san_baltázar_loxicha.lua

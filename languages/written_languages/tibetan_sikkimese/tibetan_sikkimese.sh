@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua tibetan_sikkimese/.lua
+lua tibetan_sikkimese.lua

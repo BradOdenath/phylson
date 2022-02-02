@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua yi_nuosu/.lua
+lua yi_nuosu.lua

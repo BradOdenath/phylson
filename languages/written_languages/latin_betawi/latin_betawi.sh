@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_betawi/.lua
+lua latin_betawi.lua

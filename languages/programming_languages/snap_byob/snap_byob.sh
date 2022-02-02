@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua snap_byob/.lua
+lua snap_byob.lua

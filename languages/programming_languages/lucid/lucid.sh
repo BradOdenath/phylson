@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua lucid/.lua
+lua lucid.lua

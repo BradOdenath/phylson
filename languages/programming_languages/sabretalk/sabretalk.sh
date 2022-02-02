@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua sabretalk/.lua
+lua sabretalk.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua grasshopper/.lua
+lua grasshopper.lua

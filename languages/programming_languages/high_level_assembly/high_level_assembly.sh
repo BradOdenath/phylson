@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua high_level_assembly/.lua
+lua high_level_assembly.lua

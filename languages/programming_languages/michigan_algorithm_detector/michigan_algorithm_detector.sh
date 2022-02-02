@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua michigan_algorithm_detector/.lua
+lua michigan_algorithm_detector.lua

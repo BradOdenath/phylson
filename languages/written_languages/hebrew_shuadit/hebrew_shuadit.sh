@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hebrew_shuadit/.lua
+lua hebrew_shuadit.lua

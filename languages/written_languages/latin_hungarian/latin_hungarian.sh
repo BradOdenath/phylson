@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_hungarian/.lua
+lua latin_hungarian.lua

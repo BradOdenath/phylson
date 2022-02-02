@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua naipier88/.lua
+lua naipier88.lua

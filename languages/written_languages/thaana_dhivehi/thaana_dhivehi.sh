@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua thaana_dhivehi/.lua
+lua thaana_dhivehi.lua

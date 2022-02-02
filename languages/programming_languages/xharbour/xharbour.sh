@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua xharbour/.lua
+lua xharbour.lua

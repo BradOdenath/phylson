@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua script_dot_net/.lua
+lua script_dot_net.lua

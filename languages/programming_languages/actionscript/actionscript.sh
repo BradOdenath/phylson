@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua actionscript/.lua
+lua actionscript.lua

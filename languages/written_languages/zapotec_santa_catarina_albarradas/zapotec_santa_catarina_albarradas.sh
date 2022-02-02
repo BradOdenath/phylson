@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua zapotec_santa_catarina_albarradas/.lua
+lua zapotec_santa_catarina_albarradas.lua

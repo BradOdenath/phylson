@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua turing/.lua
+lua turing.lua

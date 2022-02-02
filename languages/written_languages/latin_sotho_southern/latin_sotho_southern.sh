@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_sotho_southern/.lua
+lua latin_sotho_southern.lua

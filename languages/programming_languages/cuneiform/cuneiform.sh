@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua cuneiform/.lua
+lua cuneiform.lua

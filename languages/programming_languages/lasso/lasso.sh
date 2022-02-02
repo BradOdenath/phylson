@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua lasso/.lua
+lua lasso.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua processing_dot_js/.lua
+lua processing_dot_js.lua

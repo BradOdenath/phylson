@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua spanish/.lua
+lua spanish.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua euclid/.lua
+lua euclid.lua

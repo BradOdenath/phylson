@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua angelscript/.lua
+lua angelscript.lua

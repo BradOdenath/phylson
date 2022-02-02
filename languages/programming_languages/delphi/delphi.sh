@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua delphi/.lua
+lua delphi.lua

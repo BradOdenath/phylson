@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua futhark/.lua
+lua futhark.lua

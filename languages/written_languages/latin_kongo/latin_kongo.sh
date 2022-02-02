@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_kongo/.lua
+lua latin_kongo.lua

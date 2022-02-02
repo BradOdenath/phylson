@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ranjana_nepel_bhasa/.lua
+lua ranjana_nepel_bhasa.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_rohingya/.lua
+lua latin_rohingya.lua

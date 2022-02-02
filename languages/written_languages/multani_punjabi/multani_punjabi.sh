@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua multani_punjabi/.lua
+lua multani_punjabi.lua

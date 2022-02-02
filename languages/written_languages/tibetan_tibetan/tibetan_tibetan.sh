@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua tibetan_tibetan/.lua
+lua tibetan_tibetan.lua

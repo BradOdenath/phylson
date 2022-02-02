@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua faust/.lua
+lua faust.lua

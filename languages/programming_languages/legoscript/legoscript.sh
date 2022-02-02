@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua legoscript/.lua
+lua legoscript.lua

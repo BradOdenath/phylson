@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua georgian_laz/.lua
+lua georgian_laz.lua

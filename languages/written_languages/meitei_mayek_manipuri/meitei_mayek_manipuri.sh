@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua meitei_mayek_manipuri/.lua
+lua meitei_mayek_manipuri.lua

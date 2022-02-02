@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua winbatch/.lua
+lua winbatch.lua

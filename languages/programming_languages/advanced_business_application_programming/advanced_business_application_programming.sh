@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua advanced_business_application_programming/.lua
+lua advanced_business_application_programming.lua

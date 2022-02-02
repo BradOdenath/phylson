@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua occam_pi/.lua
+lua occam_pi.lua

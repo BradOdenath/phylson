@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua linq/.lua
+lua linq.lua

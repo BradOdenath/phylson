@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua pl360/.lua
+lua pl360.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua greek_bactrian/.lua
+lua greek_bactrian.lua

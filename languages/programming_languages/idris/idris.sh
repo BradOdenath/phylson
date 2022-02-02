@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua idris/.lua
+lua idris.lua

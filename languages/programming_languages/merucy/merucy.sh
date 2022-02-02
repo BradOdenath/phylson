@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua merucy/.lua
+lua merucy.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua corvision/.lua
+lua corvision.lua

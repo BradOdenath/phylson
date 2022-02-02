@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua khitan_small/.lua
+lua khitan_small.lua

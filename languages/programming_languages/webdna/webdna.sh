@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua webdna/.lua
+lua webdna.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua modula-2/.lua
+lua modula-2.lua

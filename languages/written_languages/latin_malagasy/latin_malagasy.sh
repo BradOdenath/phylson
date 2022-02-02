@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_malagasy/.lua
+lua latin_malagasy.lua

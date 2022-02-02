@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua coffeescript/.lua
+lua coffeescript.lua

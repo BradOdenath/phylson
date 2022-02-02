@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua planner/.lua
+lua planner.lua

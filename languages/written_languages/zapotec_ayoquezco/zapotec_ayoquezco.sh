@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua zapotec_ayoquezco/.lua
+lua zapotec_ayoquezco.lua

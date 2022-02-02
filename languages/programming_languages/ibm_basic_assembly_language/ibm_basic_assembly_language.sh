@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ibm_basic_assembly_language/.lua
+lua ibm_basic_assembly_language.lua

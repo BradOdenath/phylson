@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua zapotec_asunción_mixtepec/.lua
+lua zapotec_asunción_mixtepec.lua

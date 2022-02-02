@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua italy/.lua
+lua italy.lua

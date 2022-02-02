@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua speakeasy/.lua
+lua speakeasy.lua

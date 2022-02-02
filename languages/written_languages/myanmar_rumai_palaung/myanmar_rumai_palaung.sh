@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua myanmar_rumai_palaung/.lua
+lua myanmar_rumai_palaung.lua

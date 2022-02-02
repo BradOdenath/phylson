@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hebrew_yiddish/.lua
+lua hebrew_yiddish.lua

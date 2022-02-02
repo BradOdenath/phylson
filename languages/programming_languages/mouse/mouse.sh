@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mouse/.lua
+lua mouse.lua

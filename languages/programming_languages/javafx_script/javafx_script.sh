@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua javafx_script/.lua
+lua javafx_script.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua app_inventor_for_androids_visual_block_language/.lua
+lua app_inventor_for_androids_visual_block_language.lua

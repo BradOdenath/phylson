@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua solidity/.lua
+lua solidity.lua

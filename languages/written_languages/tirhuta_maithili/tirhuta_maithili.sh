@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua tirhuta_maithili/.lua
+lua tirhuta_maithili.lua

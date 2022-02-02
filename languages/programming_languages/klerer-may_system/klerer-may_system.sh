@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua klerer-may_system/.lua
+lua klerer-may_system.lua

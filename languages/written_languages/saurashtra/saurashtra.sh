@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua saurashtra/.lua
+lua saurashtra.lua

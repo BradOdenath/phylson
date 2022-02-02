@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_zazaki/.lua
+lua latin_zazaki.lua

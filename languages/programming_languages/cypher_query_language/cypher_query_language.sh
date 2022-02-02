@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua cypher_query_language/.lua
+lua cypher_query_language.lua

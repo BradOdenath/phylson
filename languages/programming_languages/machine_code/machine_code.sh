@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua machine_code/.lua
+lua machine_code.lua

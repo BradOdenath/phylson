@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua georgian_mingrelian/.lua
+lua georgian_mingrelian.lua

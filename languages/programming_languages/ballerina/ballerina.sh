@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ballerina/.lua
+lua ballerina.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua takalk_abaj_kaminaljuyú_proto-maya/.lua
+lua takalk_abaj_kaminaljuyú_proto-maya.lua

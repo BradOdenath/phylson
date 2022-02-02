@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua msharp/.lua
+lua msharp.lua

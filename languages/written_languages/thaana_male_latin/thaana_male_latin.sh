@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua thaana_male_latin/.lua
+lua thaana_male_latin.lua

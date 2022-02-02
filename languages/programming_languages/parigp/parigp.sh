@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua parigp/.lua
+lua parigp.lua

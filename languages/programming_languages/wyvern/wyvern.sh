@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua wyvern/.lua
+lua wyvern.lua

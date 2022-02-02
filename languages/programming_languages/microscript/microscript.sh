@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua microscript/.lua
+lua microscript.lua

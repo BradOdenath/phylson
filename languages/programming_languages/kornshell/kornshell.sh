@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kornshell/.lua
+lua kornshell.lua

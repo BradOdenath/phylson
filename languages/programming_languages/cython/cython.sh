@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua cython/.lua
+lua cython.lua

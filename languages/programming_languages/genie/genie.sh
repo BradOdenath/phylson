@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua genie/.lua
+lua genie.lua

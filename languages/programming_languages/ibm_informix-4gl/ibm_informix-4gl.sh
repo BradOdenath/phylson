@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ibm_informix-4gl/.lua
+lua ibm_informix-4gl.lua

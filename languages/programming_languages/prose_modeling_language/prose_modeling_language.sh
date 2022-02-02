@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua prose_modeling_language/.lua
+lua prose_modeling_language.lua

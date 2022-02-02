@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hollywood/.lua
+lua hollywood.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua telcomp/.lua
+lua telcomp.lua

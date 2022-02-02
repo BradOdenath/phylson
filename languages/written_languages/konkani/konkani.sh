@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua konkani/.lua
+lua konkani.lua

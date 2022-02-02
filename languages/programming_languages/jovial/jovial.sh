@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua jovial/.lua
+lua jovial.lua

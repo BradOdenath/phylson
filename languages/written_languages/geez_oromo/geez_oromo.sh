@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua geez_oromo/.lua
+lua geez_oromo.lua

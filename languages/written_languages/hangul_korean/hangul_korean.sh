@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hangul_korean/.lua
+lua hangul_korean.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua old_permic_alphabet_komi/.lua
+lua old_permic_alphabet_komi.lua

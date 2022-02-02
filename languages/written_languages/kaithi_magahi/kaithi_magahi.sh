@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kaithi_magahi/.lua
+lua kaithi_magahi.lua

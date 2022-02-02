@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua vhdl/.lua
+lua vhdl.lua

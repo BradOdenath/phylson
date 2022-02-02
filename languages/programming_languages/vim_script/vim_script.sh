@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua vim_script/.lua
+lua vim_script.lua

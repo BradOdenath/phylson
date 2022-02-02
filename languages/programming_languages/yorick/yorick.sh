@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua yorick/.lua
+lua yorick.lua

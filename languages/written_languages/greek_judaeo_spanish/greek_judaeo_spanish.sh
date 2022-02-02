@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua greek_judaeo_spanish/.lua
+lua greek_judaeo_spanish.lua

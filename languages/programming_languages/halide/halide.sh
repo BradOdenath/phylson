@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua halide/.lua
+lua halide.lua

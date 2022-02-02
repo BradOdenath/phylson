@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ogham_primitive_irish/.lua
+lua ogham_primitive_irish.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua flavors/.lua
+lua flavors.lua

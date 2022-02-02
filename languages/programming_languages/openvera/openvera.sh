@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua openvera/.lua
+lua openvera.lua

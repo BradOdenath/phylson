@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua gurmukhi_punjabi/.lua
+lua gurmukhi_punjabi.lua

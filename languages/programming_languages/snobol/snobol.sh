@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua snobol/.lua
+lua snobol.lua

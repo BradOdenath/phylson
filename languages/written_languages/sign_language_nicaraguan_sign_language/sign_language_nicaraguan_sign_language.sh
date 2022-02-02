@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua sign_language_nicaraguan_sign_language/.lua
+lua sign_language_nicaraguan_sign_language.lua

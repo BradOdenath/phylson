@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua flix/.lua
+lua flix.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua xquery/.lua
+lua xquery.lua

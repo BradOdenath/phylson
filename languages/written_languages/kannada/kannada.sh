@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kannada/.lua
+lua kannada.lua

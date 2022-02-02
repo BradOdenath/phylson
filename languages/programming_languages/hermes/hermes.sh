@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hermes/.lua
+lua hermes.lua

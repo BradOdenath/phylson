@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua z_notation/.lua
+lua z_notation.lua

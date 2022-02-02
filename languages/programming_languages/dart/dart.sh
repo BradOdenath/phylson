@@ -6,9 +6,8 @@ then
 	ls
 fi
 
-cp -r ../../essentialz ./
+cp -r ../../../essentialz ./
 
-ls
+tree
 
 lua dart.lua
-

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua glagolitic_old_church_slavonic/.lua
+lua glagolitic_old_church_slavonic.lua

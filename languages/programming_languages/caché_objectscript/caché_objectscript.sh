@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua caché_objectscript/.lua
+lua caché_objectscript.lua

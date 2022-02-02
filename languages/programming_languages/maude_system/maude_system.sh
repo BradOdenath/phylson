@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua maude_system/.lua
+lua maude_system.lua

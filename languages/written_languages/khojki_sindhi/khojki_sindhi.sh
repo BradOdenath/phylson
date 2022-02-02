@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua khojki_sindhi/.lua
+lua khojki_sindhi.lua

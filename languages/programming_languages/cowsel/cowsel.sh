@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua cowsel/.lua
+lua cowsel.lua

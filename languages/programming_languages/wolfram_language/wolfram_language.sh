@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua wolfram_language/.lua
+lua wolfram_language.lua

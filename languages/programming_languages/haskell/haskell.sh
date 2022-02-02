@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua haskell/.lua
+lua haskell.lua

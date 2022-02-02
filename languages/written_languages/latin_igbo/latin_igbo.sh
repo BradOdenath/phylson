@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_igbo/.lua
+lua latin_igbo.lua

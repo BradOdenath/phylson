@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua pahawh_hmong/.lua
+lua pahawh_hmong.lua

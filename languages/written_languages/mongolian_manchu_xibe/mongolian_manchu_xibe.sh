@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mongolian_manchu_xibe/.lua
+lua mongolian_manchu_xibe.lua

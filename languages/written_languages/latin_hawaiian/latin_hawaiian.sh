@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_hawaiian/.lua
+lua latin_hawaiian.lua

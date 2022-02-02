@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua squirrel/.lua
+lua squirrel.lua

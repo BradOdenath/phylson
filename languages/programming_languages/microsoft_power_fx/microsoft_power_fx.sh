@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua microsoft_power_fx/.lua
+lua microsoft_power_fx.lua

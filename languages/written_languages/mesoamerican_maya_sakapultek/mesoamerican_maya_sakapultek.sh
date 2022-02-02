@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mesoamerican_maya_sakapultek/.lua
+lua mesoamerican_maya_sakapultek.lua

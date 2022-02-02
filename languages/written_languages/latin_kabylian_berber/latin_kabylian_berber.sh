@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_kabylian_berber/.lua
+lua latin_kabylian_berber.lua

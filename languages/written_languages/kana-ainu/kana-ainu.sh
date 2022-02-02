@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kana-ainu/.lua
+lua kana-ainu.lua

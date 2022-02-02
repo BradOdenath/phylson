@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua euslisp_robot_programming_language/.lua
+lua euslisp_robot_programming_language.lua

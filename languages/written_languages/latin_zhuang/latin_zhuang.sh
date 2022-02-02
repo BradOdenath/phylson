@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_zhuang/.lua
+lua latin_zhuang.lua

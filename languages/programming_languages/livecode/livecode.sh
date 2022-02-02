@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua livecode/.lua
+lua livecode.lua

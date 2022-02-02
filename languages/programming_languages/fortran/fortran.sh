@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua fortran/.lua
+lua fortran.lua

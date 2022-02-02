@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kharosthi/.lua
+lua kharosthi.lua

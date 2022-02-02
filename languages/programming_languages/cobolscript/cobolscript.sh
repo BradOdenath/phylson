@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua cobolscript/.lua
+lua cobolscript.lua

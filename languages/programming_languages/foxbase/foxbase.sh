@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua foxbase/.lua
+lua foxbase.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua oriel/.lua
+lua oriel.lua

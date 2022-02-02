@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_bislama/.lua
+lua latin_bislama.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua sinhala_vedda/.lua
+lua sinhala_vedda.lua

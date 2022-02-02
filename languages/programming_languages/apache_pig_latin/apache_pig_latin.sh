@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua apache_pig_latin/.lua
+lua apache_pig_latin.lua

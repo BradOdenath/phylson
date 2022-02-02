@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua runic_proto-norse/.lua
+lua runic_proto-norse.lua

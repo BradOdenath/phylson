@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_acehnese/.lua
+lua latin_acehnese.lua

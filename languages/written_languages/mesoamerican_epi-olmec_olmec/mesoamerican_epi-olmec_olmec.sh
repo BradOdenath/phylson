@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mesoamerican_epi-olmec_olmec/.lua
+lua mesoamerican_epi-olmec_olmec.lua

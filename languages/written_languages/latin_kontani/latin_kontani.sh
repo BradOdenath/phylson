@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_kontani/.lua
+lua latin_kontani.lua

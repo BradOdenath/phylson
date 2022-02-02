@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua janus_concurrent_constraint/.lua
+lua janus_concurrent_constraint.lua

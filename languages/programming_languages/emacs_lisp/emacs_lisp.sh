@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua emacs_lisp/.lua
+lua emacs_lisp.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua ambient_talk/.lua
+lua ambient_talk.lua

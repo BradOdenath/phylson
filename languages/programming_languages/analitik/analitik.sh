@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua analitik/.lua
+lua analitik.lua

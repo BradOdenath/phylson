@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua gamemonkey_script/.lua
+lua gamemonkey_script.lua

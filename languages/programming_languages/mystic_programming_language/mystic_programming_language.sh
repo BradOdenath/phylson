@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua mystic_programming_language/.lua
+lua mystic_programming_language.lua

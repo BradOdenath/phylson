@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua kaleidoscope/.lua
+lua kaleidoscope.lua

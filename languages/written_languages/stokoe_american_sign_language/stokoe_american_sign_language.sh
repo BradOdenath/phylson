@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua stokoe_american_sign_language/.lua
+lua stokoe_american_sign_language.lua

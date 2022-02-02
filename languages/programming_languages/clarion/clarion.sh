@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua clarion/.lua
+lua clarion.lua

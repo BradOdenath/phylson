@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua gpss/.lua
+lua gpss.lua

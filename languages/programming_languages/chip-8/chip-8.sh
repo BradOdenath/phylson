@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua chip-8/.lua
+lua chip-8.lua

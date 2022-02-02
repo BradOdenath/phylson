@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_seychellois_creole/.lua
+lua latin_seychellois_creole.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua project_verona/.lua
+lua project_verona.lua

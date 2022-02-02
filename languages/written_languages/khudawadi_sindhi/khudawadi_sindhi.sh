@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua khudawadi_sindhi/.lua
+lua khudawadi_sindhi.lua

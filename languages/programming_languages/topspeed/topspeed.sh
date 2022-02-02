@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua topspeed/.lua
+lua topspeed.lua

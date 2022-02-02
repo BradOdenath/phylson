@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua z_shell/.lua
+lua z_shell.lua

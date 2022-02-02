@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_hiri_motu/.lua
+lua latin_hiri_motu.lua

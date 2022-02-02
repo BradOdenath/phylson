@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_tsonga/.lua
+lua latin_tsonga.lua

@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua executable_uml/.lua
+lua executable_uml.lua

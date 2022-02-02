@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua autoit/.lua
+lua autoit.lua

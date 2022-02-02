@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua high-order_assembly_language_shuttle/.lua
+lua high-order_assembly_language_shuttle.lua

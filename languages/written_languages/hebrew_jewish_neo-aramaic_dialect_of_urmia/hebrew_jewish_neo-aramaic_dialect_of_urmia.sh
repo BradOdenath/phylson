@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua hebrew_jewish_neo-aramaic_dialect_of_urmia/.lua
+lua hebrew_jewish_neo-aramaic_dialect_of_urmia.lua

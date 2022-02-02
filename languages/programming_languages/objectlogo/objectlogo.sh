@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua objectlogo/.lua
+lua objectlogo.lua

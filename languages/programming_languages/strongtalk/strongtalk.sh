@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua strongtalk/.lua
+lua strongtalk.lua

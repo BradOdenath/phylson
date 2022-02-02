@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua visual_j++/.lua
+lua visual_j++.lua

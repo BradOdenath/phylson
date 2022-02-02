@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua watfiv_watfor_waterloo_fortran_iv/.lua
+lua watfiv_watfor_waterloo_fortran_iv.lua

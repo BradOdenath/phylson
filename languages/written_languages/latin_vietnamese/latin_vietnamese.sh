@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua latin_vietnamese/.lua
+lua latin_vietnamese.lua

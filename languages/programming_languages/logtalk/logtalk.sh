@@ -10,4 +10,4 @@ cp -r ../../../essentialz ./
 
 tree
 
-lua logtalk/.lua
+lua logtalk.lua
