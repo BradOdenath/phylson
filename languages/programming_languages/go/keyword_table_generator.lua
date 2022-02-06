@@ -11,7 +11,8 @@ luajson = function(file_name)
 
 			local status, line
 			while true do 
-				status, line = pcall(function() return io.read() end)
+				status, line = pcall(function() return io.read() end)\
+				print(status, line)
 				if (status) then
 					if (line and #line > 1) then
 						print("Line "..line)
