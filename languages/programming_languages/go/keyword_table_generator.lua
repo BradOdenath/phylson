@@ -1,8 +1,19 @@
-
+split_string = function(str, delimeter)
+	if (delimeter == nil) then 
+		delimeter = '%s'
+	end
+	local result = {}
+	for match in (str..delimeter):gmatch('(.-)'..delimeter) do
+		table.insert(result, match)
+	end
+	return result
+end
 
 -- Put quotes arounds a string value
 stringify = function(str)     
 	if (str) then
+		--str = split_string(str, ' ')[1]
+		str = (string.sub(str,1,#str-1))
 		if (type(string.lower(str)) == string.lower('string')) then
 			return tostring([["]]..str..[["]])
 		else
@@ -15,10 +26,15 @@ stringify = function(str)
 end
 
 equalmyself = function(thing)
-	return (thing..[[ : ]]..thing)
+	thing = stringify(thing)
+	return (
+		"\t"
+		..thing..[[ : ]]..thing
+		..";"
+		.."\n"
+	)
 end
-print(equalmyself(stringify('ayoo')))
-
+print(equalmyself('ayoo'))
 
 luajson = function(file_name)
 
@@ -29,7 +45,7 @@ luajson = function(file_name)
 		
 		if (file) then
 			io.input(file)
-			outStr = "{"
+			outStr = "{\n"
 			for line in io.lines(file_name) do
 				if (line) then
 					table.insert(outTable, tostring(line))
@@ -43,18 +59,14 @@ luajson = function(file_name)
 			
 			for i,v in pairs(outTable) do			
 				local _os = v:gsub("\n","")
-				print(_os)
-				_os = stringify(_os)
-				print(_os)
 				local shouldequalitself = equalmyself(_os)
-				print(tostring(shouldequalitself))
 				outStr = (
 					outStr
 						..shouldequalitself
 				)
 			end
 
-			outStr = (outStr.."\n}\n\n")
+			outStr = (outStr.."}\n\n")
 		else
 			print("nil_value: keyword_table_generator/luajson/var/file")
 		end
@@ -78,11 +90,11 @@ keyword_list_generator = function(file_name)
 				io.input(keyword_list_file)
 				
 				io.output(keyword_list_file)
-				
+								
 				io.write(generated_keywords_table)
 				
 				io.close(keyword_list_file)
-			
+
 			else
 				print("nil_value: keyword_table_generator/keyword_list_generator/var/keyword_list_file: "..tostring(keyword_list_file))
 			end
