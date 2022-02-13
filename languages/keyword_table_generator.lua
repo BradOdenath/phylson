@@ -106,4 +106,6 @@ keyword_list_generator = function(file_name)
 	end		
 end
 
-main = function()  keyword_list_generator("go_keywords.txt") end main()
+main = function()  keyword_list_generator("reserved_words.txt") end main()
+
+--brb
