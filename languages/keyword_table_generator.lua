@@ -84,13 +84,13 @@ keyword_list_generator = function(file_name)
 		local generated_keywords_table = luajson(file_name)
 		
 		if (generated_keywords_table) then
-			local keyword_list_file = io.open("go_keyword_list.lua","w+")
+			local keyword_list_file = io.open(file_name.."_list.json","w+")
 			
 			if (keyword_list_file) then
 				io.input(keyword_list_file)
 				
 				io.output(keyword_list_file)
-								
+				
 				io.write(generated_keywords_table)
 				
 				io.close(keyword_list_file)

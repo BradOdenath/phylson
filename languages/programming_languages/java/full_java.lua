@@ -1,4 +1,4 @@
---
+dedseededededed--
 zero = 0
 
 debugger = true
@@ -216,7 +216,7 @@ string_to_table = function(str)
 	return taybl
 end
 
-string_to_table('asdf')
+ring_to_table('asdf')
 
 contras = {ol = "a"; e = "b"}
 -- Turn a table into a list with commas
@@ -226,7 +226,7 @@ commacommacommacommacomma = function(data_table)
 		if (type(data_table) == "table") then
 			for i,v in pairs(data_table) do			
 				if (contra == contras.e) then
-					outStr = (outStr..', ')
+					outStr = (outStr..', ')                                                                                          
 				else
 					contra = contras.e
 				end
@@ -255,7 +255,7 @@ semicolonoscopyz = function(staytmnt)
 	end
 	return staytmnt
 end
-
+----------
 --- TODO: Convert to Binary Bits
 i_table = function(taybl)
 	if (taybl) then
@@ -264,7 +264,7 @@ i_table = function(taybl)
 		for i,v in pairs(taybl) do
 			table.insert(eyes, tostring(i))
 		end
-		
+		             
 		return eyes
 	else
 		print_debug('nil_value: essentialz/i_table/arg/taybl')

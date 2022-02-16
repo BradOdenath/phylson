@@ -248,6 +248,13 @@ demo_class = {
 	class_implements = {};
 	class_privacy = code_permissions.public;
 	class_data = {
+		suhpher_ohbjhekt = (
+			data_privcay = code_permissions.public;
+			data_type = 'VEEEHIKL';
+			data_value = {
+				
+			}
+		)
 		sthr = {
 			data_privacy = code_permissions.public;
 			data_type = 'string';
