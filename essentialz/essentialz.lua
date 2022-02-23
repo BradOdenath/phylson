@@ -248,13 +248,13 @@ demo_class = {
 	class_implements = {};
 	class_privacy = code_permissions.public;
 	class_data = {
-		suhpher_ohbjhekt = (
+		suhpher_ohbjhekt = {
 			data_privcay = code_permissions.public;
 			data_type = 'VEEEHIKL';
 			data_value = {
 				
-			}
-		)
+			};
+		};
 		sthr = {
 			data_privacy = code_permissions.public;
 			data_type = 'string';
@@ -378,9 +378,7 @@ print_table = function(table_data)
 					end
 				else
 					print_debug('nil_value: essentials/print_table/arg'
-						..code_components.left_bracket
-						..tostring(i)
-						..code_components.right_bracket
+						..bracketify(tostring(i))
 						..'/v')
 				end
 			end

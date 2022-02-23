@@ -1,4 +1,3 @@
-dedseededededed--
 zero = 0
 
 debugger = true

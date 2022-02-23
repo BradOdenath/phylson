@@ -84,7 +84,7 @@ keyword_list_generator = function(file_name)
 		local generated_keywords_table = luajson(file_name)
 		
 		if (generated_keywords_table) then
-			local keyword_list_file = io.open(file_name.."_list.json","w+")
+			local keyword_list_file = io.open(string.sub(file_name,1,#file_name-4).."_list.json","w+")
 			
 			if (keyword_list_file) then
 				io.input(keyword_list_file)
@@ -109,3 +109,5 @@ end
 main = function()  keyword_list_generator("reserved_words.txt") end main()
 
 --brb
+
+ 

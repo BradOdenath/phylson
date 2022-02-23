@@ -10,16 +10,22 @@ local python_components = {
 	stryng = [[str]];
 }
 
-local python_is_string = function(data_type)
-	return (type(data) == ('string'))
+local python_is_stringifyable = function(data_type)
+	local is_string = (data_type == ('string') or data_type == ('char'))
+	print(tostring(is_string),tostring(data_type))
+	return is_string
 end
 
 python_is_string_but_data_type = function(data_type)
-	if (python_is_string(data)) then
+	if (python_is_stringifyable(data_type)) then
 		return python_components.stryng
 	else
 		return data_type
 	end
+end
+
+python_commentify = function(oi)
+	return ify(oi, '\n"""')
 end
 
 python_class = function(class_data)
@@ -81,8 +87,9 @@ python_class = function(class_data)
 							)
 				end
 			else
-				local isStr = python_is_string(v.data_type)
+				local isStr = python_is_stringifyable(v.data_type)
 				local dataValue 
+				print(isStr)
 				if (isStr) then
 					dataValue = stringify(data_value)
 				end
@@ -92,9 +99,9 @@ python_class = function(class_data)
 						..python_components.comment_statement
 						..' Declare attribute '
 						..tostring(i)
-						..' as data type "'
-						..v.data_type
-						..'" and initialize the value as '
+						..' as data type '
+						..stringify(v.data_type)
+						..' and initialize the value as '
 						..(dataValue or v.data_value)
 						..'.'
 						..'\n\t'
@@ -128,7 +135,7 @@ python_class = function(class_data)
 	else
 		print_debug('python_file_generator/python_class_data/arg/class_data')
 	end 
-	return ( outAtr..outFnc )
+	return ( outAtr..'\n'..python_commentify(outFnc) )
 end
 
 local python_demo_class = demo_class
