@@ -19,6 +19,10 @@ python_syntax = {
 		ss = [[in (]];
 		sf = [[):]];
 	};
+	range_ = {
+		ss = [[range(]];
+		sf = [[)]];
+	};
 	
 }
 
@@ -39,12 +43,14 @@ end
 python_syntax.for_.extract = function(data)
 	local outData = {}
 	if (python_syntax.for_.is(data)) then
-		
+		string.gsub(data,python_syntax.for_.ss,'')
+		table.insert(outData, first_word_from_statement(data))
 	end
+	print(outData)
 	return(outData)
 end
 python_syntax.for_.convert = function(data)
-
+	--[[order of operations check all ifs from the essentialz map it to the language that returns true get the extract function from that table then return the data to this function to build the new for]]
 end
 
-main = function() print_table(python_syntax) end main()
+main = function() print_table(python_syntax.for_.extract("for a in range(1,5):")) end main()

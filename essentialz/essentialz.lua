@@ -421,7 +421,13 @@ commacommacommacommacomma = function(data_table)
 	return outStr
 end
 
-
+first_word_from_statement = function(statement) 
+	if (statement) then
+		
+	else
+		print_debug('nil_value: essentials/first_word_from_statement/arg/statement')
+	end
+end
 
 desemicolonoscoz = function(staytmnt)
 	return string.gsub(staytmnt, code_components.finish_statement, [[]])
