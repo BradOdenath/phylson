@@ -1,0 +1,4037 @@
+.
+├── essentialz
+│   ├── essentialz.lua
+│   ├── essentialz_syntax.lua
+│   ├── essentialz_syntax_file_generator.sh
+│   └── referencez
+│       ├── referencez.lua
+│       ├── referencez.sh
+│       └── reserved_wordz
+│           ├── reserved_wordz.lua
+│           └── reserved_wordz.sh
+├── file_concat
+│   └── file_concat.lua
+├── languages
+│   ├── languages.lua
+│   ├── languages.sh
+│   ├── markup_languages
+│   ├── math_languages
+│   │   └── standard_tessellation_language
+│   ├── programming_languages
+│   │   ├── a-0
+│   │   │   ├── a-0.lua
+│   │   │   ├── a-0.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── abc
+│   │   │   ├── abc.lua
+│   │   │   ├── abc.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── abc_algol
+│   │   │   ├── abc_algol.lua
+│   │   │   ├── abc_algol.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── acc
+│   │   │   ├── acc.lua
+│   │   │   ├── acc.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── accent
+│   │   │   ├── accent.lua
+│   │   │   ├── accent.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── ace_dasl
+│   │   │   ├── ace_dasl.lua
+│   │   │   ├── ace_dasl.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── action
+│   │   │   ├── action.lua
+│   │   │   ├── action.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── actionscript
+│   │   │   ├── actionscript.lua
+│   │   │   ├── actionscript.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── actor
+│   │   │   ├── actor.lua
+│   │   │   ├── actor.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── ada
+│   │   │   ├── ada.lua
+│   │   │   ├── ada.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── adenine
+│   │   │   ├── adenine.lua
+│   │   │   ├── adenine.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── advanced_business_application_programming
+│   │   │   ├── advanced_business_application_programming.lua
+│   │   │   ├── advanced_business_application_programming.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── advpl
+│   │   │   ├── advpl.lua
+│   │   │   ├── advpl.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── agda
+│   │   │   ├── agda.lua
+│   │   │   ├── agda.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── agilent_vee
+│   │   │   ├── agilent_vee.lua
+│   │   │   ├── agilent_vee.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── agol_58
+│   │   │   ├── agol_58.lua
+│   │   │   ├── agol_58.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── agol_60
+│   │   │   ├── agol_60.lua
+│   │   │   ├── agol_60.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── agol_68
+│   │   │   ├── agol_68.lua
+│   │   │   ├── agol_68.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── agol_w
+│   │   │   ├── agol_w.lua
+│   │   │   ├── agol_w.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── agora
+│   │   │   ├── agora.lua
+│   │   │   ├── agora.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── aimms
+│   │   │   ├── aimms.lua
+│   │   │   ├── aimms.sh
+│   │   │   └── essentialz
+│   │   │       └── essentialz.lua
+│   │   ├── aldor
+│   │   │   ├── aldor.lua
+│   │   │   └── aldor.sh
+│   │   ├── alef
+│   │   │   ├── alef.lua
+│   │   │   └── alef.sh
+│   │   ├── alf
+│   │   │   ├── alf.lua
+│   │   │   └── alf.sh
+│   │   ├── alice
+│   │   │   ├── alice.lua
+│   │   │   └── alice.sh
+│   │   ├── alma-0
+│   │   │   ├── alma-0.lua
+│   │   │   └── alma-0.sh
+│   │   ├── ambient_talk
+│   │   │   ├── ambient_talk.lua
+│   │   │   └── ambient_talk.sh
+│   │   ├── amiga_e
+│   │   │   ├── amiga_e.lua
+│   │   │   └── amiga_e.sh
+│   │   ├── amos
+│   │   │   ├── amos.lua
+│   │   │   └── amos.sh
+│   │   ├── ampl
+│   │   │   ├── ampl.lua
+│   │   │   └── ampl.sh
+│   │   ├── analitik
+│   │   │   ├── analitik.lua
+│   │   │   └── analitik.sh
+│   │   ├── angelscript
+│   │   │   ├── angelscript.lua
+│   │   │   └── angelscript.sh
+│   │   ├── ao
+│   │   │   ├── ao.lua
+│   │   │   └── ao.sh
+│   │   ├── apache_pig_latin
+│   │   │   ├── apache_pig_latin.lua
+│   │   │   └── apache_pig_latin.sh
+│   │   ├── apex
+│   │   │   ├── apex.lua
+│   │   │   └── apex.sh
+│   │   ├── apl
+│   │   │   ├── apl.lua
+│   │   │   └── apl.sh
+│   │   ├── aplus
+│   │   │   ├── aplus.lua
+│   │   │   └── aplus.sh
+│   │   ├── app_inventor_for_androids_visual_block_language
+│   │   │   ├── app_inventor_for_androids_visual_block_language.lua
+│   │   │   └── app_inventor_for_androids_visual_block_language.sh
+│   │   ├── apt
+│   │   │   ├── apt.lua
+│   │   │   └── apt.sh
+│   │   ├── arc
+│   │   │   ├── arc.lua
+│   │   │   └── arc.sh
+│   │   ├── arexx
+│   │   │   ├── arexx.lua
+│   │   │   └── arexx.sh
+│   │   ├── argus
+│   │   │   ├── argus.lua
+│   │   │   └── argus.sh
+│   │   ├── asharp
+│   │   │   ├── asharp.lua
+│   │   │   └── asharp.sh
+│   │   ├── asm
+│   │   │   ├── asm.lua
+│   │   │   └── asm.sh
+│   │   ├── autoit
+│   │   │   ├── autoit.lua
+│   │   │   └── autoit.sh
+│   │   ├── autolisp
+│   │   │   ├── autolisp.lua
+│   │   │   └── autolisp.sh
+│   │   ├── averest
+│   │   │   ├── averest.lua
+│   │   │   └── averest.sh
+│   │   ├── awk
+│   │   │   ├── awk.lua
+│   │   │   └── awk.sh
+│   │   ├── axum
+│   │   │   ├── axum.lua
+│   │   │   └── axum.sh
+│   │   ├── b
+│   │   │   ├── b.lua
+│   │   │   └── b.sh
+│   │   ├── babbage
+│   │   │   ├── babbage.lua
+│   │   │   └── babbage.sh
+│   │   ├── ballerina
+│   │   │   ├── ballerina.lua
+│   │   │   └── ballerina.sh
+│   │   ├── bash
+│   │   │   ├── bash.lua
+│   │   │   └── bash.sh
+│   │   ├── basic
+│   │   │   ├── basic.lua
+│   │   │   └── basic.sh
+│   │   ├── batch_file
+│   │   │   ├── batch_file.lua
+│   │   │   └── batch_file.sh
+│   │   ├── bc
+│   │   │   ├── bc.lua
+│   │   │   └── bc.sh
+│   │   ├── bcpl
+│   │   │   ├── bcpl.lua
+│   │   │   └── bcpl.sh
+│   │   ├── bean_shell
+│   │   │   ├── bean_shell.lua
+│   │   │   └── bean_shell.sh
+│   │   ├── bertrand
+│   │   │   ├── bertrand.lua
+│   │   │   └── bertrand.sh
+│   │   ├── beta
+│   │   │   ├── beta.lua
+│   │   │   └── beta.sh
+│   │   ├── bliss
+│   │   │   ├── bliss.lua
+│   │   │   └── bliss.sh
+│   │   ├── blocky
+│   │   │   ├── blocky.lua
+│   │   │   └── blocky.sh
+│   │   ├── bloop
+│   │   │   ├── bloop.lua
+│   │   │   └── bloop.sh
+│   │   ├── boo
+│   │   │   ├── boo.lua
+│   │   │   └── boo.sh
+│   │   ├── boomerang
+│   │   │   ├── boomerang.lua
+│   │   │   └── boomerang.sh
+│   │   ├── bosque
+│   │   │   ├── bosque.lua
+│   │   │   └── bosque.sh
+│   │   ├── brainfuck
+│   │   │   ├── brainfuck.lua
+│   │   │   └── brainfuck.sh
+│   │   ├── c
+│   │   │   ├── c.lua
+│   │   │   └── c.sh
+│   │   ├── c_shell
+│   │   │   ├── c_shell.lua
+│   │   │   └── c_shell.sh
+│   │   ├── caché_objectscript
+│   │   │   ├── caché_objectscript.lua
+│   │   │   └── caché_objectscript.sh
+│   │   ├── caml
+│   │   │   ├── caml.lua
+│   │   │   └── caml.sh
+│   │   ├── cayenne
+│   │   │   ├── cayenne.lua
+│   │   │   └── cayenne.sh
+│   │   ├── cduce
+│   │   │   ├── cduce.lua
+│   │   │   └── cduce.sh
+│   │   ├── cecil
+│   │   │   ├── cecil.lua
+│   │   │   └── cecil.sh
+│   │   ├── ceemac
+│   │   │   ├── ceemac.lua
+│   │   │   └── ceemac.sh
+│   │   ├── cesil
+│   │   │   ├── cesil.lua
+│   │   │   └── cesil.sh
+│   │   ├── ceylon
+│   │   │   ├── ceylon.lua
+│   │   │   └── ceylon.sh
+│   │   ├── cfengine
+│   │   │   ├── cfengine.lua
+│   │   │   └── cfengine.sh
+│   │   ├── cg
+│   │   │   ├── cg.lua
+│   │   │   └── cg.sh
+│   │   ├── ch
+│   │   │   ├── ch.lua
+│   │   │   └── ch.sh
+│   │   ├── chapel
+│   │   │   ├── chapel.lua
+│   │   │   └── chapel.sh
+│   │   ├── charm
+│   │   │   ├── charm.lua
+│   │   │   └── charm.sh
+│   │   ├── chill
+│   │   │   ├── chill.lua
+│   │   │   └── chill.sh
+│   │   ├── chip-8
+│   │   │   ├── chip-8.lua
+│   │   │   └── chip-8.sh
+│   │   ├── chuck
+│   │   │   ├── chuck.lua
+│   │   │   └── chuck.sh
+│   │   ├── claire
+│   │   │   ├── claire.lua
+│   │   │   └── claire.sh
+│   │   ├── clarion
+│   │   │   ├── clarion.lua
+│   │   │   └── clarion.sh
+│   │   ├── clean
+│   │   │   ├── clean.lua
+│   │   │   └── clean.sh
+│   │   ├── client_application_language
+│   │   │   ├── client_application_language.lua
+│   │   │   └── client_application_language.sh
+│   │   ├── clik
+│   │   │   ├── clik.lua
+│   │   │   └── clik.sh
+│   │   ├── clipper
+│   │   │   ├── clipper.lua
+│   │   │   └── clipper.sh
+│   │   ├── clips
+│   │   │   ├── clips.lua
+│   │   │   └── clips.sh
+│   │   ├── clist
+│   │   │   ├── clist.lua
+│   │   │   └── clist.sh
+│   │   ├── clojure
+│   │   │   ├── clojure.lua
+│   │   │   └── clojure.sh
+│   │   ├── clu
+│   │   │   ├── clu.lua
+│   │   │   └── clu.sh
+│   │   ├── cminusminus
+│   │   │   ├── cminusminus.lua
+│   │   │   └── cminusminus.sh
+│   │   ├── cms-2
+│   │   │   ├── cms-2.lua
+│   │   │   └── cms-2.sh
+│   │   ├── cms_exec
+│   │   │   ├── cms_exec.lua
+│   │   │   └── cms_exec.sh
+│   │   ├── cobol
+│   │   │   ├── cobol.lua
+│   │   │   └── cobol.sh
+│   │   ├── cobolscript
+│   │   │   ├── cobolscript.lua
+│   │   │   └── cobolscript.sh
+│   │   ├── cobra
+│   │   │   ├── cobra.lua
+│   │   │   └── cobra.sh
+│   │   ├── coffeescript
+│   │   │   ├── coffeescript.lua
+│   │   │   └── coffeescript.sh
+│   │   ├── coldfusion
+│   │   │   ├── coldfusion.lua
+│   │   │   └── coldfusion.sh
+│   │   ├── comal
+│   │   │   ├── comal.lua
+│   │   │   └── comal.sh
+│   │   ├── comit
+│   │   │   ├── comit.lua
+│   │   │   └── comit.sh
+│   │   ├── common_intermediate_language
+│   │   │   ├── common_intermediate_language.lua
+│   │   │   └── common_intermediate_language.sh
+│   │   ├── common_lisp
+│   │   │   ├── common_lisp.lua
+│   │   │   └── common_lisp.sh
+│   │   ├── compass
+│   │   │   ├── compass.lua
+│   │   │   └── compass.sh
+│   │   ├── component_pascal
+│   │   │   ├── component_pascal.lua
+│   │   │   └── component_pascal.sh
+│   │   ├── comtran
+│   │   │   ├── comtran.lua
+│   │   │   └── comtran.sh
+│   │   ├── constraint_handling_rules
+│   │   │   ├── constraint_handling_rules.lua
+│   │   │   └── constraint_handling_rules.sh
+│   │   ├── control_language
+│   │   │   ├── control_language.lua
+│   │   │   └── control_language.sh
+│   │   ├── cool
+│   │   │   ├── cool.lua
+│   │   │   └── cool.sh
+│   │   ├── coq
+│   │   │   ├── coq.lua
+│   │   │   └── coq.sh
+│   │   ├── coral_66
+│   │   │   ├── coral_66.lua
+│   │   │   └── coral_66.sh
+│   │   ├── corvision
+│   │   │   ├── corvision.lua
+│   │   │   └── corvision.sh
+│   │   ├── cowsel
+│   │   │   ├── cowsel.lua
+│   │   │   └── cowsel.sh
+│   │   ├── cpl
+│   │   │   ├── cpl.lua
+│   │   │   └── cpl.sh
+│   │   ├── cplusplus
+│   │   │   ├── cplusplus.lua
+│   │   │   ├── cplusplus.sh
+│   │   │   ├── reserved_words.cpp
+│   │   │   └── reserved_words.txt
+│   │   ├── cryptol
+│   │   │   ├── cryptol.lua
+│   │   │   └── cryptol.sh
+│   │   ├── crystal
+│   │   │   ├── crystal.lua
+│   │   │   └── crystal.sh
+│   │   ├── csharp
+│   │   │   ├── Obj.cs
+│   │   │   ├── csharp.lua
+│   │   │   ├── csharp.sh
+│   │   │   ├── csharp_reserved_words.txt
+│   │   │   └── essentialz
+│   │   │       ├── essentialz.lua
+│   │   │       ├── essentialz_syntax.lua
+│   │   │       ├── essentialz_syntax_file_generator.sh
+│   │   │       └── referencez
+│   │   │           ├── referencez.lua
+│   │   │           ├── referencez.sh
+│   │   │           └── reserved_wordz
+│   │   │               ├── reserved_wordz.lua
+│   │   │               └── reserved_wordz.sh
+│   │   ├── csound
+│   │   │   ├── csound.lua
+│   │   │   └── csound.sh
+│   │   ├── css
+│   │   │   ├── css.lua
+│   │   │   └── css.sh
+│   │   ├── cstar
+│   │   │   ├── cstar.lua
+│   │   │   └── cstar.sh
+│   │   ├── cuneiform
+│   │   │   ├── cuneiform.lua
+│   │   │   └── cuneiform.sh
+│   │   ├── curl
+│   │   │   ├── curl.lua
+│   │   │   └── curl.sh
+│   │   ├── curry
+│   │   │   ├── curry.lua
+│   │   │   └── curry.sh
+│   │   ├── cybil
+│   │   │   ├── cybil.lua
+│   │   │   └── cybil.sh
+│   │   ├── cyclone
+│   │   │   ├── cyclone.lua
+│   │   │   └── cyclone.sh
+│   │   ├── cypher_query_language
+│   │   │   ├── cypher_query_language.lua
+│   │   │   └── cypher_query_language.sh
+│   │   ├── cython
+│   │   │   ├── cython.lua
+│   │   │   └── cython.sh
+│   │   ├── céu
+│   │   │   ├── céu.lua
+│   │   │   └── céu.sh
+│   │   ├── d
+│   │   │   ├── d.lua
+│   │   │   └── d.sh
+│   │   ├── dart
+│   │   │   ├── Obj.dart
+│   │   │   ├── dart.lua
+│   │   │   ├── dart.sh
+│   │   │   ├── essentialz
+│   │   │   │   └── essentialz.lua
+│   │   │   ├── full_dart.lua
+│   │   │   └── pryslya
+│   │   ├── darwin
+│   │   │   ├── darwin.lua
+│   │   │   └── darwin.sh
+│   │   ├── dataflex
+│   │   │   ├── dataflex.lua
+│   │   │   └── dataflex.sh
+│   │   ├── datalog
+│   │   │   ├── datalog.lua
+│   │   │   └── datalog.sh
+│   │   ├── datatrieve
+│   │   │   ├── datatrieve.lua
+│   │   │   └── datatrieve.sh
+│   │   ├── dax
+│   │   │   ├── dax.lua
+│   │   │   └── dax.sh
+│   │   ├── dbase
+│   │   │   ├── dbase.lua
+│   │   │   └── dbase.sh
+│   │   ├── dc
+│   │   │   ├── dc.lua
+│   │   │   └── dc.sh
+│   │   ├── dcl
+│   │   │   ├── dcl.lua
+│   │   │   └── dcl.sh
+│   │   ├── delphi
+│   │   │   ├── delphi.lua
+│   │   │   └── delphi.sh
+│   │   ├── dibol
+│   │   │   ├── dibol.lua
+│   │   │   └── dibol.sh
+│   │   ├── dinkc
+│   │   │   ├── dinkc.lua
+│   │   │   └── dinkc.sh
+│   │   ├── dog
+│   │   │   ├── dog.lua
+│   │   │   └── dog.sh
+│   │   ├── draco
+│   │   │   ├── draco.lua
+│   │   │   └── draco.sh
+│   │   ├── drakon
+│   │   │   ├── drakon.lua
+│   │   │   └── drakon.sh
+│   │   ├── dylan
+│   │   │   ├── dylan.lua
+│   │   │   └── dylan.sh
+│   │   ├── dynamo
+│   │   │   ├── dynamo.lua
+│   │   │   └── dynamo.sh
+│   │   ├── e
+│   │   │   ├── e.lua
+│   │   │   └── e.sh
+│   │   ├── ease
+│   │   │   ├── ease.lua
+│   │   │   └── ease.sh
+│   │   ├── easy_programming_language
+│   │   │   ├── easy_programming_language.lua
+│   │   │   └── easy_programming_language.sh
+│   │   ├── easy_programming_language_one
+│   │   │   ├── easy_programming_language_one.lua
+│   │   │   └── easy_programming_language_one.sh
+│   │   ├── easytrieve_plus
+│   │   │   ├── easytrieve_plus.lua
+│   │   │   └── easytrieve_plus.sh
+│   │   ├── ec
+│   │   │   ├── ec.lua
+│   │   │   └── ec.sh
+│   │   ├── ecmascript
+│   │   │   ├── ecmascript.lua
+│   │   │   └── ecmascript.sh
+│   │   ├── edinburgh_imp
+│   │   │   ├── edinburgh_imp.lua
+│   │   │   └── edinburgh_imp.sh
+│   │   ├── egl
+│   │   │   ├── egl.lua
+│   │   │   └── egl.sh
+│   │   ├── eiffel
+│   │   │   ├── eiffel.lua
+│   │   │   └── eiffel.sh
+│   │   ├── elan
+│   │   │   ├── elan.lua
+│   │   │   └── elan.sh
+│   │   ├── elixir
+│   │   │   ├── elixir.lua
+│   │   │   └── elixir.sh
+│   │   ├── elm
+│   │   │   ├── elm.lua
+│   │   │   └── elm.sh
+│   │   ├── emacs_lisp
+│   │   │   ├── emacs_lisp.lua
+│   │   │   └── emacs_lisp.sh
+│   │   ├── emerald
+│   │   │   ├── emerald.lua
+│   │   │   └── emerald.sh
+│   │   ├── eno
+│   │   │   ├── eno.lua
+│   │   │   └── eno.sh
+│   │   ├── epigram
+│   │   │   ├── epigram.lua
+│   │   │   └── epigram.sh
+│   │   ├── erlang
+│   │   │   ├── erlang.lua
+│   │   │   └── erlang.sh
+│   │   ├── es
+│   │   │   ├── es.lua
+│   │   │   └── es.sh
+│   │   ├── escher
+│   │   │   ├── escher.lua
+│   │   │   └── escher.sh
+│   │   ├── espol
+│   │   │   ├── espol.lua
+│   │   │   └── espol.sh
+│   │   ├── esterel
+│   │   │   ├── esterel.lua
+│   │   │   └── esterel.sh
+│   │   ├── etoys
+│   │   │   ├── etoys.lua
+│   │   │   └── etoys.sh
+│   │   ├── euclid
+│   │   │   ├── euclid.lua
+│   │   │   └── euclid.sh
+│   │   ├── euler
+│   │   │   ├── euler.lua
+│   │   │   └── euler.sh
+│   │   ├── euphoria
+│   │   │   ├── euphoria.lua
+│   │   │   └── euphoria.sh
+│   │   ├── euslisp_robot_programming_language
+│   │   │   ├── euslisp_robot_programming_language.lua
+│   │   │   └── euslisp_robot_programming_language.sh
+│   │   ├── exec_2
+│   │   │   ├── exec_2.lua
+│   │   │   └── exec_2.sh
+│   │   ├── executable_uml
+│   │   │   ├── executable_uml.lua
+│   │   │   └── executable_uml.sh
+│   │   ├── ezhil
+│   │   │   ├── ezhil.lua
+│   │   │   └── ezhil.sh
+│   │   ├── f
+│   │   │   ├── f.lua
+│   │   │   └── f.sh
+│   │   ├── f-script
+│   │   │   ├── f-script.lua
+│   │   │   └── f-script.sh
+│   │   ├── factor
+│   │   │   ├── factor.lua
+│   │   │   └── factor.sh
+│   │   ├── fantom
+│   │   │   ├── fantom.lua
+│   │   │   └── fantom.sh
+│   │   ├── faust
+│   │   │   ├── faust.lua
+│   │   │   └── faust.sh
+│   │   ├── ffp
+│   │   │   ├── ffp.lua
+│   │   │   └── ffp.sh
+│   │   ├── fish
+│   │   │   ├── fish.lua
+│   │   │   └── fish.sh
+│   │   ├── fjölnir
+│   │   │   ├── fjölnir.lua
+│   │   │   └── fjölnir.sh
+│   │   ├── fl
+│   │   │   ├── fl.lua
+│   │   │   └── fl.sh
+│   │   ├── flagship
+│   │   │   ├── flagship.lua
+│   │   │   └── flagship.sh
+│   │   ├── flavors
+│   │   │   ├── flavors.lua
+│   │   │   └── flavors.sh
+│   │   ├── flex
+│   │   │   ├── flex.lua
+│   │   │   └── flex.sh
+│   │   ├── flix
+│   │   │   ├── flix.lua
+│   │   │   └── flix.sh
+│   │   ├── floop
+│   │   │   ├── floop.lua
+│   │   │   └── floop.sh
+│   │   ├── flow-matric
+│   │   │   ├── flow-matric.lua
+│   │   │   └── flow-matric.sh
+│   │   ├── focal
+│   │   │   ├── focal.lua
+│   │   │   └── focal.sh
+│   │   ├── focus
+│   │   │   ├── focus.lua
+│   │   │   └── focus.sh
+│   │   ├── foil
+│   │   │   ├── foil.lua
+│   │   │   └── foil.sh
+│   │   ├── formac
+│   │   │   ├── formac.lua
+│   │   │   └── formac.sh
+│   │   ├── formula
+│   │   │   ├── formula.lua
+│   │   │   └── formula.sh
+│   │   ├── forth
+│   │   │   ├── forth.lua
+│   │   │   └── forth.sh
+│   │   ├── fortran
+│   │   │   ├── fortran.lua
+│   │   │   └── fortran.sh
+│   │   ├── fortress
+│   │   │   ├── fortress.lua
+│   │   │   └── fortress.sh
+│   │   ├── foxbase
+│   │   │   ├── foxbase.lua
+│   │   │   └── foxbase.sh
+│   │   ├── fp
+│   │   │   ├── fp.lua
+│   │   │   └── fp.sh
+│   │   ├── franz_lisp
+│   │   │   ├── franz_lisp.lua
+│   │   │   └── franz_lisp.sh
+│   │   ├── fsharp
+│   │   │   ├── fsharp.lua
+│   │   │   └── fsharp.sh
+│   │   ├── fstar
+│   │   │   ├── fstar.lua
+│   │   │   └── fstar.sh
+│   │   ├── futhark
+│   │   │   ├── futhark.lua
+│   │   │   └── futhark.sh
+│   │   ├── g-code
+│   │   │   ├── g-code.lua
+│   │   │   └── g-code.sh
+│   │   ├── game_maker_language
+│   │   │   ├── game_maker_language.lua
+│   │   │   └── game_maker_language.sh
+│   │   ├── gamemonkey_script
+│   │   │   ├── gamemonkey_script.lua
+│   │   │   └── gamemonkey_script.sh
+│   │   ├── gams
+│   │   │   ├── gams.lua
+│   │   │   └── gams.sh
+│   │   ├── gap
+│   │   │   ├── gap.lua
+│   │   │   └── gap.sh
+│   │   ├── gdl
+│   │   │   ├── gdl.lua
+│   │   │   └── gdl.sh
+│   │   ├── genie
+│   │   │   ├── genie.lua
+│   │   │   └── genie.sh
+│   │   ├── george
+│   │   │   ├── george.lua
+│   │   │   └── george.sh
+│   │   ├── glsl
+│   │   │   ├── glsl.lua
+│   │   │   └── glsl.sh
+│   │   ├── gnu_e
+│   │   │   ├── gnu_e.lua
+│   │   │   └── gnu_e.sh
+│   │   ├── gnu_gulie
+│   │   │   ├── gnu_gulie.lua
+│   │   │   └── gnu_gulie.sh
+│   │   ├── go
+│   │   │   ├── full_go.lua
+│   │   │   ├── go.lua
+│   │   │   ├── go.sh
+│   │   │   ├── go_keyword_list.lua
+│   │   │   ├── go_keywords.txt
+│   │   │   └── go_syntax.lua
+│   │   ├── goal
+│   │   │   ├── goal.lua
+│   │   │   └── goal.sh
+│   │   ├── godot
+│   │   │   ├── godot.lua
+│   │   │   └── godot.sh
+│   │   ├── golo
+│   │   │   ├── golo.lua
+│   │   │   └── golo.sh
+│   │   ├── gom
+│   │   │   ├── gom.lua
+│   │   │   └── gom.sh
+│   │   ├── google_apps_script
+│   │   │   ├── google_apps_script.lua
+│   │   │   └── google_apps_script.sh
+│   │   ├── goooooooooooooooooo
+│   │   │   ├── goooooooooooooooooo.lua
+│   │   │   └── goooooooooooooooooo.sh
+│   │   ├── gosu
+│   │   │   ├── gosu.lua
+│   │   │   └── gosu.sh
+│   │   ├── gotran
+│   │   │   ├── gotran.lua
+│   │   │   └── gotran.sh
+│   │   ├── gpss
+│   │   │   ├── gpss.lua
+│   │   │   └── gpss.sh
+│   │   ├── graphtalk
+│   │   │   ├── graphtalk.lua
+│   │   │   └── graphtalk.sh
+│   │   ├── grass
+│   │   │   ├── grass.lua
+│   │   │   └── grass.sh
+│   │   ├── grasshopper
+│   │   │   ├── grasshopper.lua
+│   │   │   └── grasshopper.sh
+│   │   ├── groovy
+│   │   │   ├── groovy.lua
+│   │   │   └── groovy.sh
+│   │   ├── gödel
+│   │   │   ├── gödel.lua
+│   │   │   └── gödel.sh
+│   │   ├── hack
+│   │   │   ├── hack.lua
+│   │   │   └── hack.sh
+│   │   ├── haggis
+│   │   │   ├── haggis.lua
+│   │   │   └── haggis.sh
+│   │   ├── halide
+│   │   │   ├── halide.lua
+│   │   │   └── halide.sh
+│   │   ├── hamilton_c_shell
+│   │   │   ├── hamilton_c_shell.lua
+│   │   │   └── hamilton_c_shell.sh
+│   │   ├── harbour
+│   │   │   ├── harbour.lua
+│   │   │   └── harbour.sh
+│   │   ├── hartmann_pipelines
+│   │   │   ├── hartmann_pipelines.lua
+│   │   │   └── hartmann_pipelines.sh
+│   │   ├── haskell
+│   │   │   ├── haskell.lua
+│   │   │   └── haskell.sh
+│   │   ├── haxe
+│   │   │   ├── haxe.lua
+│   │   │   └── haxe.sh
+│   │   ├── hermes
+│   │   │   ├── hermes.lua
+│   │   │   └── hermes.sh
+│   │   ├── high-order_assembly_language_shuttle
+│   │   │   ├── high-order_assembly_language_shuttle.lua
+│   │   │   └── high-order_assembly_language_shuttle.sh
+│   │   ├── high_level_assembly
+│   │   │   ├── high_level_assembly.lua
+│   │   │   └── high_level_assembly.sh
+│   │   ├── hlsl
+│   │   │   ├── hlsl.lua
+│   │   │   └── hlsl.sh
+│   │   ├── hollywood
+│   │   │   ├── hollywood.lua
+│   │   │   └── hollywood.sh
+│   │   ├── holyc
+│   │   │   ├── holyc.lua
+│   │   │   └── holyc.sh
+│   │   ├── hop
+│   │   │   ├── hop.lua
+│   │   │   └── hop.sh
+│   │   ├── hope
+│   │   │   ├── hope.lua
+│   │   │   └── hope.sh
+│   │   ├── hopscotch
+│   │   │   ├── hopscotch.lua
+│   │   │   └── hopscotch.sh
+│   │   ├── html
+│   │   │   ├── html.lua
+│   │   │   └── html.sh
+│   │   ├── hume
+│   │   │   ├── hume.lua
+│   │   │   └── hume.sh
+│   │   ├── hypertalk
+│   │   │   ├── hypertalk.lua
+│   │   │   └── hypertalk.sh
+│   │   ├── ibm_basic_assembly_language
+│   │   │   ├── ibm_basic_assembly_language.lua
+│   │   │   └── ibm_basic_assembly_language.sh
+│   │   ├── ibm_hascript
+│   │   │   ├── ibm_hascript.lua
+│   │   │   └── ibm_hascript.sh
+│   │   ├── ibm_informix-4gl
+│   │   │   ├── ibm_informix-4gl.lua
+│   │   │   └── ibm_informix-4gl.sh
+│   │   ├── ibm_rpg
+│   │   │   ├── ibm_rpg.lua
+│   │   │   └── ibm_rpg.sh
+│   │   ├── icon
+│   │   │   ├── icon.lua
+│   │   │   └── icon.sh
+│   │   ├── idl
+│   │   │   ├── idl.lua
+│   │   │   └── idl.sh
+│   │   ├── idris
+│   │   │   ├── idris.lua
+│   │   │   └── idris.sh
+│   │   ├── inform
+│   │   │   ├── inform.lua
+│   │   │   └── inform.sh
+│   │   ├── io
+│   │   │   ├── io.lua
+│   │   │   └── io.sh
+│   │   ├── islisp
+│   │   │   ├── islisp.lua
+│   │   │   └── islisp.sh
+│   │   ├── j
+│   │   │   ├── j.lua
+│   │   │   └── j.sh
+│   │   ├── jade
+│   │   │   ├── jade.lua
+│   │   │   └── jade.sh
+│   │   ├── jai
+│   │   │   ├── jai.lua
+│   │   │   └── jai.sh
+│   │   ├── jal
+│   │   │   ├── jal.lua
+│   │   │   └── jal.sh
+│   │   ├── janus_concurrent_constraint
+│   │   │   ├── janus_concurrent_constraint.lua
+│   │   │   └── janus_concurrent_constraint.sh
+│   │   ├── janus_time_reversible_computing
+│   │   │   ├── janus_time_reversible_computing.lua
+│   │   │   └── janus_time_reversible_computing.sh
+│   │   ├── jass
+│   │   │   ├── jass.lua
+│   │   │   └── jass.sh
+│   │   ├── java
+│   │   │   ├── Obj.java
+│   │   │   ├── essentialz
+│   │   │   │   └── essentialz.lua
+│   │   │   ├── full_java.lua
+│   │   │   ├── java.lua
+│   │   │   ├── java.sh
+│   │   │   ├── java_reserved_words.txt
+│   │   │   └── java_syntax.lua
+│   │   ├── javafx_script
+│   │   │   ├── javafx_script.lua
+│   │   │   └── javafx_script.sh
+│   │   ├── javascript
+│   │   │   ├── javascript.lua
+│   │   │   └── javascript.sh
+│   │   ├── jcl
+│   │   │   ├── jcl.lua
+│   │   │   └── jcl.sh
+│   │   ├── jean
+│   │   │   ├── jean.lua
+│   │   │   └── jean.sh
+│   │   ├── jess
+│   │   │   ├── jess.lua
+│   │   │   └── jess.sh
+│   │   ├── join_java
+│   │   │   ├── join_java.lua
+│   │   │   └── join_java.sh
+│   │   ├── joss
+│   │   │   ├── joss.lua
+│   │   │   └── joss.sh
+│   │   ├── joule
+│   │   │   ├── joule.lua
+│   │   │   └── joule.sh
+│   │   ├── jovial
+│   │   │   ├── jovial.lua
+│   │   │   └── jovial.sh
+│   │   ├── joy
+│   │   │   ├── joy.lua
+│   │   │   └── joy.sh
+│   │   ├── jplusplus
+│   │   │   ├── jplusplus.lua
+│   │   │   └── jplusplus.sh
+│   │   ├── jscript
+│   │   │   ├── jscript.lua
+│   │   │   └── jscript.sh
+│   │   ├── jscript_dot_net
+│   │   │   ├── jscript_dot_net.lua
+│   │   │   └── jscript_dot_net.sh
+│   │   ├── jsharp
+│   │   │   ├── jsharp.lua
+│   │   │   └── jsharp.sh
+│   │   ├── julia
+│   │   │   ├── julia.lua
+│   │   │   └── julia.sh
+│   │   ├── jython
+│   │   │   ├── jython.lua
+│   │   │   └── jython.sh
+│   │   ├── k
+│   │   │   ├── k.lua
+│   │   │   └── k.sh
+│   │   ├── kaleidoscope
+│   │   │   ├── kaleidoscope.lua
+│   │   │   └── kaleidoscope.sh
+│   │   ├── karel
+│   │   │   ├── karel.lua
+│   │   │   └── karel.sh
+│   │   ├── kee
+│   │   │   ├── kee.lua
+│   │   │   └── kee.sh
+│   │   ├── kif
+│   │   │   ├── kif.lua
+│   │   │   └── kif.sh
+│   │   ├── kixtart
+│   │   │   ├── kixtart.lua
+│   │   │   └── kixtart.sh
+│   │   ├── klerer-may_system
+│   │   │   ├── klerer-may_system.lua
+│   │   │   └── klerer-may_system.sh
+│   │   ├── kodu
+│   │   │   ├── kodu.lua
+│   │   │   └── kodu.sh
+│   │   ├── kojo
+│   │   │   ├── kojo.lua
+│   │   │   └── kojo.sh
+│   │   ├── kornshell
+│   │   │   ├── kornshell.lua
+│   │   │   └── kornshell.sh
+│   │   ├── kotlin
+│   │   │   ├── kotlin.lua
+│   │   │   └── kotlin.sh
+│   │   ├── krc
+│   │   │   ├── krc.lua
+│   │   │   └── krc.sh
+│   │   ├── krl
+│   │   │   ├── krl.lua
+│   │   │   └── krl.sh
+│   │   ├── krypton
+│   │   │   ├── krypton.lua
+│   │   │   └── krypton.sh
+│   │   ├── kv
+│   │   │   ├── kv.lua
+│   │   │   └── kv.sh
+│   │   ├── labiew
+│   │   │   ├── labiew.lua
+│   │   │   └── labiew.sh
+│   │   ├── ladder
+│   │   │   ├── ladder.lua
+│   │   │   └── ladder.sh
+│   │   ├── language_h
+│   │   │   ├── language_h.lua
+│   │   │   └── language_h.sh
+│   │   ├── lansa
+│   │   │   ├── lansa.lua
+│   │   │   └── lansa.sh
+│   │   ├── lasso
+│   │   │   ├── lasso.lua
+│   │   │   └── lasso.sh
+│   │   ├── lava
+│   │   │   ├── lava.lua
+│   │   │   └── lava.sh
+│   │   ├── lc-3
+│   │   │   ├── lc-3.lua
+│   │   │   └── lc-3.sh
+│   │   ├── lc3op
+│   │   │   ├── instruction_console
+│   │   │   ├── lc3op.lua
+│   │   │   └── lc3op.sh
+│   │   ├── lean
+│   │   │   ├── lean.lua
+│   │   │   └── lean.sh
+│   │   ├── legoscript
+│   │   │   ├── legoscript.lua
+│   │   │   └── legoscript.sh
+│   │   ├── lexico
+│   │   │   ├── lexico.lua
+│   │   │   └── lexico.sh
+│   │   ├── lil
+│   │   │   ├── lil.lua
+│   │   │   └── lil.sh
+│   │   ├── lilypond
+│   │   │   ├── lilypond.lua
+│   │   │   └── lilypond.sh
+│   │   ├── limbo
+│   │   │   ├── limbo.lua
+│   │   │   └── limbo.sh
+│   │   ├── limnor
+│   │   │   ├── limnor.lua
+│   │   │   └── limnor.sh
+│   │   ├── linc
+│   │   │   ├── linc.lua
+│   │   │   └── linc.sh
+│   │   ├── lingo
+│   │   │   ├── lingo.lua
+│   │   │   └── lingo.sh
+│   │   ├── linq
+│   │   │   ├── linq.lua
+│   │   │   └── linq.sh
+│   │   ├── lis
+│   │   │   ├── lis.lua
+│   │   │   └── lis.sh
+│   │   ├── lisa
+│   │   │   ├── lisa.lua
+│   │   │   └── lisa.sh
+│   │   ├── lisp
+│   │   │   ├── lisp.lua
+│   │   │   └── lisp.sh
+│   │   ├── lite-c
+│   │   │   ├── lite-c.lua
+│   │   │   └── lite-c.sh
+│   │   ├── lithe
+│   │   │   ├── lithe.lua
+│   │   │   └── lithe.sh
+│   │   ├── little_b
+│   │   │   ├── little_b.lua
+│   │   │   └── little_b.sh
+│   │   ├── livecode
+│   │   │   ├── livecode.lua
+│   │   │   └── livecode.sh
+│   │   ├── livescript
+│   │   │   ├── livescript.lua
+│   │   │   └── livescript.sh
+│   │   ├── lll
+│   │   │   ├── lll.lua
+│   │   │   └── lll.sh
+│   │   ├── logo
+│   │   │   ├── logo.lua
+│   │   │   └── logo.sh
+│   │   ├── logtalk
+│   │   │   ├── logtalk.lua
+│   │   │   └── logtalk.sh
+│   │   ├── lotusscript
+│   │   │   ├── lotusscript.lua
+│   │   │   └── lotusscript.sh
+│   │   ├── lpc
+│   │   │   ├── lpc.lua
+│   │   │   └── lpc.sh
+│   │   ├── lse
+│   │   │   ├── lse.lua
+│   │   │   └── lse.sh
+│   │   ├── lsl
+│   │   │   ├── lsl.lua
+│   │   │   └── lsl.sh
+│   │   ├── lua
+│   │   │   ├── lua.lua
+│   │   │   └── lua.sh
+│   │   ├── lucid
+│   │   │   ├── lucid.lua
+│   │   │   └── lucid.sh
+│   │   ├── lustre
+│   │   │   ├── lustre.lua
+│   │   │   └── lustre.sh
+│   │   ├── lyapas
+│   │   │   ├── lyapas.lua
+│   │   │   └── lyapas.sh
+│   │   ├── lynx
+│   │   │   ├── lynx.lua
+│   │   │   └── lynx.sh
+│   │   ├── m2001
+│   │   │   ├── m2001.lua
+│   │   │   └── m2001.sh
+│   │   ├── m4
+│   │   │   ├── m4.lua
+│   │   │   └── m4.sh
+│   │   ├── m_formula
+│   │   │   ├── m_formula.lua
+│   │   │   └── m_formula.sh
+│   │   ├── m_formula_language
+│   │   │   ├── m_formula_language.lua
+│   │   │   └── m_formula_language.sh
+│   │   ├── machine_code
+│   │   │   ├── machine_code.lua
+│   │   │   └── machine_code.sh
+│   │   ├── mad
+│   │   │   ├── mad.lua
+│   │   │   └── mad.sh
+│   │   ├── magma
+│   │   │   ├── magma.lua
+│   │   │   └── magma.sh
+│   │   ├── maple
+│   │   │   ├── maple.lua
+│   │   │   └── maple.sh
+│   │   ├── mapper
+│   │   │   ├── mapper.lua
+│   │   │   └── mapper.sh
+│   │   ├── mark-iv
+│   │   │   ├── mark-iv.lua
+│   │   │   └── mark-iv.sh
+│   │   ├── mary
+│   │   │   ├── mary.lua
+│   │   │   └── mary.sh
+│   │   ├── masm_microsoft_assembly_x86
+│   │   │   ├── masm_microsoft_assembly_x86.lua
+│   │   │   └── masm_microsoft_assembly_x86.sh
+│   │   ├── math-matic
+│   │   │   ├── math-matic.lua
+│   │   │   └── math-matic.sh
+│   │   ├── matlab
+│   │   │   ├── matlab.lua
+│   │   │   └── matlab.sh
+│   │   ├── maude_system
+│   │   │   ├── maude_system.lua
+│   │   │   └── maude_system.sh
+│   │   ├── max
+│   │   │   ├── max.lua
+│   │   │   └── max.sh
+│   │   ├── maxima
+│   │   │   ├── maxima.lua
+│   │   │   └── maxima.sh
+│   │   ├── maxscript
+│   │   │   ├── maxscript.lua
+│   │   │   └── maxscript.sh
+│   │   ├── maya
+│   │   │   ├── maya.lua
+│   │   │   └── maya.sh
+│   │   ├── mdl
+│   │   │   ├── mdl.lua
+│   │   │   └── mdl.sh
+│   │   ├── merucy
+│   │   │   ├── merucy.lua
+│   │   │   └── merucy.sh
+│   │   ├── mesa
+│   │   │   ├── mesa.lua
+│   │   │   └── mesa.sh
+│   │   ├── mheg-5
+│   │   │   ├── mheg-5.lua
+│   │   │   └── mheg-5.sh
+│   │   ├── michigan_algorithm_detector
+│   │   │   ├── michigan_algorithm_detector.lua
+│   │   │   └── michigan_algorithm_detector.sh
+│   │   ├── microcode
+│   │   │   ├── microcode.lua
+│   │   │   └── microcode.sh
+│   │   ├── microscript
+│   │   │   ├── microscript.lua
+│   │   │   └── microscript.sh
+│   │   ├── microsoft_power_fx
+│   │   │   ├── microsoft_power_fx.lua
+│   │   │   └── microsoft_power_fx.sh
+│   │   ├── miis
+│   │   │   ├── miis.lua
+│   │   │   └── miis.sh
+│   │   ├── milk
+│   │   │   ├── milk.lua
+│   │   │   └── milk.sh
+│   │   ├── mimic
+│   │   │   ├── mimic.lua
+│   │   │   └── mimic.sh
+│   │   ├── mirah
+│   │   │   ├── mirah.lua
+│   │   │   └── mirah.sh
+│   │   ├── miranda
+│   │   │   ├── miranda.lua
+│   │   │   └── miranda.sh
+│   │   ├── mirva_script
+│   │   │   ├── mirva_script.lua
+│   │   │   └── mirva_script.sh
+│   │   ├── ml
+│   │   │   ├── ml.lua
+│   │   │   └── ml.sh
+│   │   ├── model_204
+│   │   │   ├── model_204.lua
+│   │   │   └── model_204.sh
+│   │   ├── modelica
+│   │   │   ├── modelica.lua
+│   │   │   └── modelica.sh
+│   │   ├── modula
+│   │   │   ├── modula.lua
+│   │   │   └── modula.sh
+│   │   ├── modula-2
+│   │   │   ├── modula-2.lua
+│   │   │   └── modula-2.sh
+│   │   ├── modula-3
+│   │   │   ├── modula-3.lua
+│   │   │   └── modula-3.sh
+│   │   ├── mohol
+│   │   │   ├── mohol.lua
+│   │   │   └── mohol.sh
+│   │   ├── moo
+│   │   │   ├── moo.lua
+│   │   │   └── moo.sh
+│   │   ├── mortran
+│   │   │   ├── mortran.lua
+│   │   │   └── mortran.sh
+│   │   ├── mouse
+│   │   │   ├── mouse.lua
+│   │   │   └── mouse.sh
+│   │   ├── mpd
+│   │   │   ├── mpd.lua
+│   │   │   └── mpd.sh
+│   │   ├── msharp
+│   │   │   ├── msharp.lua
+│   │   │   └── msharp.sh
+│   │   ├── msl
+│   │   │   ├── msl.lua
+│   │   │   └── msl.sh
+│   │   ├── mumps
+│   │   │   ├── mumps.lua
+│   │   │   └── mumps.sh
+│   │   ├── mupad
+│   │   │   ├── mupad.lua
+│   │   │   └── mupad.sh
+│   │   ├── mutan
+│   │   │   ├── mutan.lua
+│   │   │   └── mutan.sh
+│   │   ├── mystic_programming_language
+│   │   │   ├── mystic_programming_language.lua
+│   │   │   └── mystic_programming_language.sh
+│   │   ├── máni
+│   │   │   ├── máni.lua
+│   │   │   └── máni.sh
+│   │   ├── naipier88
+│   │   │   ├── naipier88.lua
+│   │   │   └── naipier88.sh
+│   │   ├── nasm
+│   │   │   ├── nasm.lua
+│   │   │   └── nasm.sh
+│   │   ├── neko
+│   │   │   ├── neko.lua
+│   │   │   └── neko.sh
+│   │   ├── nemerle
+│   │   │   ├── nemerle.lua
+│   │   │   └── nemerle.sh
+│   │   ├── nesl
+│   │   │   ├── nesl.lua
+│   │   │   └── nesl.sh
+│   │   ├── net_dot_data
+│   │   │   ├── net_dot_data.lua
+│   │   │   └── net_dot_data.sh
+│   │   ├── netloogo
+│   │   │   ├── netloogo.lua
+│   │   │   └── netloogo.sh
+│   │   ├── netrexx
+│   │   │   ├── netrexx.lua
+│   │   │   └── netrexx.sh
+│   │   ├── newlisp
+│   │   │   ├── newlisp.lua
+│   │   │   └── newlisp.sh
+│   │   ├── newp
+│   │   │   ├── newp.lua
+│   │   │   └── newp.sh
+│   │   ├── newspeak
+│   │   │   ├── newspeak.lua
+│   │   │   └── newspeak.sh
+│   │   ├── newtonscript
+│   │   │   ├── newtonscript.lua
+│   │   │   └── newtonscript.sh
+│   │   ├── nial
+│   │   │   ├── nial.lua
+│   │   │   └── nial.sh
+│   │   ├── nickle
+│   │   │   ├── nickle.lua
+│   │   │   └── nickle.sh
+│   │   ├── nim
+│   │   │   ├── nim.lua
+│   │   │   └── nim.sh
+│   │   ├── nix
+│   │   │   ├── nix.lua
+│   │   │   └── nix.sh
+│   │   ├── node_dot_js
+│   │   │   ├── node_dot_js.lua
+│   │   │   └── node_dot_js.sh
+│   │   ├── not_exactly_c
+│   │   │   ├── not_exactly_c.lua
+│   │   │   └── not_exactly_c.sh
+│   │   ├── not_quite_c
+│   │   │   ├── not_quite_c.lua
+│   │   │   └── not_quite_c.sh
+│   │   ├── npl
+│   │   │   ├── npl.lua
+│   │   │   └── npl.sh
+│   │   ├── nsis
+│   │   │   ├── nsis.lua
+│   │   │   └── nsis.sh
+│   │   ├── nu
+│   │   │   ├── nu.lua
+│   │   │   └── nu.sh
+│   │   ├── nwscript
+│   │   │   ├── nwscript.lua
+│   │   │   └── nwscript.sh
+│   │   ├── nxt-g
+│   │   │   ├── nxt-g.lua
+│   │   │   └── nxt-g.sh
+│   │   ├── o_xml
+│   │   │   ├── o_xml.lua
+│   │   │   └── o_xml.sh
+│   │   ├── oak
+│   │   │   ├── oak.lua
+│   │   │   └── oak.sh
+│   │   ├── obberon
+│   │   │   ├── obberon.lua
+│   │   │   └── obberon.sh
+│   │   ├── obj2
+│   │   │   ├── obj2.lua
+│   │   │   └── obj2.sh
+│   │   ├── object
+│   │   │   ├── object.lua
+│   │   │   └── object.sh
+│   │   ├── object_pascal
+│   │   │   ├── object_pascal.lua
+│   │   │   └── object_pascal.sh
+│   │   ├── object_rexx
+│   │   │   ├── object_rexx.lua
+│   │   │   └── object_rexx.sh
+│   │   ├── objective-c
+│   │   │   ├── objective-c.lua
+│   │   │   └── objective-c.sh
+│   │   ├── objective-j
+│   │   │   ├── objective-j.lua
+│   │   │   └── objective-j.sh
+│   │   ├── objectlogo
+│   │   │   ├── objectlogo.lua
+│   │   │   └── objectlogo.sh
+│   │   ├── obliq
+│   │   │   ├── obliq.lua
+│   │   │   └── obliq.sh
+│   │   ├── ocaml
+│   │   │   ├── ocaml.lua
+│   │   │   └── ocaml.sh
+│   │   ├── occam
+│   │   │   ├── occam.lua
+│   │   │   └── occam.sh
+│   │   ├── occam_pi
+│   │   │   ├── occam_pi.lua
+│   │   │   └── occam_pi.sh
+│   │   ├── octave
+│   │   │   ├── octave.lua
+│   │   │   └── octave.sh
+│   │   ├── omnimark
+│   │   │   ├── omnimark.lua
+│   │   │   └── omnimark.sh
+│   │   ├── opa
+│   │   │   ├── opa.lua
+│   │   │   └── opa.sh
+│   │   ├── opal
+│   │   │   ├── opal.lua
+│   │   │   └── opal.sh
+│   │   ├── open_programming_language
+│   │   │   ├── open_programming_language.lua
+│   │   │   └── open_programming_language.sh
+│   │   ├── opencl
+│   │   │   ├── opencl.lua
+│   │   │   └── opencl.sh
+│   │   ├── openedge_advanced_business_language
+│   │   │   ├── openedge_advanced_business_language.lua
+│   │   │   └── openedge_advanced_business_language.sh
+│   │   ├── openvera
+│   │   │   ├── openvera.lua
+│   │   │   └── openvera.sh
+│   │   ├── ops5
+│   │   │   ├── ops5.lua
+│   │   │   └── ops5.sh
+│   │   ├── orc
+│   │   │   ├── orc.lua
+│   │   │   └── orc.sh
+│   │   ├── orca_modula-2
+│   │   │   ├── orca_modula-2.lua
+│   │   │   └── orca_modula-2.sh
+│   │   ├── oriel
+│   │   │   ├── oriel.lua
+│   │   │   └── oriel.sh
+│   │   ├── orwell
+│   │   │   ├── orwell.lua
+│   │   │   └── orwell.sh
+│   │   ├── oxygene
+│   │   │   ├── oxygene.lua
+│   │   │   └── oxygene.sh
+│   │   ├── oz
+│   │   │   ├── oz.lua
+│   │   │   └── oz.sh
+│   │   ├── p
+│   │   │   ├── p.lua
+│   │   │   └── p.sh
+│   │   ├── p4
+│   │   │   ├── p4.lua
+│   │   │   └── p4.sh
+│   │   ├── p_double_prime
+│   │   │   ├── p_double_prime.lua
+│   │   │   └── p_double_prime.sh
+│   │   ├── parasail
+│   │   │   ├── parasail.lua
+│   │   │   └── parasail.sh
+│   │   ├── parigp
+│   │   │   ├── parigp.lua
+│   │   │   └── parigp.sh
+│   │   ├── pascal
+│   │   │   ├── pascal.lua
+│   │   │   └── pascal.sh
+│   │   ├── pascal_script
+│   │   │   ├── pascal_script.lua
+│   │   │   └── pascal_script.sh
+│   │   ├── pcastl
+│   │   │   ├── pcastl.lua
+│   │   │   └── pcastl.sh
+│   │   ├── pcf
+│   │   │   ├── pcf.lua
+│   │   │   └── pcf.sh
+│   │   ├── pearl
+│   │   │   ├── pearl.lua
+│   │   │   └── pearl.sh
+│   │   ├── peoplecode
+│   │   │   ├── peoplecode.lua
+│   │   │   └── peoplecode.sh
+│   │   ├── perl
+│   │   │   ├── perl.lua
+│   │   │   └── perl.sh
+│   │   ├── pharo
+│   │   │   ├── pharo.lua
+│   │   │   └── pharo.sh
+│   │   ├── php
+│   │   │   ├── php.lua
+│   │   │   └── php.sh
+│   │   ├── pico
+│   │   │   ├── pico.lua
+│   │   │   └── pico.sh
+│   │   ├── picolisp
+│   │   │   ├── picolisp.lua
+│   │   │   └── picolisp.sh
+│   │   ├── pict
+│   │   │   ├── pict.lua
+│   │   │   └── pict.sh
+│   │   ├── pike
+│   │   │   ├── pike.lua
+│   │   │   └── pike.sh
+│   │   ├── pilot
+│   │   │   ├── pilot.lua
+│   │   │   └── pilot.sh
+│   │   ├── pipelines
+│   │   │   ├── pipelines.lua
+│   │   │   └── pipelines.sh
+│   │   ├── pizza
+│   │   │   ├── pizza.lua
+│   │   │   └── pizza.sh
+│   │   ├── pl-11
+│   │   │   ├── pl-11.lua
+│   │   │   └── pl-11.sh
+│   │   ├── pl0
+│   │   │   ├── pl0.lua
+│   │   │   └── pl0.sh
+│   │   ├── pl360
+│   │   │   ├── pl360.lua
+│   │   │   └── pl360.sh
+│   │   ├── planc
+│   │   │   ├── planc.lua
+│   │   │   └── planc.sh
+│   │   ├── plankalkül
+│   │   │   ├── plankalkül.lua
+│   │   │   └── plankalkül.sh
+│   │   ├── planner
+│   │   │   ├── planner.lua
+│   │   │   └── planner.sh
+│   │   ├── plb
+│   │   │   ├── plb.lua
+│   │   │   └── plb.sh
+│   │   ├── plc
+│   │   │   ├── plc.lua
+│   │   │   └── plc.sh
+│   │   ├── plex
+│   │   │   ├── plex.lua
+│   │   │   └── plex.sh
+│   │   ├── plexil
+│   │   │   ├── plexil.lua
+│   │   │   └── plexil.sh
+│   │   ├── pli
+│   │   │   ├── pli.lua
+│   │   │   └── pli.sh
+│   │   ├── plm
+│   │   │   ├── plm.lua
+│   │   │   └── plm.sh
+│   │   ├── plp
+│   │   │   ├── plp.lua
+│   │   │   └── plp.sh
+│   │   ├── pls
+│   │   │   ├── pls.lua
+│   │   │   └── pls.sh
+│   │   ├── plsql
+│   │   │   ├── plsql.lua
+│   │   │   └── plsql.sh
+│   │   ├── plus
+│   │   │   ├── plus.lua
+│   │   │   └── plus.sh
+│   │   ├── pop-11
+│   │   │   ├── pop-11.lua
+│   │   │   └── pop-11.sh
+│   │   ├── pop-2
+│   │   │   ├── pop-2.lua
+│   │   │   └── pop-2.sh
+│   │   ├── portable
+│   │   │   ├── portable.lua
+│   │   │   └── portable.sh
+│   │   ├── postscript
+│   │   │   ├── postscript.lua
+│   │   │   └── postscript.sh
+│   │   ├── pov-ray_sdl
+│   │   │   ├── pov-ray_sdl.lua
+│   │   │   └── pov-ray_sdl.sh
+│   │   ├── powerbuilder
+│   │   │   ├── powerbuilder.lua
+│   │   │   └── powerbuilder.sh
+│   │   ├── powerhouse
+│   │   │   ├── powerhouse.lua
+│   │   │   └── powerhouse.sh
+│   │   ├── powershell
+│   │   │   ├── powershell.lua
+│   │   │   └── powershell.sh
+│   │   ├── ppl
+│   │   │   ├── ppl.lua
+│   │   │   └── ppl.sh
+│   │   ├── processing
+│   │   │   ├── processing.lua
+│   │   │   └── processing.sh
+│   │   ├── processing_dot_js
+│   │   │   ├── processing_dot_js.lua
+│   │   │   └── processing_dot_js.sh
+│   │   ├── prograph
+│   │   │   ├── prograph.lua
+│   │   │   └── prograph.sh
+│   │   ├── project_verona
+│   │   │   ├── project_verona.lua
+│   │   │   └── project_verona.sh
+│   │   ├── prolog
+│   │   │   ├── prolog.lua
+│   │   │   └── prolog.sh
+│   │   ├── promal
+│   │   │   ├── promal.lua
+│   │   │   └── promal.sh
+│   │   ├── promela
+│   │   │   ├── promela.lua
+│   │   │   └── promela.sh
+│   │   ├── prose_modeling_language
+│   │   │   ├── prose_modeling_language.lua
+│   │   │   └── prose_modeling_language.sh
+│   │   ├── prostarc
+│   │   │   ├── prostarc.lua
+│   │   │   └── prostarc.sh
+│   │   ├── protel
+│   │   │   ├── protel.lua
+│   │   │   └── protel.sh
+│   │   ├── providex
+│   │   │   ├── providex.lua
+│   │   │   └── providex.sh
+│   │   ├── ptimj
+│   │   │   ├── ptimj.lua
+│   │   │   └── ptimj.sh
+│   │   ├── pure
+│   │   │   ├── pure.lua
+│   │   │   └── pure.sh
+│   │   ├── pure_data
+│   │   │   ├── pure_data.lua
+│   │   │   └── pure_data.sh
+│   │   ├── purescript
+│   │   │   ├── purescript.lua
+│   │   │   └── purescript.sh
+│   │   ├── python
+│   │   │   ├── Obj.py
+│   │   │   ├── essentialz
+│   │   │   │   ├── essentialz.lua
+│   │   │   │   ├── essentialz_syntax.lua
+│   │   │   │   └── essentialz_syntax_file_generator.sh
+│   │   │   ├── python.lua
+│   │   │   ├── python.sh
+│   │   │   └── python_syntax.lua
+│   │   ├── q
+│   │   │   ├── q.lua
+│   │   │   └── q.sh
+│   │   ├── qalb
+│   │   │   ├── qalb.lua
+│   │   │   └── qalb.sh
+│   │   ├── ql
+│   │   │   ├── ql.lua
+│   │   │   └── ql.sh
+│   │   ├── qpl
+│   │   │   ├── qpl.lua
+│   │   │   └── qpl.sh
+│   │   ├── qsharp
+│   │   │   ├── qsharp.lua
+│   │   │   └── qsharp.sh
+│   │   ├── qtscript
+│   │   │   ├── qtscript.lua
+│   │   │   └── qtscript.sh
+│   │   ├── quakec
+│   │   │   ├── quakec.lua
+│   │   │   └── quakec.sh
+│   │   ├── quantum_computation_language
+│   │   │   ├── quantum_computation_language.lua
+│   │   │   └── quantum_computation_language.sh
+│   │   ├── r
+│   │   │   ├── r.lua
+│   │   │   └── r.sh
+│   │   ├── racket
+│   │   │   ├── racket.lua
+│   │   │   └── racket.sh
+│   │   ├── raku
+│   │   │   ├── raku.lua
+│   │   │   └── raku.sh
+│   │   ├── rapid
+│   │   │   ├── rapid.lua
+│   │   │   └── rapid.sh
+│   │   ├── rapira
+│   │   │   ├── rapira.lua
+│   │   │   └── rapira.sh
+│   │   ├── ratfiv
+│   │   │   ├── ratfiv.lua
+│   │   │   └── ratfiv.sh
+│   │   ├── ratfor
+│   │   │   ├── ratfor.lua
+│   │   │   └── ratfor.sh
+│   │   ├── rc
+│   │   │   ├── rc.lua
+│   │   │   └── rc.sh
+│   │   ├── reason
+│   │   │   ├── reason.lua
+│   │   │   └── reason.sh
+│   │   ├── rebol
+│   │   │   ├── rebol.lua
+│   │   │   └── rebol.sh
+│   │   ├── red
+│   │   │   ├── red.lua
+│   │   │   └── red.sh
+│   │   ├── redcode
+│   │   │   ├── redcode.lua
+│   │   │   └── redcode.sh
+│   │   ├── refal
+│   │   │   ├── refal.lua
+│   │   │   └── refal.sh
+│   │   ├── rexx
+│   │   │   ├── rexx.lua
+│   │   │   └── rexx.sh
+│   │   ├── roop
+│   │   │   ├── roop.lua
+│   │   │   └── roop.sh
+│   │   ├── rpg
+│   │   │   ├── rpg.lua
+│   │   │   └── rpg.sh
+│   │   ├── rpl
+│   │   │   ├── rpl.lua
+│   │   │   └── rpl.sh
+│   │   ├── rplusplus
+│   │   │   ├── rplusplus.lua
+│   │   │   └── rplusplus.sh
+│   │   ├── rsl
+│   │   │   ├── rsl.lua
+│   │   │   └── rsl.sh
+│   │   ├── rtl2
+│   │   │   ├── rtl2.lua
+│   │   │   └── rtl2.sh
+│   │   ├── ruby
+│   │   │   ├── ruby.lua
+│   │   │   └── ruby.sh
+│   │   ├── rust
+│   │   │   ├── rust.lua
+│   │   │   └── rust.sh
+│   │   ├── s
+│   │   │   ├── s.lua
+│   │   │   └── s.sh
+│   │   ├── s-lang
+│   │   │   ├── s-lang.lua
+│   │   │   └── s-lang.sh
+│   │   ├── s-plus
+│   │   │   ├── s-plus.lua
+│   │   │   └── s-plus.sh
+│   │   ├── s2
+│   │   │   ├── s2.lua
+│   │   │   └── s2.sh
+│   │   ├── s3
+│   │   │   ├── s3.lua
+│   │   │   └── s3.sh
+│   │   ├── sa-c
+│   │   │   ├── sa-c.lua
+│   │   │   └── sa-c.sh
+│   │   ├── sabretalk
+│   │   │   ├── sabretalk.lua
+│   │   │   └── sabretalk.sh
+│   │   ├── sail
+│   │   │   ├── sail.lua
+│   │   │   └── sail.sh
+│   │   ├── sako
+│   │   │   ├── sako.lua
+│   │   │   └── sako.sh
+│   │   ├── sas
+│   │   │   ├── sas.lua
+│   │   │   └── sas.sh
+│   │   ├── sasl
+│   │   │   ├── sasl.lua
+│   │   │   └── sasl.sh
+│   │   ├── sather
+│   │   │   ├── sather.lua
+│   │   │   └── sather.sh
+│   │   ├── sawzall
+│   │   │   ├── sawzall.lua
+│   │   │   └── sawzall.sh
+│   │   ├── sbl
+│   │   │   ├── sbl.lua
+│   │   │   └── sbl.sh
+│   │   ├── scala
+│   │   │   ├── scala.lua
+│   │   │   └── scala.sh
+│   │   ├── scheme
+│   │   │   ├── scheme.lua
+│   │   │   └── scheme.sh
+│   │   ├── scilab
+│   │   │   ├── scilab.lua
+│   │   │   └── scilab.sh
+│   │   ├── scratch
+│   │   │   ├── scratch.lua
+│   │   │   └── scratch.sh
+│   │   ├── script_dot_net
+│   │   │   ├── script_dot_net.lua
+│   │   │   └── script_dot_net.sh
+│   │   ├── sed
+│   │   │   ├── sed.lua
+│   │   │   └── sed.sh
+│   │   ├── seed7
+│   │   │   ├── seed7.lua
+│   │   │   └── seed7.sh
+│   │   ├── self
+│   │   │   ├── self.lua
+│   │   │   └── self.sh
+│   │   ├── sensetalk
+│   │   │   ├── sensetalk.lua
+│   │   │   └── sensetalk.sh
+│   │   ├── sequencel
+│   │   │   ├── sequencel.lua
+│   │   │   └── sequencel.sh
+│   │   ├── serpent
+│   │   │   ├── serpent.lua
+│   │   │   └── serpent.sh
+│   │   ├── setl
+│   │   │   ├── setl.lua
+│   │   │   └── setl.sh
+│   │   ├── short_code
+│   │   │   ├── short_code.lua
+│   │   │   └── short_code.sh
+│   │   ├── signal
+│   │   │   ├── signal.lua
+│   │   │   └── signal.sh
+│   │   ├── simple
+│   │   │   ├── simple.lua
+│   │   │   └── simple.sh
+│   │   ├── simpol
+│   │   │   ├── simpol.lua
+│   │   │   └── simpol.sh
+│   │   ├── simscript
+│   │   │   ├── simscript.lua
+│   │   │   └── simscript.sh
+│   │   ├── simula
+│   │   │   ├── simula.lua
+│   │   │   └── simula.sh
+│   │   ├── simulink
+│   │   │   ├── simulink.lua
+│   │   │   └── simulink.sh
+│   │   ├── sisal
+│   │   │   ├── sisal.lua
+│   │   │   └── sisal.sh
+│   │   ├── slip
+│   │   │   ├── slip.lua
+│   │   │   └── slip.sh
+│   │   ├── small
+│   │   │   ├── small.lua
+│   │   │   └── small.sh
+│   │   ├── smalltalk
+│   │   │   ├── smalltalk.lua
+│   │   │   └── smalltalk.sh
+│   │   ├── smiles
+│   │   │   ├── smiles.lua
+│   │   │   └── smiles.sh
+│   │   ├── sml
+│   │   │   ├── sml.lua
+│   │   │   └── sml.sh
+│   │   ├── snap_byob
+│   │   │   ├── snap_byob.lua
+│   │   │   └── snap_byob.sh
+│   │   ├── snobol
+│   │   │   ├── snobol.lua
+│   │   │   └── snobol.sh
+│   │   ├── snowball
+│   │   │   ├── snowball.lua
+│   │   │   └── snowball.sh
+│   │   ├── sol
+│   │   │   ├── sol.lua
+│   │   │   └── sol.sh
+│   │   ├── solidity
+│   │   │   ├── solidity.lua
+│   │   │   └── solidity.sh
+│   │   ├── sophaeros
+│   │   │   ├── sophaeros.lua
+│   │   │   └── sophaeros.sh
+│   │   ├── source
+│   │   │   ├── source.lua
+│   │   │   └── source.sh
+│   │   ├── spark
+│   │   │   ├── spark.lua
+│   │   │   └── spark.sh
+│   │   ├── speakeasy
+│   │   │   ├── speakeasy.lua
+│   │   │   └── speakeasy.sh
+│   │   ├── speedcode
+│   │   │   ├── speedcode.lua
+│   │   │   └── speedcode.sh
+│   │   ├── spin
+│   │   │   ├── spin.lua
+│   │   │   └── spin.sh
+│   │   ├── spitbol
+│   │   │   ├── spitbol.lua
+│   │   │   └── spitbol.sh
+│   │   ├── spk
+│   │   │   ├── spk.lua
+│   │   │   └── spk.sh
+│   │   ├── sps
+│   │   │   ├── sps.lua
+│   │   │   └── sps.sh
+│   │   ├── sql
+│   │   │   ├── sql.lua
+│   │   │   └── sql.sh
+│   │   ├── sqr
+│   │   │   ├── sqr.lua
+│   │   │   └── sqr.sh
+│   │   ├── squeak
+│   │   │   ├── squeak.lua
+│   │   │   └── squeak.sh
+│   │   ├── squirrel
+│   │   │   ├── squirrel.lua
+│   │   │   └── squirrel.sh
+│   │   ├── sr
+│   │   │   ├── sr.lua
+│   │   │   └── sr.sh
+│   │   ├── starlogo
+│   │   │   ├── starlogo.lua
+│   │   │   └── starlogo.sh
+│   │   ├── stata
+│   │   │   ├── stata.lua
+│   │   │   └── stata.sh
+│   │   ├── stateflow
+│   │   │   ├── stateflow.lua
+│   │   │   └── stateflow.sh
+│   │   ├── strand
+│   │   │   ├── strand.lua
+│   │   │   └── strand.sh
+│   │   ├── strongtalk
+│   │   │   ├── strongtalk.lua
+│   │   │   └── strongtalk.sh
+│   │   ├── subtext
+│   │   │   ├── subtext.lua
+│   │   │   └── subtext.sh
+│   │   ├── supercollider
+│   │   │   ├── supercollider.lua
+│   │   │   └── supercollider.sh
+│   │   ├── superplan
+│   │   │   ├── superplan.lua
+│   │   │   └── superplan.sh
+│   │   ├── supertalk
+│   │   │   ├── supertalk.lua
+│   │   │   └── supertalk.sh
+│   │   ├── swift_apple
+│   │   │   ├── swift_apple.lua
+│   │   │   └── swift_apple.sh
+│   │   ├── swift_parallel
+│   │   │   ├── swift_parallel.lua
+│   │   │   └── swift_parallel.sh
+│   │   ├── sympl
+│   │   │   ├── sympl.lua
+│   │   │   └── sympl.sh
+│   │   ├── syntax_semantic_language
+│   │   │   ├── syntax_semantic_language.lua
+│   │   │   └── syntax_semantic_language.sh
+│   │   ├── systemverilog
+│   │   │   ├── systemverilog.lua
+│   │   │   └── systemverilog.sh
+│   │   ├── t
+│   │   │   ├── t.lua
+│   │   │   └── t.sh
+│   │   ├── t-sql
+│   │   │   ├── t-sql.lua
+│   │   │   └── t-sql.sh
+│   │   ├── tacl
+│   │   │   ├── tacl.lua
+│   │   │   └── tacl.sh
+│   │   ├── tacpol
+│   │   │   ├── tacpol.lua
+│   │   │   └── tacpol.sh
+│   │   ├── tads
+│   │   │   ├── tads.lua
+│   │   │   └── tads.sh
+│   │   ├── tal
+│   │   │   ├── tal.lua
+│   │   │   └── tal.sh
+│   │   ├── tcl
+│   │   │   ├── tcl.lua
+│   │   │   └── tcl.sh
+│   │   ├── tea
+│   │   │   ├── tea.lua
+│   │   │   └── tea.sh
+│   │   ├── teco
+│   │   │   ├── teco.lua
+│   │   │   └── teco.sh
+│   │   ├── telcomp
+│   │   │   ├── telcomp.lua
+│   │   │   └── telcomp.sh
+│   │   ├── tex
+│   │   │   ├── tex.lua
+│   │   │   └── tex.sh
+│   │   ├── text_executive_programming_language
+│   │   │   ├── text_executive_programming_language.lua
+│   │   │   └── text_executive_programming_language.sh
+│   │   ├── tie
+│   │   │   ├── tie.lua
+│   │   │   └── tie.sh
+│   │   ├── tmg
+│   │   │   ├── tmg.lua
+│   │   │   └── tmg.sh
+│   │   ├── toi
+│   │   │   ├── toi.lua
+│   │   │   └── toi.sh
+│   │   ├── tom
+│   │   │   ├── tom.lua
+│   │   │   └── tom.sh
+│   │   ├── topspeed
+│   │   │   ├── topspeed.lua
+│   │   │   └── topspeed.sh
+│   │   ├── tpu
+│   │   │   ├── tpu.lua
+│   │   │   └── tpu.sh
+│   │   ├── trac
+│   │   │   ├── trac.lua
+│   │   │   └── trac.sh
+│   │   ├── transcript
+│   │   │   ├── transcript.lua
+│   │   │   └── transcript.sh
+│   │   ├── ttcn
+│   │   │   ├── ttcn.lua
+│   │   │   └── ttcn.sh
+│   │   ├── ttm
+│   │   │   ├── ttm.lua
+│   │   │   └── ttm.sh
+│   │   ├── turing
+│   │   │   ├── turing.lua
+│   │   │   └── turing.sh
+│   │   ├── tutor
+│   │   │   ├── tutor.lua
+│   │   │   └── tutor.sh
+│   │   ├── txl
+│   │   │   ├── txl.lua
+│   │   │   └── txl.sh
+│   │   ├── tynker
+│   │   │   ├── tynker.lua
+│   │   │   └── tynker.sh
+│   │   ├── typescript
+│   │   │   ├── typescript.lua
+│   │   │   └── typescript.sh
+│   │   ├── ubercode
+│   │   │   ├── ubercode.lua
+│   │   │   └── ubercode.sh
+│   │   ├── ucsd_pascal
+│   │   │   ├── ucsd_pascal.lua
+│   │   │   └── ucsd_pascal.sh
+│   │   ├── umple
+│   │   │   ├── umple.lua
+│   │   │   └── umple.sh
+│   │   ├── unicon
+│   │   │   ├── unicon.lua
+│   │   │   └── unicon.sh
+│   │   ├── uniface
+│   │   │   ├── uniface.lua
+│   │   │   └── uniface.sh
+│   │   ├── unity
+│   │   │   ├── unity.lua
+│   │   │   └── unity.sh
+│   │   ├── unrealscript
+│   │   │   ├── unrealscript.lua
+│   │   │   └── unrealscript.sh
+│   │   ├── vala
+│   │   │   ├── vala.lua
+│   │   │   └── vala.sh
+│   │   ├── verilog
+│   │   │   ├── verilog.lua
+│   │   │   └── verilog.sh
+│   │   ├── vhdl
+│   │   │   ├── vhdl.lua
+│   │   │   └── vhdl.sh
+│   │   ├── vim_script
+│   │   │   ├── vim_script.lua
+│   │   │   └── vim_script.sh
+│   │   ├── viper
+│   │   │   ├── viper.lua
+│   │   │   └── viper.sh
+│   │   ├── visual_dataflex
+│   │   │   ├── visual_dataflex.lua
+│   │   │   └── visual_dataflex.sh
+│   │   ├── visual_dialogscript
+│   │   │   ├── visual_dialogscript.lua
+│   │   │   └── visual_dialogscript.sh
+│   │   ├── visual_foxpro
+│   │   │   ├── visual_foxpro.lua
+│   │   │   └── visual_foxpro.sh
+│   │   ├── visual_j++
+│   │   │   ├── visual_j++.lua
+│   │   │   └── visual_j++.sh
+│   │   ├── visual_lisp
+│   │   │   ├── visual_lisp.lua
+│   │   │   └── visual_lisp.sh
+│   │   ├── visual_objects
+│   │   │   ├── visual_objects.lua
+│   │   │   └── visual_objects.sh
+│   │   ├── visual_prolog
+│   │   │   ├── visual_prolog.lua
+│   │   │   └── visual_prolog.sh
+│   │   ├── watfiv_watfor_waterloo_fortran_iv
+│   │   │   ├── watfiv_watfor_waterloo_fortran_iv.lua
+│   │   │   └── watfiv_watfor_waterloo_fortran_iv.sh
+│   │   ├── watfix
+│   │   │   ├── watfix.lua
+│   │   │   └── watfix.sh
+│   │   ├── webassembly
+│   │   │   ├── webassembly.lua
+│   │   │   └── webassembly.sh
+│   │   ├── webdna
+│   │   │   ├── webdna.lua
+│   │   │   └── webdna.sh
+│   │   ├── whiley
+│   │   │   ├── whiley.lua
+│   │   │   └── whiley.sh
+│   │   ├── winbatch
+│   │   │   ├── winbatch.lua
+│   │   │   └── winbatch.sh
+│   │   ├── wolfram_language
+│   │   │   ├── wolfram_language.lua
+│   │   │   └── wolfram_language.sh
+│   │   ├── wyvern
+│   │   │   ├── wyvern.lua
+│   │   │   └── wyvern.sh
+│   │   ├── x10
+│   │   │   ├── x10.lua
+│   │   │   └── x10.sh
+│   │   ├── xbaseplusplus
+│   │   │   ├── xbaseplusplus.lua
+│   │   │   └── xbaseplusplus.sh
+│   │   ├── xbl
+│   │   │   ├── xbl.lua
+│   │   │   └── xbl.sh
+│   │   ├── xc
+│   │   │   ├── xc.lua
+│   │   │   └── xc.sh
+│   │   ├── xharbour
+│   │   │   ├── xharbour.lua
+│   │   │   └── xharbour.sh
+│   │   ├── xl
+│   │   │   ├── xl.lua
+│   │   │   └── xl.sh
+│   │   ├── xml
+│   │   │   ├── xml.lua
+│   │   │   └── xml.sh
+│   │   ├── xod
+│   │   │   ├── xod.lua
+│   │   │   └── xod.sh
+│   │   ├── xojo
+│   │   │   ├── xojo.lua
+│   │   │   └── xojo.sh
+│   │   ├── xotcl
+│   │   │   ├── xotcl.lua
+│   │   │   └── xotcl.sh
+│   │   ├── xpl
+│   │   │   ├── xpl.lua
+│   │   │   └── xpl.sh
+│   │   ├── xpl0
+│   │   │   ├── xpl0.lua
+│   │   │   └── xpl0.sh
+│   │   ├── xplusplus
+│   │   │   ├── xplusplus.lua
+│   │   │   └── xplusplus.sh
+│   │   ├── xquery
+│   │   │   ├── xquery.lua
+│   │   │   └── xquery.sh
+│   │   ├── xsb
+│   │   │   ├── xsb.lua
+│   │   │   └── xsb.sh
+│   │   ├── xsharp
+│   │   │   ├── xsharp.lua
+│   │   │   └── xsharp.sh
+│   │   ├── xslt
+│   │   │   ├── xslt.lua
+│   │   │   └── xslt.sh
+│   │   ├── xtend
+│   │   │   ├── xtend.lua
+│   │   │   └── xtend.sh
+│   │   ├── yoix
+│   │   │   ├── yoix.lua
+│   │   │   └── yoix.sh
+│   │   ├── yorick
+│   │   │   ├── yorick.lua
+│   │   │   └── yorick.sh
+│   │   ├── yql
+│   │   │   ├── yql.lua
+│   │   │   └── yql.sh
+│   │   ├── z_notation
+│   │   │   ├── z_notation.lua
+│   │   │   └── z_notation.sh
+│   │   ├── z_shell
+│   │   │   ├── z_shell.lua
+│   │   │   └── z_shell.sh
+│   │   ├── zebra
+│   │   │   ├── zebra.lua
+│   │   │   └── zebra.sh
+│   │   ├── zetalisp
+│   │   │   ├── zetalisp.lua
+│   │   │   └── zetalisp.sh
+│   │   ├── zig
+│   │   │   ├── zig.lua
+│   │   │   └── zig.sh
+│   │   ├── zopl
+│   │   │   ├── zopl.lua
+│   │   │   └── zopl.sh
+│   │   ├── zpl
+│   │   │   ├── zpl.lua
+│   │   │   └── zpl.sh
+│   │   └── zplusplus
+│   │       ├── zplusplus.lua
+│   │       └── zplusplus.sh
+│   ├── pseudocode
+│   │   ├── pseudocode.lua
+│   │   └── pseudocode.sh
+│   ├── tensor_languages
+│   └── written_languages
+│       ├── acehnese
+│       │   ├── acehnese.lua
+│       │   └── acehnese.sh
+│       ├── adlam-fulfulde
+│       │   ├── adlam-fulfulde.lua
+│       │   └── adlam-fulfulde.sh
+│       ├── adyghe
+│       │   ├── adyghe.lua
+│       │   └── adyghe.sh
+│       ├── afaka_ndyuka
+│       │   ├── afaka_ndyuka.lua
+│       │   └── afaka_ndyuka.sh
+│       ├── american_sign_language
+│       │   ├── american_sign_language.lua
+│       │   └── american_sign_language.sh
+│       ├── antartican
+│       │   ├── antartican.lua
+│       │   └── antartican.sh
+│       ├── arabic_afer
+│       │   ├── arabic_afer.lua
+│       │   └── arabic_afer.sh
+│       ├── arabic_algerian
+│       │   ├── arabic_algerian.lua
+│       │   └── arabic_algerian.sh
+│       ├── arabic_awri
+│       │   ├── arabic_awri.lua
+│       │   └── arabic_awri.sh
+│       ├── arabic_bakhtiari
+│       │   ├── arabic_bakhtiari.lua
+│       │   └── arabic_bakhtiari.sh
+│       ├── arabic_balochi
+│       │   ├── arabic_balochi.lua
+│       │   └── arabic_balochi.sh
+│       ├── arabic_balti
+│       │   ├── arabic_balti.lua
+│       │   └── arabic_balti.sh
+│       ├── arabic_banjar
+│       │   ├── arabic_banjar.lua
+│       │   └── arabic_banjar.sh
+│       ├── arabic_barhui
+│       │   ├── arabic_barhui.lua
+│       │   └── arabic_barhui.sh
+│       ├── arabic_bashkir
+│       │   ├── arabic_bashkir.lua
+│       │   └── arabic_bashkir.sh
+│       ├── arabic_belarusian
+│       │   ├── arabic_belarusian.lua
+│       │   └── arabic_belarusian.sh
+│       ├── arabic_bengali
+│       │   ├── arabic_bengali.lua
+│       │   └── arabic_bengali.sh
+│       ├── arabic_berber
+│       │   ├── arabic_berber.lua
+│       │   └── arabic_berber.sh
+│       ├── arabic_bhadrawahi
+│       │   ├── arabic_bhadrawahi.lua
+│       │   └── arabic_bhadrawahi.sh
+│       ├── arabic_bosnian
+│       │   ├── arabic_bosnian.lua
+│       │   └── arabic_bosnian.sh
+│       ├── arabic_burushaski
+│       │   ├── arabic_burushaski.lua
+│       │   └── arabic_burushaski.sh
+│       ├── arabic_central_kurdish
+│       │   ├── arabic_central_kurdish.lua
+│       │   └── arabic_central_kurdish.sh
+│       ├── arabic_cham
+│       │   ├── arabic_cham.lua
+│       │   └── arabic_cham.sh
+│       ├── arabic_chechen
+│       │   ├── arabic_chechen.lua
+│       │   └── arabic_chechen.sh
+│       ├── arabic_chinese
+│       │   ├── arabic_chinese.lua
+│       │   └── arabic_chinese.sh
+│       ├── arabic_chittagonian
+│       │   ├── arabic_chittagonian.lua
+│       │   └── arabic_chittagonian.sh
+│       ├── arabic_comorian
+│       │   ├── arabic_comorian.lua
+│       │   └── arabic_comorian.sh
+│       ├── arabic_crimean_tatar
+│       │   ├── arabic_crimean_tatar.lua
+│       │   └── arabic_crimean_tatar.sh
+│       ├── arabic_dari
+│       │   ├── arabic_dari.lua
+│       │   └── arabic_dari.sh
+│       ├── arabic_dogri
+│       │   ├── arabic_dogri.lua
+│       │   └── arabic_dogri.sh
+│       ├── arabic_dungan
+│       │   ├── arabic_dungan.lua
+│       │   └── arabic_dungan.sh
+│       ├── arabic_dyula
+│       │   ├── arabic_dyula.lua
+│       │   └── arabic_dyula.sh
+│       ├── arabic_egyptian
+│       │   ├── arabic_egyptian.lua
+│       │   └── arabic_egyptian.sh
+│       ├── arabic_fillipino
+│       │   ├── arabic_fillipino.lua
+│       │   └── arabic_fillipino.sh
+│       ├── arabic_french
+│       │   ├── arabic_french.lua
+│       │   └── arabic_french.sh
+│       ├── arabic_fulani
+│       │   ├── arabic_fulani.lua
+│       │   └── arabic_fulani.sh
+│       ├── arabic_gilaki
+│       │   ├── arabic_gilaki.lua
+│       │   └── arabic_gilaki.sh
+│       ├── arabic_greek
+│       │   ├── arabic_greek.lua
+│       │   └── arabic_greek.sh
+│       ├── arabic_harari
+│       │   ├── arabic_harari.lua
+│       │   └── arabic_harari.sh
+│       ├── arabic_hausa
+│       │   ├── arabic_hausa.lua
+│       │   └── arabic_hausa.sh
+│       ├── arabic_ingush
+│       │   ├── arabic_ingush.lua
+│       │   └── arabic_ingush.sh
+│       ├── arabic_iraqi
+│       │   ├── arabic_iraqi.lua
+│       │   └── arabic_iraqi.sh
+│       ├── arabic_javanese
+│       │   ├── arabic_javanese.lua
+│       │   └── arabic_javanese.sh
+│       ├── arabic_jola-fonyi
+│       │   ├── arabic_jola-fonyi.lua
+│       │   └── arabic_jola-fonyi.sh
+│       ├── arabic_judaeo-spanish
+│       │   ├── arabic_judaeo-spanish.lua
+│       │   └── arabic_judaeo-spanish.sh
+│       ├── arabic_judeo-tunisian
+│       │   ├── arabic_judeo-tunisian.lua
+│       │   └── arabic_judeo-tunisian.sh
+│       ├── arabic_kanuri
+│       │   ├── arabic_kanuri.lua
+│       │   └── arabic_kanuri.sh
+│       ├── arabic_karakalpak
+│       │   ├── arabic_karakalpak.lua
+│       │   └── arabic_karakalpak.sh
+│       ├── arabic_kashmiri
+│       │   ├── arabic_kashmiri.lua
+│       │   └── arabic_kashmiri.sh
+│       ├── arabic_kazakh
+│       │   ├── arabic_kazakh.lua
+│       │   └── arabic_kazakh.sh
+│       ├── arabic_khowar
+│       │   ├── arabic_khowar.lua
+│       │   └── arabic_khowar.sh
+│       ├── arabic_kurdish
+│       │   ├── arabic_kurdish.lua
+│       │   └── arabic_kurdish.sh
+│       ├── arabic_kyrgyz
+│       │   ├── arabic_kyrgyz.lua
+│       │   └── arabic_kyrgyz.sh
+│       ├── arabic_lak
+│       │   ├── arabic_lak.lua
+│       │   └── arabic_lak.sh
+│       ├── arabic_lebanese
+│       │   ├── arabic_lebanese.lua
+│       │   └── arabic_lebanese.sh
+│       ├── arabic_lezgin
+│       │   ├── arabic_lezgin.lua
+│       │   └── arabic_lezgin.sh
+│       ├── arabic_luri
+│       │   ├── arabic_luri.lua
+│       │   └── arabic_luri.sh
+│       ├── arabic_madurese
+│       │   ├── arabic_madurese.lua
+│       │   └── arabic_madurese.sh
+│       ├── arabic_malagasy
+│       │   ├── arabic_malagasy.lua
+│       │   └── arabic_malagasy.sh
+│       ├── arabic_malay
+│       │   ├── arabic_malay.lua
+│       │   └── arabic_malay.sh
+│       ├── arabic_mandinka
+│       │   ├── arabic_mandinka.lua
+│       │   └── arabic_mandinka.sh
+│       ├── arabic_marwari
+│       │   ├── arabic_marwari.lua
+│       │   └── arabic_marwari.sh
+│       ├── arabic_mazanderani
+│       │   ├── arabic_mazanderani.lua
+│       │   └── arabic_mazanderani.sh
+│       ├── arabic_minangkabau
+│       │   ├── arabic_minangkabau.lua
+│       │   └── arabic_minangkabau.sh
+│       ├── arabic_morccan
+│       │   ├── arabic_morccan.lua
+│       │   └── arabic_morccan.sh
+│       ├── arabic_mozarabic
+│       │   ├── arabic_mozarabic.lua
+│       │   └── arabic_mozarabic.sh
+│       ├── arabic_ngai
+│       │   ├── arabic_ngai.lua
+│       │   └── arabic_ngai.sh
+│       ├── arabic_nobiin
+│       │   ├── arabic_nobiin.lua
+│       │   └── arabic_nobiin.sh
+│       ├── arabic_ottoman_turkish
+│       │   ├── arabic_ottoman_turkish.lua
+│       │   └── arabic_ottoman_turkish.sh
+│       ├── arabic_pashto
+│       │   ├── arabic_pashto.lua
+│       │   └── arabic_pashto.sh
+│       ├── arabic_persian
+│       │   ├── arabic_persian.lua
+│       │   └── arabic_persian.sh
+│       ├── arabic_punjabi
+│       │   ├── arabic_punjabi.lua
+│       │   └── arabic_punjabi.sh
+│       ├── arabic_qashqai
+│       │   ├── arabic_qashqai.lua
+│       │   └── arabic_qashqai.sh
+│       ├── arabic_rohingya
+│       │   ├── arabic_rohingya.lua
+│       │   └── arabic_rohingya.sh
+│       ├── arabic_salar
+│       │   ├── arabic_salar.lua
+│       │   └── arabic_salar.sh
+│       ├── arabic_saraiki
+│       │   ├── arabic_saraiki.lua
+│       │   └── arabic_saraiki.sh
+│       ├── arabic_sindhi
+│       │   ├── arabic_sindhi.lua
+│       │   └── arabic_sindhi.sh
+│       ├── arabic_somali
+│       │   ├── arabic_somali.lua
+│       │   └── arabic_somali.sh
+│       ├── arabic_songhay
+│       │   ├── arabic_songhay.lua
+│       │   └── arabic_songhay.sh
+│       ├── arabic_spanish
+│       │   ├── arabic_spanish.lua
+│       │   └── arabic_spanish.sh
+│       ├── arabic_swahili
+│       │   ├── arabic_swahili.lua
+│       │   └── arabic_swahili.sh
+│       ├── arabic_tajik
+│       │   ├── arabic_tajik.lua
+│       │   └── arabic_tajik.sh
+│       ├── arabic_talysh
+│       │   ├── arabic_talysh.lua
+│       │   └── arabic_talysh.sh
+│       ├── arabic_tatar
+│       │   ├── arabic_tatar.lua
+│       │   └── arabic_tatar.sh
+│       ├── arabic_tausug
+│       │   ├── arabic_tausug.lua
+│       │   └── arabic_tausug.sh
+│       ├── arabic_tuareg
+│       │   ├── arabic_tuareg.lua
+│       │   └── arabic_tuareg.sh
+│       ├── arabic_tunisian
+│       │   ├── arabic_tunisian.lua
+│       │   └── arabic_tunisian.sh
+│       ├── arabic_turkish
+│       │   ├── arabic_turkish.lua
+│       │   └── arabic_turkish.sh
+│       ├── arabic_turkmen
+│       │   ├── arabic_turkmen.lua
+│       │   └── arabic_turkmen.sh
+│       ├── arabic_urdu
+│       │   ├── arabic_urdu.lua
+│       │   └── arabic_urdu.sh
+│       ├── arabic_uyghur
+│       │   ├── arabic_uyghur.lua
+│       │   └── arabic_uyghur.sh
+│       ├── arabic_uzbek
+│       │   ├── arabic_uzbek.lua
+│       │   └── arabic_uzbek.sh
+│       ├── arabic_wakhi
+│       │   ├── arabic_wakhi.lua
+│       │   └── arabic_wakhi.sh
+│       ├── arabic_wolio
+│       │   ├── arabic_wolio.lua
+│       │   └── arabic_wolio.sh
+│       ├── arabic_wolof
+│       │   ├── arabic_wolof.lua
+│       │   └── arabic_wolof.sh
+│       ├── arabic_yoruba
+│       │   ├── arabic_yoruba.lua
+│       │   └── arabic_yoruba.sh
+│       ├── arabic_zarma
+│       │   ├── arabic_zarma.lua
+│       │   └── arabic_zarma.sh
+│       ├── arabic_zerbaijani
+│       │   ├── arabic_zerbaijani.lua
+│       │   └── arabic_zerbaijani.sh
+│       ├── aramaic_arabic
+│       │   ├── aramaic_arabic.lua
+│       │   └── aramaic_arabic.sh
+│       ├── aramaic_assyrian
+│       │   ├── aramaic_assyrian.lua
+│       │   └── aramaic_assyrian.sh
+│       ├── aramaic_bohtan
+│       │   ├── aramaic_bohtan.lua
+│       │   └── aramaic_bohtan.sh
+│       ├── aramaic_chaldean
+│       │   ├── aramaic_chaldean.lua
+│       │   └── aramaic_chaldean.sh
+│       ├── aramaic_hertevin
+│       │   ├── aramaic_hertevin.lua
+│       │   └── aramaic_hertevin.sh
+│       ├── aramaic_koy_sanjaq_surat
+│       │   ├── aramaic_koy_sanjaq_surat.lua
+│       │   └── aramaic_koy_sanjaq_surat.sh
+│       ├── aramaic_mongolian
+│       │   ├── aramaic_mongolian.lua
+│       │   └── aramaic_mongolian.sh
+│       ├── aramaic_senaya
+│       │   ├── aramaic_senaya.lua
+│       │   └── aramaic_senaya.sh
+│       ├── aramaic_syriac
+│       │   ├── aramaic_syriac.lua
+│       │   └── aramaic_syriac.sh
+│       ├── aramaic_turoyo
+│       │   ├── aramaic_turoyo.lua
+│       │   └── aramaic_turoyo.sh
+│       ├── armenian
+│       │   ├── armenian.lua
+│       │   └── armenian.sh
+│       ├── armenian_classical
+│       │   ├── armenian_classical.lua
+│       │   └── armenian_classical.sh
+│       ├── armenian_middle
+│       │   ├── armenian_middle.lua
+│       │   └── armenian_middle.sh
+│       ├── armenian_western
+│       │   ├── armenian_western.lua
+│       │   └── armenian_western.sh
+│       ├── assyrian
+│       │   ├── assyrian.lua
+│       │   └── assyrian.sh
+│       ├── balinese
+│       │   ├── balinese.lua
+│       │   └── balinese.sh
+│       ├── bengali-assamese_anga_lipa
+│       │   ├── bengali-assamese_anga_lipa.lua
+│       │   └── bengali-assamese_anga_lipa.sh
+│       ├── bengali-assamese_anga_lipa_angika
+│       │   ├── bengali-assamese_anga_lipa_angika.lua
+│       │   └── bengali-assamese_anga_lipa_angika.sh
+│       ├── bengali-assamese_assamese_assamese
+│       │   ├── bengali-assamese_assamese_assamese.lua
+│       │   └── bengali-assamese_assamese_assamese.sh
+│       ├── bengali-assamese_assamese_bishnupriya_manipuri
+│       │   ├── bengali-assamese_assamese_bishnupriya_manipuri.lua
+│       │   └── bengali-assamese_assamese_bishnupriya_manipuri.sh
+│       ├── bengali-assamese_assamese_bodo
+│       │   ├── bengali-assamese_assamese_bodo.lua
+│       │   └── bengali-assamese_assamese_bodo.sh
+│       ├── bengali-assamese_assamese_garo
+│       │   ├── bengali-assamese_assamese_garo.lua
+│       │   └── bengali-assamese_assamese_garo.sh
+│       ├── bengali-assamese_assamese_kamtapuri
+│       │   ├── bengali-assamese_assamese_kamtapuri.lua
+│       │   └── bengali-assamese_assamese_kamtapuri.sh
+│       ├── bengali-assamese_assamese_karbi
+│       │   ├── bengali-assamese_assamese_karbi.lua
+│       │   └── bengali-assamese_assamese_karbi.sh
+│       ├── bengali-assamese_assamese_khasi
+│       │   ├── bengali-assamese_assamese_khasi.lua
+│       │   └── bengali-assamese_assamese_khasi.sh
+│       ├── bengali-assamese_assamese_meitei_manipuri
+│       │   ├── bengali-assamese_assamese_meitei_manipuri.lua
+│       │   └── bengali-assamese_assamese_meitei_manipuri.sh
+│       ├── bengali-assamese_assamese_mising
+│       │   ├── bengali-assamese_assamese_mising.lua
+│       │   └── bengali-assamese_assamese_mising.sh
+│       ├── bengali-assamese_assamese_rabha
+│       │   ├── bengali-assamese_assamese_rabha.lua
+│       │   └── bengali-assamese_assamese_rabha.sh
+│       ├── bengali-assamese_assamese_sylheti
+│       │   ├── bengali-assamese_assamese_sylheti.lua
+│       │   └── bengali-assamese_assamese_sylheti.sh
+│       ├── bengali-assamese_assamese_tiwa
+│       │   ├── bengali-assamese_assamese_tiwa.lua
+│       │   └── bengali-assamese_assamese_tiwa.sh
+│       ├── bengali-assamese_assamesesanskrit
+│       │   ├── bengali-assamese_assamesesanskrit.lua
+│       │   └── bengali-assamese_assamesesanskrit.sh
+│       ├── bengali-assamese_bengali_bengali
+│       │   ├── bengali-assamese_bengali_bengali.lua
+│       │   └── bengali-assamese_bengali_bengali.sh
+│       ├── bengali-assamese_bengali_sylheti
+│       │   ├── bengali-assamese_bengali_sylheti.lua
+│       │   └── bengali-assamese_bengali_sylheti.sh
+│       ├── bengali-assamese_maithili
+│       │   ├── bengali-assamese_maithili.lua
+│       │   └── bengali-assamese_maithili.sh
+│       ├── borama-somali
+│       │   ├── borama-somali.lua
+│       │   └── borama-somali.sh
+│       ├── bosnian
+│       │   ├── bosnian.lua
+│       │   └── bosnian.sh
+│       ├── bosnian_cyrillic_bosnian
+│       │   ├── bosnian_cyrillic_bosnian.lua
+│       │   └── bosnian_cyrillic_bosnian.sh
+│       ├── bosnian_cyrillic_croatian
+│       │   ├── bosnian_cyrillic_croatian.lua
+│       │   └── bosnian_cyrillic_croatian.sh
+│       ├── canadian_aboriginal_blackfoot
+│       │   ├── canadian_aboriginal_blackfoot.lua
+│       │   └── canadian_aboriginal_blackfoot.sh
+│       ├── canadian_aboriginal_chipewyan
+│       │   ├── canadian_aboriginal_chipewyan.lua
+│       │   └── canadian_aboriginal_chipewyan.sh
+│       ├── canadian_aboriginal_cree
+│       │   ├── canadian_aboriginal_cree.lua
+│       │   └── canadian_aboriginal_cree.sh
+│       ├── canadian_aboriginal_dakelh
+│       │   ├── canadian_aboriginal_dakelh.lua
+│       │   └── canadian_aboriginal_dakelh.sh
+│       ├── canadian_aboriginal_dane-zaa
+│       │   ├── canadian_aboriginal_dane-zaa.lua
+│       │   └── canadian_aboriginal_dane-zaa.sh
+│       ├── canadian_aboriginal_inuktitut
+│       │   ├── canadian_aboriginal_inuktitut.lua
+│       │   └── canadian_aboriginal_inuktitut.sh
+│       ├── canadian_aboriginal_ojibwe
+│       │   ├── canadian_aboriginal_ojibwe.lua
+│       │   └── canadian_aboriginal_ojibwe.sh
+│       ├── canadian_aboriginal_sekani
+│       │   ├── canadian_aboriginal_sekani.lua
+│       │   └── canadian_aboriginal_sekani.sh
+│       ├── canadian_aboriginal_slavey
+│       │   ├── canadian_aboriginal_slavey.lua
+│       │   └── canadian_aboriginal_slavey.sh
+│       ├── canadian_aboriginal_tłįchǫ
+│       │   ├── canadian_aboriginal_tłįchǫ.lua
+│       │   └── canadian_aboriginal_tłįchǫ.sh
+│       ├── caucasian_albanian_udi
+│       │   ├── caucasian_albanian_udi.lua
+│       │   └── caucasian_albanian_udi.sh
+│       ├── chakma
+│       │   ├── chakma.lua
+│       │   └── chakma.sh
+│       ├── cherokee
+│       │   ├── cherokee.lua
+│       │   └── cherokee.sh
+│       ├── chinese
+│       │   ├── chinese.lua
+│       │   └── chinese.sh
+│       ├── chinese_japanese
+│       │   ├── chinese_japanese.lua
+│       │   └── chinese_japanese.sh
+│       ├── chinese_jurchen
+│       │   ├── chinese_jurchen.lua
+│       │   └── chinese_jurchen.sh
+│       ├── chinese_khitan
+│       │   ├── chinese_khitan.lua
+│       │   └── chinese_khitan.sh
+│       ├── chinese_korean
+│       │   ├── chinese_korean.lua
+│       │   └── chinese_korean.sh
+│       ├── chinese_minority_bai
+│       │   ├── chinese_minority_bai.lua
+│       │   └── chinese_minority_bai.sh
+│       ├── chinese_minority_miao
+│       │   ├── chinese_minority_miao.lua
+│       │   └── chinese_minority_miao.sh
+│       ├── chinese_minority_zhuang
+│       │   ├── chinese_minority_zhuang.lua
+│       │   └── chinese_minority_zhuang.sh
+│       ├── chinese_minoriy_dong
+│       │   ├── chinese_minoriy_dong.lua
+│       │   └── chinese_minoriy_dong.sh
+│       ├── chinese_sinitic_gan
+│       │   ├── chinese_sinitic_gan.lua
+│       │   └── chinese_sinitic_gan.sh
+│       ├── chinese_sinitic_guanhua
+│       │   ├── chinese_sinitic_guanhua.lua
+│       │   └── chinese_sinitic_guanhua.sh
+│       ├── chinese_sinitic_hakka
+│       │   ├── chinese_sinitic_hakka.lua
+│       │   └── chinese_sinitic_hakka.sh
+│       ├── chinese_sinitic_huizou
+│       │   ├── chinese_sinitic_huizou.lua
+│       │   └── chinese_sinitic_huizou.sh
+│       ├── chinese_sinitic_jin
+│       │   ├── chinese_sinitic_jin.lua
+│       │   └── chinese_sinitic_jin.sh
+│       ├── chinese_sinitic_min
+│       │   ├── chinese_sinitic_min.lua
+│       │   └── chinese_sinitic_min.sh
+│       ├── chinese_sinitic_wu
+│       │   ├── chinese_sinitic_wu.lua
+│       │   └── chinese_sinitic_wu.sh
+│       ├── chinese_sinitic_xiang
+│       │   ├── chinese_sinitic_xiang.lua
+│       │   └── chinese_sinitic_xiang.sh
+│       ├── chinese_sinitic_yue
+│       │   ├── chinese_sinitic_yue.lua
+│       │   └── chinese_sinitic_yue.sh
+│       ├── chinese_tangut
+│       │   ├── chinese_tangut.lua
+│       │   └── chinese_tangut.sh
+│       ├── chinese_vietnamese
+│       │   ├── chinese_vietnamese.lua
+│       │   └── chinese_vietnamese.sh
+│       ├── coptic
+│       │   ├── coptic.lua
+│       │   └── coptic.sh
+│       ├── cyrillic_belarusian
+│       │   ├── cyrillic_belarusian.lua
+│       │   └── cyrillic_belarusian.sh
+│       ├── cyrillic_bosnian
+│       │   ├── cyrillic_bosnian.lua
+│       │   └── cyrillic_bosnian.sh
+│       ├── cyrillic_bulgarian
+│       │   ├── cyrillic_bulgarian.lua
+│       │   └── cyrillic_bulgarian.sh
+│       ├── cyrillic_judaeo_spanish
+│       │   ├── cyrillic_judaeo_spanish.lua
+│       │   └── cyrillic_judaeo_spanish.sh
+│       ├── cyrillic_kazakh
+│       │   ├── cyrillic_kazakh.lua
+│       │   └── cyrillic_kazakh.sh
+│       ├── cyrillic_kyrgyz
+│       │   ├── cyrillic_kyrgyz.lua
+│       │   └── cyrillic_kyrgyz.sh
+│       ├── cyrillic_macedonian
+│       │   ├── cyrillic_macedonian.lua
+│       │   └── cyrillic_macedonian.sh
+│       ├── cyrillic_mongolian
+│       │   ├── cyrillic_mongolian.lua
+│       │   └── cyrillic_mongolian.sh
+│       ├── cyrillic_montenegrin
+│       │   ├── cyrillic_montenegrin.lua
+│       │   └── cyrillic_montenegrin.sh
+│       ├── cyrillic_persian
+│       │   ├── cyrillic_persian.lua
+│       │   └── cyrillic_persian.sh
+│       ├── cyrillic_russian
+│       │   ├── cyrillic_russian.lua
+│       │   └── cyrillic_russian.sh
+│       ├── cyrillic_serbian
+│       │   ├── cyrillic_serbian.lua
+│       │   └── cyrillic_serbian.sh
+│       ├── cyrillic_ukrainian
+│       │   ├── cyrillic_ukrainian.lua
+│       │   └── cyrillic_ukrainian.sh
+│       ├── devanagari
+│       │   ├── devanagari.lua
+│       │   └── devanagari.sh
+│       ├── devanagari_bhjopuri
+│       │   ├── devanagari_bhjopuri.lua
+│       │   └── devanagari_bhjopuri.sh
+│       ├── devanagari_bodo
+│       │   ├── devanagari_bodo.lua
+│       │   └── devanagari_bodo.sh
+│       ├── devanagari_chhattisgarhi
+│       │   ├── devanagari_chhattisgarhi.lua
+│       │   └── devanagari_chhattisgarhi.sh
+│       ├── devanagari_dogri
+│       │   ├── devanagari_dogri.lua
+│       │   └── devanagari_dogri.sh
+│       ├── devanagari_hindi
+│       │   ├── devanagari_hindi.lua
+│       │   └── devanagari_hindi.sh
+│       ├── devanagari_kashmiri
+│       │   ├── devanagari_kashmiri.lua
+│       │   └── devanagari_kashmiri.sh
+│       ├── devanagari_konkani
+│       │   ├── devanagari_konkani.lua
+│       │   └── devanagari_konkani.sh
+│       ├── devanagari_magadhi
+│       │   ├── devanagari_magadhi.lua
+│       │   └── devanagari_magadhi.sh
+│       ├── devanagari_maithili
+│       │   ├── devanagari_maithili.lua
+│       │   └── devanagari_maithili.sh
+│       ├── devanagari_marathi
+│       │   ├── devanagari_marathi.lua
+│       │   └── devanagari_marathi.sh
+│       ├── devanagari_nepal_bhasa
+│       │   ├── devanagari_nepal_bhasa.lua
+│       │   └── devanagari_nepal_bhasa.sh
+│       ├── devanagari_nepali
+│       │   ├── devanagari_nepali.lua
+│       │   └── devanagari_nepali.sh
+│       ├── devanagari_sanskrit
+│       │   ├── devanagari_sanskrit.lua
+│       │   └── devanagari_sanskrit.sh
+│       ├── devanagari_santali
+│       │   ├── devanagari_santali.lua
+│       │   └── devanagari_santali.sh
+│       ├── devanagari_sindhi
+│       │   ├── devanagari_sindhi.lua
+│       │   └── devanagari_sindhi.sh
+│       ├── dutch
+│       │   ├── dutch.lua
+│       │   └── dutch.sh
+│       ├── english
+│       │   ├── english.lua
+│       │   └── english.sh
+│       ├── farsi
+│       │   ├── farsi.lua
+│       │   └── farsi.sh
+│       ├── french
+│       │   ├── french.lua
+│       │   └── french.sh
+│       ├── geez_amharic
+│       │   ├── geez_amharic.lua
+│       │   └── geez_amharic.sh
+│       ├── geez_blin
+│       │   ├── geez_blin.lua
+│       │   └── geez_blin.sh
+│       ├── geez_geez
+│       │   ├── geez_geez.lua
+│       │   └── geez_geez.sh
+│       ├── geez_girinya
+│       │   ├── geez_girinya.lua
+│       │   └── geez_girinya.sh
+│       ├── geez_harari
+│       │   ├── geez_harari.lua
+│       │   └── geez_harari.sh
+│       ├── geez_meen
+│       │   ├── geez_meen.lua
+│       │   └── geez_meen.sh
+│       ├── geez_oromo
+│       │   ├── geez_oromo.lua
+│       │   └── geez_oromo.sh
+│       ├── geez_tigre
+│       │   ├── geez_tigre.lua
+│       │   └── geez_tigre.sh
+│       ├── georgian_georgian
+│       │   ├── georgian_georgian.lua
+│       │   └── georgian_georgian.sh
+│       ├── georgian_laz
+│       │   ├── georgian_laz.lua
+│       │   └── georgian_laz.sh
+│       ├── georgian_mingrelian
+│       │   ├── georgian_mingrelian.lua
+│       │   └── georgian_mingrelian.sh
+│       ├── georgian_svan
+│       │   ├── georgian_svan.lua
+│       │   └── georgian_svan.sh
+│       ├── glagolitic_croatian
+│       │   ├── glagolitic_croatian.lua
+│       │   └── glagolitic_croatian.sh
+│       ├── glagolitic_old_church_slavonic
+│       │   ├── glagolitic_old_church_slavonic.lua
+│       │   └── glagolitic_old_church_slavonic.sh
+│       ├── gothic
+│       │   ├── gothic.lua
+│       │   └── gothic.sh
+│       ├── greek_bactrian
+│       │   ├── greek_bactrian.lua
+│       │   └── greek_bactrian.sh
+│       ├── greek_coptic_egyptian
+│       │   ├── greek_coptic_egyptian.lua
+│       │   └── greek_coptic_egyptian.sh
+│       ├── greek_gaulish
+│       │   ├── greek_gaulish.lua
+│       │   └── greek_gaulish.sh
+│       ├── greek_greek
+│       │   ├── greek_greek.lua
+│       │   └── greek_greek.sh
+│       ├── greek_judaeo_spanish
+│       │   ├── greek_judaeo_spanish.lua
+│       │   └── greek_judaeo_spanish.sh
+│       ├── greek_karamanli
+│       │   ├── greek_karamanli.lua
+│       │   └── greek_karamanli.sh
+│       ├── gujarati
+│       │   ├── gujarati.lua
+│       │   └── gujarati.sh
+│       ├── gurmukhi_punjabi
+│       │   ├── gurmukhi_punjabi.lua
+│       │   └── gurmukhi_punjabi.sh
+│       ├── hangul_cia-cia
+│       │   ├── hangul_cia-cia.lua
+│       │   └── hangul_cia-cia.sh
+│       ├── hangul_jeju
+│       │   ├── hangul_jeju.lua
+│       │   └── hangul_jeju.sh
+│       ├── hangul_korean
+│       │   ├── hangul_korean.lua
+│       │   └── hangul_korean.sh
+│       ├── hanunoo
+│       │   ├── hanunoo.lua
+│       │   └── hanunoo.sh
+│       ├── hebrew_aramaic
+│       │   ├── hebrew_aramaic.lua
+│       │   └── hebrew_aramaic.sh
+│       ├── hebrew_hulaula
+│       │   ├── hebrew_hulaula.lua
+│       │   └── hebrew_hulaula.sh
+│       ├── hebrew_iranian
+│       │   ├── hebrew_iranian.lua
+│       │   └── hebrew_iranian.sh
+│       ├── hebrew_jewish_neo-aramaic_dialect_of_urmia
+│       │   ├── hebrew_jewish_neo-aramaic_dialect_of_urmia.lua
+│       │   └── hebrew_jewish_neo-aramaic_dialect_of_urmia.sh
+│       ├── hebrew_jewish_neo_aramic_dialect_of_zakho
+│       │   ├── hebrew_jewish_neo_aramic_dialect_of_zakho.lua
+│       │   └── hebrew_jewish_neo_aramic_dialect_of_zakho.sh
+│       ├── hebrew_judeo-iraqi_arabic
+│       │   ├── hebrew_judeo-iraqi_arabic.lua
+│       │   └── hebrew_judeo-iraqi_arabic.sh
+│       ├── hebrew_judeo-portuese
+│       │   ├── hebrew_judeo-portuese.lua
+│       │   └── hebrew_judeo-portuese.sh
+│       ├── hebrew_judeo-tripolitanian_arabic
+│       │   ├── hebrew_judeo-tripolitanian_arabic.lua
+│       │   └── hebrew_judeo-tripolitanian_arabic.sh
+│       ├── hebrew_judeo-tunisian_arabic
+│       │   ├── hebrew_judeo-tunisian_arabic.lua
+│       │   └── hebrew_judeo-tunisian_arabic.sh
+│       ├── hebrew_judeo-yermenite
+│       │   ├── hebrew_judeo-yermenite.lua
+│       │   └── hebrew_judeo-yermenite.sh
+│       ├── hebrew_judeo_spanish
+│       │   ├── hebrew_judeo_spanish.lua
+│       │   └── hebrew_judeo_spanish.sh
+│       ├── hebrew_lishanid_noshan
+│       │   ├── hebrew_lishanid_noshan.lua
+│       │   └── hebrew_lishanid_noshan.sh
+│       ├── hebrew_shuadit
+│       │   ├── hebrew_shuadit.lua
+│       │   └── hebrew_shuadit.sh
+│       ├── hebrew_yiddish
+│       │   ├── hebrew_yiddish.lua
+│       │   └── hebrew_yiddish.sh
+│       ├── hebrew_zarphatic
+│       │   ├── hebrew_zarphatic.lua
+│       │   └── hebrew_zarphatic.sh
+│       ├── hungarian_old_hungarian
+│       │   ├── hungarian_old_hungarian.lua
+│       │   └── hungarian_old_hungarian.sh
+│       ├── italic
+│       │   ├── italic.lua
+│       │   └── italic.sh
+│       ├── italy
+│       │   ├── italy.lua
+│       │   └── italy.sh
+│       ├── japanese
+│       │   ├── japanese.lua
+│       │   └── japanese.sh
+│       ├── javanese
+│       │   ├── javanese.lua
+│       │   └── javanese.sh
+│       ├── kaddare_somaali
+│       │   ├── kaddare_somaali.lua
+│       │   └── kaddare_somaali.sh
+│       ├── kaithi_awadhi
+│       │   ├── kaithi_awadhi.lua
+│       │   └── kaithi_awadhi.sh
+│       ├── kaithi_bhojpuri
+│       │   ├── kaithi_bhojpuri.lua
+│       │   └── kaithi_bhojpuri.sh
+│       ├── kaithi_magahi
+│       │   ├── kaithi_magahi.lua
+│       │   └── kaithi_magahi.sh
+│       ├── kaithi_maithili
+│       │   ├── kaithi_maithili.lua
+│       │   └── kaithi_maithili.sh
+│       ├── kana-ainu
+│       │   ├── kana-ainu.lua
+│       │   └── kana-ainu.sh
+│       ├── kana-japanese
+│       │   ├── kana-japanese.lua
+│       │   └── kana-japanese.sh
+│       ├── kana-ryukyuan
+│       │   ├── kana-ryukyuan.lua
+│       │   └── kana-ryukyuan.sh
+│       ├── kannada
+│       │   ├── kannada.lua
+│       │   └── kannada.sh
+│       ├── kharosthi
+│       │   ├── kharosthi.lua
+│       │   └── kharosthi.sh
+│       ├── khitan_large
+│       │   ├── khitan_large.lua
+│       │   └── khitan_large.sh
+│       ├── khitan_small
+│       │   ├── khitan_small.lua
+│       │   └── khitan_small.sh
+│       ├── khmer
+│       │   ├── khmer.lua
+│       │   └── khmer.sh
+│       ├── khojki_sindhi
+│       │   ├── khojki_sindhi.lua
+│       │   └── khojki_sindhi.sh
+│       ├── khudawadi_sindhi
+│       │   ├── khudawadi_sindhi.lua
+│       │   └── khudawadi_sindhi.sh
+│       ├── kno
+│       │   ├── kno.lua
+│       │   └── kno.sh
+│       ├── konkani
+│       │   ├── konkani.lua
+│       │   └── konkani.sh
+│       ├── korean
+│       │   ├── korean.lua
+│       │   └── korean.sh
+│       ├── kulitan_kampampangan
+│       │   ├── kulitan_kampampangan.lua
+│       │   └── kulitan_kampampangan.sh
+│       ├── landā
+│       │   ├── landā.lua
+│       │   └── landā.sh
+│       ├── lao
+│       │   ├── lao.lua
+│       │   └── lao.sh
+│       ├── latin
+│       │   ├── latin.lua
+│       │   └── latin.sh
+│       ├── latin_acehnese
+│       │   ├── latin_acehnese.lua
+│       │   └── latin_acehnese.sh
+│       ├── latin_afar
+│       │   ├── latin_afar.lua
+│       │   └── latin_afar.sh
+│       ├── latin_afrikaans
+│       │   ├── latin_afrikaans.lua
+│       │   └── latin_afrikaans.sh
+│       ├── latin_albanian
+│       │   ├── latin_albanian.lua
+│       │   └── latin_albanian.sh
+│       ├── latin_aragonese
+│       │   ├── latin_aragonese.lua
+│       │   └── latin_aragonese.sh
+│       ├── latin_asturian
+│       │   ├── latin_asturian.lua
+│       │   └── latin_asturian.sh
+│       ├── latin_aymara
+│       │   ├── latin_aymara.lua
+│       │   └── latin_aymara.sh
+│       ├── latin_azeri
+│       │   ├── latin_azeri.lua
+│       │   └── latin_azeri.sh
+│       ├── latin_bai
+│       │   ├── latin_bai.lua
+│       │   └── latin_bai.sh
+│       ├── latin_banjar
+│       │   ├── latin_banjar.lua
+│       │   └── latin_banjar.sh
+│       ├── latin_basque
+│       │   ├── latin_basque.lua
+│       │   └── latin_basque.sh
+│       ├── latin_belarusian
+│       │   ├── latin_belarusian.lua
+│       │   └── latin_belarusian.sh
+│       ├── latin_berber
+│       │   ├── latin_berber.lua
+│       │   └── latin_berber.sh
+│       ├── latin_betawi
+│       │   ├── latin_betawi.lua
+│       │   └── latin_betawi.sh
+│       ├── latin_bislama
+│       │   ├── latin_bislama.lua
+│       │   └── latin_bislama.sh
+│       ├── latin_boholano
+│       │   ├── latin_boholano.lua
+│       │   └── latin_boholano.sh
+│       ├── latin_bosnian
+│       │   ├── latin_bosnian.lua
+│       │   └── latin_bosnian.sh
+│       ├── latin_breton
+│       │   ├── latin_breton.lua
+│       │   └── latin_breton.sh
+│       ├── latin_catalin
+│       │   ├── latin_catalin.lua
+│       │   └── latin_catalin.sh
+│       ├── latin_cebuano
+│       │   ├── latin_cebuano.lua
+│       │   └── latin_cebuano.sh
+│       ├── latin_chamorro
+│       │   ├── latin_chamorro.lua
+│       │   └── latin_chamorro.sh
+│       ├── latin_cherokee
+│       │   ├── latin_cherokee.lua
+│       │   └── latin_cherokee.sh
+│       ├── latin_cornish
+│       │   ├── latin_cornish.lua
+│       │   └── latin_cornish.sh
+│       ├── latin_corsican
+│       │   ├── latin_corsican.lua
+│       │   └── latin_corsican.sh
+│       ├── latin_cree
+│       │   ├── latin_cree.lua
+│       │   └── latin_cree.sh
+│       ├── latin_croatian
+│       │   ├── latin_croatian.lua
+│       │   └── latin_croatian.sh
+│       ├── latin_czech
+│       │   ├── latin_czech.lua
+│       │   └── latin_czech.sh
+│       ├── latin_danish
+│       │   ├── latin_danish.lua
+│       │   └── latin_danish.sh
+│       ├── latin_dayak
+│       │   ├── latin_dayak.lua
+│       │   └── latin_dayak.sh
+│       ├── latin_dutch
+│       │   ├── latin_dutch.lua
+│       │   └── latin_dutch.sh
+│       ├── latin_english
+│       │   ├── latin_english.lua
+│       │   └── latin_english.sh
+│       ├── latin_esperanto
+│       │   ├── latin_esperanto.lua
+│       │   └── latin_esperanto.sh
+│       ├── latin_estonian
+│       │   ├── latin_estonian.lua
+│       │   └── latin_estonian.sh
+│       ├── latin_faroese
+│       │   ├── latin_faroese.lua
+│       │   └── latin_faroese.sh
+│       ├── latin_fijian
+│       │   ├── latin_fijian.lua
+│       │   └── latin_fijian.sh
+│       ├── latin_finnish
+│       │   ├── latin_finnish.lua
+│       │   └── latin_finnish.sh
+│       ├── latin_french
+│       │   ├── french.lua
+│       │   ├── french.sh
+│       │   ├── latin_french.lua
+│       │   └── latin_french.sh
+│       ├── latin_fula
+│       │   ├── latin_fula.lua
+│       │   └── latin_fula.sh
+│       ├── latin_gaelic
+│       │   ├── latin_gaelic.lua
+│       │   └── latin_gaelic.sh
+│       ├── latin_galician
+│       │   ├── latin_galician.lua
+│       │   └── latin_galician.sh
+│       ├── latin_german
+│       │   ├── latin_german.lua
+│       │   └── latin_german.sh
+│       ├── latin_gikuyu
+│       │   ├── latin_gikuyu.lua
+│       │   └── latin_gikuyu.sh
+│       ├── latin_guarani
+│       │   ├── latin_guarani.lua
+│       │   └── latin_guarani.sh
+│       ├── latin_haitian_creole
+│       │   ├── latin_haitian_creole.lua
+│       │   └── latin_haitian_creole.sh
+│       ├── latin_hausa
+│       │   ├── latin_hausa.lua
+│       │   └── latin_hausa.sh
+│       ├── latin_hawaiian
+│       │   ├── latin_hawaiian.lua
+│       │   └── latin_hawaiian.sh
+│       ├── latin_hiri_motu
+│       │   ├── latin_hiri_motu.lua
+│       │   └── latin_hiri_motu.sh
+│       ├── latin_hmong
+│       │   ├── latin_hmong.lua
+│       │   └── latin_hmong.sh
+│       ├── latin_hungarian
+│       │   ├── latin_hungarian.lua
+│       │   └── latin_hungarian.sh
+│       ├── latin_icelandic
+│       │   ├── latin_icelandic.lua
+│       │   └── latin_icelandic.sh
+│       ├── latin_ido
+│       │   ├── latin_ido.lua
+│       │   └── latin_ido.sh
+│       ├── latin_igbo
+│       │   ├── latin_igbo.lua
+│       │   └── latin_igbo.sh
+│       ├── latin_indonesian
+│       │   ├── latin_indonesian.lua
+│       │   └── latin_indonesian.sh
+│       ├── latin_innu-aimun
+│       │   ├── latin_innu-aimun.lua
+│       │   └── latin_innu-aimun.sh
+│       ├── latin_interlingua
+│       │   ├── latin_interlingua.lua
+│       │   └── latin_interlingua.sh
+│       ├── latin_irish
+│       │   ├── latin_irish.lua
+│       │   └── latin_irish.sh
+│       ├── latin_italian
+│       │   ├── latin_italian.lua
+│       │   └── latin_italian.sh
+│       ├── latin_javanese
+│       │   ├── latin_javanese.lua
+│       │   └── latin_javanese.sh
+│       ├── latin_judeo-spanish
+│       │   ├── latin_judeo-spanish.lua
+│       │   └── latin_judeo-spanish.sh
+│       ├── latin_kabylian_berber
+│       │   ├── latin_kabylian_berber.lua
+│       │   └── latin_kabylian_berber.sh
+│       ├── latin_kazakh
+│       │   ├── latin_kazakh.lua
+│       │   └── latin_kazakh.sh
+│       ├── latin_khasi
+│       │   ├── latin_khasi.lua
+│       │   └── latin_khasi.sh
+│       ├── latin_kinyarwanda
+│       │   ├── latin_kinyarwanda.lua
+│       │   └── latin_kinyarwanda.sh
+│       ├── latin_kirundi
+│       │   ├── latin_kirundi.lua
+│       │   └── latin_kirundi.sh
+│       ├── latin_klingon
+│       │   ├── latin_klingon.lua
+│       │   └── latin_klingon.sh
+│       ├── latin_kongo
+│       │   ├── latin_kongo.lua
+│       │   └── latin_kongo.sh
+│       ├── latin_kontani
+│       │   ├── latin_kontani.lua
+│       │   └── latin_kontani.sh
+│       ├── latin_kurdish
+│       │   ├── latin_kurdish.lua
+│       │   └── latin_kurdish.sh
+│       ├── latin_latin
+│       │   ├── latin
+│       │   │   ├── latin.lua
+│       │   │   └── latin.sh
+│       │   ├── latin_latin.lua
+│       │   └── latin_latin.sh
+│       ├── latin_latvian
+│       │   ├── latin_latvian.lua
+│       │   └── latin_latvian.sh
+│       ├── latin_laz
+│       │   ├── latin_laz.lua
+│       │   └── latin_laz.sh
+│       ├── latin_leonese
+│       │   ├── latin_leonese.lua
+│       │   └── latin_leonese.sh
+│       ├── latin_lingala
+│       │   ├── latin_lingala.lua
+│       │   └── latin_lingala.sh
+│       ├── latin_lithuanian
+│       │   ├── latin_lithuanian.lua
+│       │   └── latin_lithuanian.sh
+│       ├── latin_llocano
+│       │   ├── latin_llocano.lua
+│       │   └── latin_llocano.sh
+│       ├── latin_luganda
+│       │   ├── latin_luganda.lua
+│       │   └── latin_luganda.sh
+│       ├── latin_luxembourgish
+│       │   ├── latin_luxembourgish.lua
+│       │   └── latin_luxembourgish.sh
+│       ├── latin_malagasy
+│       │   ├── latin_malagasy.lua
+│       │   └── latin_malagasy.sh
+│       ├── latin_maltese
+│       │   ├── latin_maltese.lua
+│       │   └── latin_maltese.sh
+│       ├── latin_manx
+│       │   ├── latin_manx.lua
+│       │   └── latin_manx.sh
+│       ├── latin_marshallese
+│       │   ├── latin_marshallese.lua
+│       │   └── latin_marshallese.sh
+│       ├── latin_mauritian_creole
+│       │   ├── latin_mauritian_creole.lua
+│       │   └── latin_mauritian_creole.sh
+│       ├── latin_minangkabau
+│       │   ├── latin_minangkabau.lua
+│       │   └── latin_minangkabau.sh
+│       ├── latin_moldovan
+│       │   ├── latin_moldovan.lua
+│       │   └── latin_moldovan.sh
+│       ├── latin_montenegrin
+│       │   ├── latin_montenegrin.lua
+│       │   └── latin_montenegrin.sh
+│       ├── latin_māori
+│       │   ├── latin_māori.lua
+│       │   └── latin_māori.sh
+│       ├── latin_nahuatl
+│       │   ├── latin_nahuatl.lua
+│       │   └── latin_nahuatl.sh
+│       ├── latin_nauruan
+│       │   ├── latin_nauruan.lua
+│       │   └── latin_nauruan.sh
+│       ├── latin_navaho
+│       │   ├── latin_navaho.lua
+│       │   └── latin_navaho.sh
+│       ├── latin_ndebele
+│       │   ├── latin_ndebele.lua
+│       │   └── latin_ndebele.sh
+│       ├── latin_ndebele_northern
+│       │   ├── latin_ndebele_northern.lua
+│       │   └── latin_ndebele_northern.sh
+│       ├── latin_ndebele_southern
+│       │   ├── latin_ndebele_southern.lua
+│       │   └── latin_ndebele_southern.sh
+│       ├── latin_nias
+│       │   ├── latin_nias.lua
+│       │   └── latin_nias.sh
+│       ├── latin_north_frisian
+│       │   ├── latin_north_frisian.lua
+│       │   └── latin_north_frisian.sh
+│       ├── latin_norwegian
+│       │   ├── latin_norwegian.lua
+│       │   └── latin_norwegian.sh
+│       ├── latin_occitan
+│       │   ├── latin_occitan.lua
+│       │   └── latin_occitan.sh
+│       ├── latin_oromo
+│       │   ├── latin_oromo.lua
+│       │   └── latin_oromo.sh
+│       ├── latin_palauan
+│       │   ├── latin_palauan.lua
+│       │   └── latin_palauan.sh
+│       ├── latin_picard
+│       │   ├── latin_picard.lua
+│       │   └── latin_picard.sh
+│       ├── latin_polish
+│       │   ├── latin_polish.lua
+│       │   └── latin_polish.sh
+│       ├── latin_portuguese
+│       │   ├── latin_portuguese.lua
+│       │   └── latin_portuguese.sh
+│       ├── latin_quechua
+│       │   ├── latin_quechua.lua
+│       │   └── latin_quechua.sh
+│       ├── latin_rohingya
+│       │   ├── latin_rohingya.lua
+│       │   └── latin_rohingya.sh
+│       ├── latin_romanian
+│       │   ├── latin_romanian.lua
+│       │   └── latin_romanian.sh
+│       ├── latin_romansh
+│       │   ├── latin_romansh.lua
+│       │   └── latin_romansh.sh
+│       ├── latin_samoan
+│       │   ├── latin_samoan.lua
+│       │   └── latin_samoan.sh
+│       ├── latin_sasak
+│       │   ├── latin_sasak.lua
+│       │   └── latin_sasak.sh
+│       ├── latin_saterland_frisian
+│       │   ├── latin_saterland_frisian.lua
+│       │   └── latin_saterland_frisian.sh
+│       ├── latin_scots
+│       │   ├── latin_scots.lua
+│       │   └── latin_scots.sh
+│       ├── latin_serbian
+│       │   ├── latin_serbian.lua
+│       │   └── latin_serbian.sh
+│       ├── latin_seychellois_creole
+│       │   ├── latin_seychellois_creole.lua
+│       │   └── latin_seychellois_creole.sh
+│       ├── latin_shona
+│       │   ├── latin_shona.lua
+│       │   └── latin_shona.sh
+│       ├── latin_slovak
+│       │   ├── latin_slovak.lua
+│       │   └── latin_slovak.sh
+│       ├── latin_slovene
+│       │   ├── latin_slovene.lua
+│       │   └── latin_slovene.sh
+│       ├── latin_somali
+│       │   ├── latin_somali.lua
+│       │   └── latin_somali.sh
+│       ├── latin_sotho
+│       │   ├── latin_sotho.lua
+│       │   └── latin_sotho.sh
+│       ├── latin_sotho_northern
+│       │   ├── latin_sotho_northern.lua
+│       │   └── latin_sotho_northern.sh
+│       ├── latin_sotho_southern
+│       │   ├── latin_sotho_southern.lua
+│       │   └── latin_sotho_southern.sh
+│       ├── latin_spanish
+│       │   ├── latin_spanish.lua
+│       │   └── latin_spanish.sh
+│       ├── latin_sundanese
+│       │   ├── latin_sundanese.lua
+│       │   └── latin_sundanese.sh
+│       ├── latin_swahili
+│       │   ├── latin_swahili.lua
+│       │   └── latin_swahili.sh
+│       ├── latin_swati
+│       │   ├── latin_swati.lua
+│       │   └── latin_swati.sh
+│       ├── latin_swedish
+│       │   ├── latin_swedish.lua
+│       │   └── latin_swedish.sh
+│       ├── latin_tagalog
+│       │   ├── latin_tagalog.lua
+│       │   └── latin_tagalog.sh
+│       ├── latin_tahitian
+│       │   ├── latin_tahitian.lua
+│       │   └── latin_tahitian.sh
+│       ├── latin_tatar
+│       │   ├── latin_tatar.lua
+│       │   └── latin_tatar.sh
+│       ├── latin_tetum
+│       │   ├── latin_tetum.lua
+│       │   └── latin_tetum.sh
+│       ├── latin_tok_pisin
+│       │   ├── latin_tok_pisin.lua
+│       │   └── latin_tok_pisin.sh
+│       ├── latin_tongan
+│       │   ├── latin_tongan.lua
+│       │   └── latin_tongan.sh
+│       ├── latin_tsonga
+│       │   ├── latin_tsonga.lua
+│       │   └── latin_tsonga.sh
+│       ├── latin_tswana
+│       │   ├── latin_tswana.lua
+│       │   └── latin_tswana.sh
+│       ├── latin_turkish
+│       │   ├── latin_turkish.lua
+│       │   └── latin_turkish.sh
+│       ├── latin_turkmen
+│       │   ├── latin_turkmen.lua
+│       │   └── latin_turkmen.sh
+│       ├── latin_turoyo
+│       │   ├── latin_turoyo.lua
+│       │   └── latin_turoyo.sh
+│       ├── latin_uzbek
+│       │   ├── latin_uzbek.lua
+│       │   └── latin_uzbek.sh
+│       ├── latin_vastese
+│       │   ├── latin_vastese.lua
+│       │   └── latin_vastese.sh
+│       ├── latin_venda
+│       │   ├── latin_venda.lua
+│       │   └── latin_venda.sh
+│       ├── latin_vietnamese
+│       │   ├── latin_vietnamese.lua
+│       │   └── latin_vietnamese.sh
+│       ├── latin_volapuk
+│       │   ├── latin_volapuk.lua
+│       │   └── latin_volapuk.sh
+│       ├── latin_voro
+│       │   ├── latin_voro.lua
+│       │   └── latin_voro.sh
+│       ├── latin_walloon
+│       │   ├── latin_walloon.lua
+│       │   └── latin_walloon.sh
+│       ├── latin_welsh
+│       │   ├── latin_welsh.lua
+│       │   └── latin_welsh.sh
+│       ├── latin_west_frisian
+│       │   ├── latin_west_frisian.lua
+│       │   └── latin_west_frisian.sh
+│       ├── latin_wolof
+│       │   ├── latin_wolof.lua
+│       │   └── latin_wolof.sh
+│       ├── latin_xhosa
+│       │   ├── latin_xhosa.lua
+│       │   └── latin_xhosa.sh
+│       ├── latin_yoruba
+│       │   ├── latin_yoruba.lua
+│       │   └── latin_yoruba.sh
+│       ├── latin_zazaki
+│       │   ├── latin_zazaki.lua
+│       │   └── latin_zazaki.sh
+│       ├── latin_zhuang
+│       │   ├── latin_zhuang.lua
+│       │   └── latin_zhuang.sh
+│       ├── latin_zulu
+│       │   ├── latin_zulu.lua
+│       │   └── latin_zulu.sh
+│       ├── leke_eastern_pwo
+│       │   ├── leke_eastern_pwo.lua
+│       │   └── leke_eastern_pwo.sh
+│       ├── lepcha
+│       │   ├── lepcha.lua
+│       │   └── lepcha.sh
+│       ├── limbu
+│       │   ├── limbu.lua
+│       │   └── limbu.sh
+│       ├── lonatara_mandar
+│       │   ├── lonatara_mandar.lua
+│       │   └── lonatara_mandar.sh
+│       ├── lontara_buginese
+│       │   ├── lontara_buginese.lua
+│       │   └── lontara_buginese.sh
+│       ├── lontara_makassarese
+│       │   ├── lontara_makassarese.lua
+│       │   └── lontara_makassarese.sh
+│       ├── mahajani_junjabi
+│       │   ├── mahajani_junjabi.lua
+│       │   └── mahajani_junjabi.sh
+│       ├── malayalam
+│       │   ├── malayalam.lua
+│       │   └── malayalam.sh
+│       ├── mayanmar_geba_karen
+│       │   ├── mayanmar_geba_karen.lua
+│       │   └── mayanmar_geba_karen.sh
+│       ├── mayanmar_pa-o
+│       │   ├── mayanmar_pa-o.lua
+│       │   └── mayanmar_pa-o.sh
+│       ├── mayanmar_pwo_karen
+│       │   ├── mayanmar_pwo_karen.lua
+│       │   └── mayanmar_pwo_karen.sh
+│       ├── mayanmar_sgaw_karen
+│       │   ├── mayanmar_sgaw_karen.lua
+│       │   └── mayanmar_sgaw_karen.sh
+│       ├── meetei_mayek
+│       │   ├── meetei_mayek.lua
+│       │   └── meetei_mayek.sh
+│       ├── meitei_mayek_manipuri
+│       │   ├── meitei_mayek_manipuri.lua
+│       │   └── meitei_mayek_manipuri.sh
+│       ├── mesoamerican_epi-olmec_olmec
+│       │   ├── mesoamerican_epi-olmec_olmec.lua
+│       │   └── mesoamerican_epi-olmec_olmec.sh
+│       ├── mesoamerican_maya_achi
+│       │   ├── mesoamerican_maya_achi.lua
+│       │   └── mesoamerican_maya_achi.sh
+│       ├── mesoamerican_maya_akatek
+│       │   ├── mesoamerican_maya_akatek.lua
+│       │   └── mesoamerican_maya_akatek.sh
+│       ├── mesoamerican_maya_awakatek
+│       │   ├── mesoamerican_maya_awakatek.lua
+│       │   └── mesoamerican_maya_awakatek.sh
+│       ├── mesoamerican_maya_chicomuceltec
+│       │   ├── mesoamerican_maya_chicomuceltec.lua
+│       │   └── mesoamerican_maya_chicomuceltec.sh
+│       ├── mesoamerican_maya_chol
+│       │   ├── mesoamerican_maya_chol.lua
+│       │   └── mesoamerican_maya_chol.sh
+│       ├── mesoamerican_maya_cholti
+│       │   ├── mesoamerican_maya_cholti.lua
+│       │   └── mesoamerican_maya_cholti.sh
+│       ├── mesoamerican_maya_chontal
+│       │   ├── mesoamerican_maya_chontal.lua
+│       │   └── mesoamerican_maya_chontal.sh
+│       ├── mesoamerican_maya_chort
+│       │   ├── mesoamerican_maya_chort.lua
+│       │   └── mesoamerican_maya_chort.sh
+│       ├── mesoamerican_maya_chuj
+│       │   ├── mesoamerican_maya_chuj.lua
+│       │   └── mesoamerican_maya_chuj.sh
+│       ├── mesoamerican_maya_husatec
+│       │   ├── mesoamerican_maya_husatec.lua
+│       │   └── mesoamerican_maya_husatec.sh
+│       ├── mesoamerican_maya_ixil
+│       │   ├── mesoamerican_maya_ixil.lua
+│       │   └── mesoamerican_maya_ixil.sh
+│       ├── mesoamerican_maya_izta
+│       │   ├── mesoamerican_maya_izta.lua
+│       │   └── mesoamerican_maya_izta.sh
+│       ├── mesoamerican_maya_jakaltek
+│       │   ├── mesoamerican_maya_jakaltek.lua
+│       │   └── mesoamerican_maya_jakaltek.sh
+│       ├── mesoamerican_maya_kaqchikel
+│       │   ├── mesoamerican_maya_kaqchikel.lua
+│       │   └── mesoamerican_maya_kaqchikel.sh
+│       ├── mesoamerican_maya_kaqchikel-kiche
+│       │   ├── mesoamerican_maya_kaqchikel-kiche.lua
+│       │   └── mesoamerican_maya_kaqchikel-kiche.sh
+│       ├── mesoamerican_maya_kiche
+│       │   ├── mesoamerican_maya_kiche.lua
+│       │   └── mesoamerican_maya_kiche.sh
+│       ├── mesoamerican_maya_lacandon
+│       │   ├── mesoamerican_maya_lacandon.lua
+│       │   └── mesoamerican_maya_lacandon.sh
+│       ├── mesoamerican_maya_mam
+│       │   ├── mesoamerican_maya_mam.lua
+│       │   └── mesoamerican_maya_mam.sh
+│       ├── mesoamerican_maya_mocho
+│       │   ├── mesoamerican_maya_mocho.lua
+│       │   └── mesoamerican_maya_mocho.sh
+│       ├── mesoamerican_maya_mopan
+│       │   ├── mesoamerican_maya_mopan.lua
+│       │   └── mesoamerican_maya_mopan.sh
+│       ├── mesoamerican_maya_poqomam
+│       │   ├── mesoamerican_maya_poqomam.lua
+│       │   └── mesoamerican_maya_poqomam.sh
+│       ├── mesoamerican_maya_poqomchi
+│       │   ├── mesoamerican_maya_poqomchi.lua
+│       │   └── mesoamerican_maya_poqomchi.sh
+│       ├── mesoamerican_maya_qantjobal
+│       │   ├── mesoamerican_maya_qantjobal.lua
+│       │   └── mesoamerican_maya_qantjobal.sh
+│       ├── mesoamerican_maya_qeqchi
+│       │   ├── mesoamerican_maya_qeqchi.lua
+│       │   └── mesoamerican_maya_qeqchi.sh
+│       ├── mesoamerican_maya_sakapultek
+│       │   ├── mesoamerican_maya_sakapultek.lua
+│       │   └── mesoamerican_maya_sakapultek.sh
+│       ├── mesoamerican_maya_sipakapense
+│       │   ├── mesoamerican_maya_sipakapense.lua
+│       │   └── mesoamerican_maya_sipakapense.sh
+│       ├── mesoamerican_maya_tektitek
+│       │   ├── mesoamerican_maya_tektitek.lua
+│       │   └── mesoamerican_maya_tektitek.sh
+│       ├── mesoamerican_maya_tojolabal
+│       │   ├── mesoamerican_maya_tojolabal.lua
+│       │   └── mesoamerican_maya_tojolabal.sh
+│       ├── mesoamerican_maya_tzeltal
+│       │   ├── mesoamerican_maya_tzeltal.lua
+│       │   └── mesoamerican_maya_tzeltal.sh
+│       ├── mesoamerican_maya_tzotzil
+│       │   ├── mesoamerican_maya_tzotzil.lua
+│       │   └── mesoamerican_maya_tzotzil.sh
+│       ├── mesoamerican_maya_tzutujil
+│       │   ├── mesoamerican_maya_tzutujil.lua
+│       │   └── mesoamerican_maya_tzutujil.sh
+│       ├── mesoamerican_maya_yucatec
+│       │   ├── mesoamerican_maya_yucatec.lua
+│       │   └── mesoamerican_maya_yucatec.sh
+│       ├── mixtec_cuicatec
+│       │   ├── mixtec_cuicatec.lua
+│       │   └── mixtec_cuicatec.sh
+│       ├── mixtec_mixtec
+│       │   ├── mixtec_mixtec.lua
+│       │   └── mixtec_mixtec.sh
+│       ├── mixtec_trique
+│       │   ├── mixtec_trique.lua
+│       │   └── mixtec_trique.sh
+│       ├── mongolian_manchu_manchu
+│       │   ├── mongolian_manchu_manchu.lua
+│       │   └── mongolian_manchu_manchu.sh
+│       ├── mongolian_manchu_xibe
+│       │   ├── mongolian_manchu_xibe.lua
+│       │   └── mongolian_manchu_xibe.sh
+│       ├── mongolian_mongolian
+│       │   ├── mongolian
+│       │   ├── mongolian_mongolian.lua
+│       │   └── mongolian_mongolian.sh
+│       ├── mongolian_old_uyghur
+│       │   ├── mongolian_old_uyghur.lua
+│       │   └── mongolian_old_uyghur.sh
+│       ├── multani_punjabi
+│       │   ├── multani_punjabi.lua
+│       │   └── multani_punjabi.sh
+│       ├── munda_ol_cemet_santali
+│       │   ├── munda_ol_cemet_santali.lua
+│       │   └── munda_ol_cemet_santali.sh
+│       ├── munda_sorang_sompeng_sora
+│       │   ├── munda_sorang_sompeng_sora.lua
+│       │   └── munda_sorang_sompeng_sora.sh
+│       ├── munda_warang_citi_ho
+│       │   ├── munda_warang_citi_ho.lua
+│       │   └── munda_warang_citi_ho.sh
+│       ├── myanmar_karen
+│       │   ├── myanmar_karen.lua
+│       │   └── myanmar_karen.sh
+│       ├── myanmar_mon
+│       │   ├── myanmar_mon.lua
+│       │   └── myanmar_mon.sh
+│       ├── myanmar_rumai_palaung
+│       │   ├── myanmar_rumai_palaung.lua
+│       │   └── myanmar_rumai_palaung.sh
+│       ├── myanmar_shan
+│       │   ├── myanmar_shan.lua
+│       │   └── myanmar_shan.sh
+│       ├── nahuat_hieroglyphs_nahuatl
+│       │   ├── nahuat_hieroglyphs_nahuatl.lua
+│       │   └── nahuat_hieroglyphs_nahuatl.sh
+│       ├── naxi
+│       │   ├── naxi.lua
+│       │   └── naxi.sh
+│       ├── nepali
+│       │   ├── nepali.lua
+│       │   └── nepali.sh
+│       ├── nsibidi_ekoi
+│       │   ├── nsibidi_ekoi.lua
+│       │   └── nsibidi_ekoi.sh
+│       ├── nsibidi_ibibio
+│       │   ├── nsibidi_ibibio.lua
+│       │   └── nsibidi_ibibio.sh
+│       ├── nsibidi_igbo
+│       │   ├── nsibidi_igbo.lua
+│       │   └── nsibidi_igbo.sh
+│       ├── odia
+│       │   ├── odia.lua
+│       │   └── odia.sh
+│       ├── ogham_british_latin
+│       │   ├── ogham_british_latin.lua
+│       │   └── ogham_british_latin.sh
+│       ├── ogham_old_welsh
+│       │   ├── ogham_old_welsh.lua
+│       │   └── ogham_old_welsh.sh
+│       ├── ogham_pictish
+│       │   ├── ogham_pictish.lua
+│       │   └── ogham_pictish.sh
+│       ├── ogham_primitive_irish
+│       │   ├── ogham_primitive_irish.lua
+│       │   └── ogham_primitive_irish.sh
+│       ├── old_permic_alphabet_komi
+│       │   ├── old_permic_alphabet_komi.lua
+│       │   └── old_permic_alphabet_komi.sh
+│       ├── olmec_olmec
+│       │   ├── olmec_olmec.lua
+│       │   └── olmec_olmec.sh
+│       ├── osmanya_somali
+│       │   ├── osmanya_somali.lua
+│       │   └── osmanya_somali.sh
+│       ├── pahawh_hmong
+│       │   ├── pahawh_hmong.lua
+│       │   └── pahawh_hmong.sh
+│       ├── phags-pa_chinese
+│       │   ├── phags-pa_chinese.lua
+│       │   └── phags-pa_chinese.sh
+│       ├── phags-pa_mongolian
+│       │   ├── phags-pa_mongolian.lua
+│       │   └── phags-pa_mongolian.sh
+│       ├── phags-pa_sanskrit
+│       │   ├── phags-pa_sanskrit.lua
+│       │   └── phags-pa_sanskrit.sh
+│       ├── phags-pa_tibetan
+│       │   ├── phags-pa_tibetan.lua
+│       │   └── phags-pa_tibetan.sh
+│       ├── phags-pa_uyghur
+│       │   ├── phags-pa_uyghur.lua
+│       │   └── phags-pa_uyghur.sh
+│       ├── ranjana_nepel_bhasa
+│       │   ├── ranjana_nepel_bhasa.lua
+│       │   └── ranjana_nepel_bhasa.sh
+│       ├── runic_old_danish
+│       │   ├── runic_old_danish.lua
+│       │   └── runic_old_danish.sh
+│       ├── runic_old_dutch
+│       │   ├── runic_old_dutch.lua
+│       │   └── runic_old_dutch.sh
+│       ├── runic_old_english
+│       │   ├── runic_old_english.lua
+│       │   └── runic_old_english.sh
+│       ├── runic_old_frisian
+│       │   ├── runic_old_frisian.lua
+│       │   └── runic_old_frisian.sh
+│       ├── runic_old_high_german
+│       │   ├── runic_old_high_german.lua
+│       │   └── runic_old_high_german.sh
+│       ├── runic_old_norse
+│       │   ├── runic_old_norse.lua
+│       │   └── runic_old_norse.sh
+│       ├── runic_proto-norse
+│       │   ├── runic_proto-norse.lua
+│       │   └── runic_proto-norse.sh
+│       ├── russian
+│       │   ├── russian.lua
+│       │   └── russian.sh
+│       ├── sanskrit
+│       │   ├── sanskirt.lua
+│       │   ├── sanskrit.lua
+│       │   └── sanskrit.sh
+│       ├── saurashtra
+│       │   ├── saurashtra.lua
+│       │   └── saurashtra.sh
+│       ├── shamukhi_punjabi
+│       │   ├── shamukhi_punjabi.lua
+│       │   └── shamukhi_punjabi.sh
+│       ├── si5s
+│       │   ├── si5s.lua
+│       │   └── si5s.sh
+│       ├── sicilian
+│       │   ├── sicilian.lua
+│       │   └── sicilian.sh
+│       ├── sign_language_nicaraguan_sign_language
+│       │   ├── sign_language_nicaraguan_sign_language.lua
+│       │   └── sign_language_nicaraguan_sign_language.sh
+│       ├── sign_writing_american_sign_language
+│       │   ├── sign_writing_american_sign_language.lua
+│       │   └── sign_writing_american_sign_language.sh
+│       ├── sign_writing_british_sign_language
+│       │   ├── sign_writing_british_sign_language.lua
+│       │   └── sign_writing_british_sign_language.sh
+│       ├── sinhala_elu
+│       │   ├── sinhala_elu.lua
+│       │   └── sinhala_elu.sh
+│       ├── sinhala_sinhala
+│       │   ├── sinhala_sinhala.lua
+│       │   └── sinhala_sinhala.sh
+│       ├── sinhala_vedda
+│       │   ├── sinhala_vedda.lua
+│       │   └── sinhala_vedda.sh
+│       ├── spanish
+│       │   ├── spanish.lua
+│       │   ├── spanish.sh
+│       │   └── spanish_reserved_words.lua
+│       ├── stokoe_american_sign_language
+│       │   ├── stokoe_american_sign_language.lua
+│       │   └── stokoe_american_sign_language.sh
+│       ├── sundanese
+│       │   ├── sundanese.lua
+│       │   └── sundanese.sh
+│       ├── sylhet_nagri_barman_kachari
+│       │   ├── sylhet_nagri_barman_kachari.lua
+│       │   └── sylhet_nagri_barman_kachari.sh
+│       ├── sylhet_nagri_bengali
+│       │   ├── sylhet_nagri_bengali.lua
+│       │   └── sylhet_nagri_bengali.sh
+│       ├── sylhet_nagri_sylheti
+│       │   ├── sylhet_nagri_sylheti.lua
+│       │   └── sylhet_nagri_sylheti.sh
+│       ├── tagbanwa_palawan
+│       │   ├── tagbanwa_palawan.lua
+│       │   └── tagbanwa_palawan.sh
+│       ├── takalk_abaj_kaminaljuyú_proto-maya
+│       │   ├── takalk_abaj_kaminaljuyú_proto-maya.lua
+│       │   └── takalk_abaj_kaminaljuyú_proto-maya.sh
+│       ├── tamil_badaga
+│       │   ├── tamil_badaga.lua
+│       │   └── tamil_badaga.sh
+│       ├── tamil_irula
+│       │   ├── tamil_irula.lua
+│       │   └── tamil_irula.sh
+│       ├── tamil_kanikkaran
+│       │   ├── tamil_kanikkaran.lua
+│       │   └── tamil_kanikkaran.sh
+│       ├── tamil_paniya
+│       │   ├── tamil_paniya.lua
+│       │   └── tamil_paniya.sh
+│       ├── tamil_saurashtra
+│       │   ├── tamil_saurashtra.lua
+│       │   └── tamil_saurashtra.sh
+│       ├── tamil_tamil
+│       │   ├── tamil_tamil.lua
+│       │   └── tamil_tamil.sh
+│       ├── telugu
+│       │   ├── telugu.lua
+│       │   └── telugu.sh
+│       ├── thaana_dhivehi
+│       │   ├── thaana_dhivehi.lua
+│       │   └── thaana_dhivehi.sh
+│       ├── thaana_male_latin
+│       │   ├── thaana_male_latin.lua
+│       │   └── thaana_male_latin.sh
+│       ├── thai
+│       │   ├── thai.lua
+│       │   └── thai.sh
+│       ├── tibetan_dzongkha
+│       │   ├── tibetan_dzongkha.lua
+│       │   └── tibetan_dzongkha.sh
+│       ├── tibetan_ladakhi
+│       │   ├── tibetan_ladakhi.lua
+│       │   └── tibetan_ladakhi.sh
+│       ├── tibetan_sherpa
+│       │   ├── tibetan_sherpa.lua
+│       │   └── tibetan_sherpa.sh
+│       ├── tibetan_sikkimese
+│       │   ├── tibetan_sikkimese.lua
+│       │   └── tibetan_sikkimese.sh
+│       ├── tibetan_tibetan
+│       │   ├── tibetan_tibetan.lua
+│       │   └── tibetan_tibetan.sh
+│       ├── tibetan_zhang_zhung
+│       │   ├── tibetan_zhang_zhung.lua
+│       │   └── tibetan_zhang_zhung.sh
+│       ├── tifinagh_berber
+│       │   ├── tifinagh_berber.lua
+│       │   └── tifinagh_berber.sh
+│       ├── tifinagh_tuareg
+│       │   ├── tifinagh_tuareg.lua
+│       │   └── tifinagh_tuareg.sh
+│       ├── tirhuta_maithili
+│       │   ├── tirhuta_maithili.lua
+│       │   └── tirhuta_maithili.sh
+│       ├── tkalik_abaj_kaminaljuyú_mixe-zoquean
+│       │   ├── tkalik_abaj_kaminaljuyú_mixe-zoquean.lua
+│       │   └── tkalik_abaj_kaminaljuyú_mixe-zoquean.sh
+│       ├── tunisian_arabic
+│       │   ├── tunisian_arabic.lua
+│       │   └── tunisian_arabic.sh
+│       ├── turkic_old_turkic
+│       │   ├── turkic_old_turkic.lua
+│       │   └── turkic_old_turkic.sh
+│       ├── yezidi
+│       │   ├── yezidi.lua
+│       │   └── yezidi.sh
+│       ├── yi_nuosu
+│       │   ├── yi_nuosu.lua
+│       │   └── yi_nuosu.sh
+│       ├── zapotec_albarradas
+│       │   ├── zapotec_albarradas.lua
+│       │   └── zapotec_albarradas.sh
+│       ├── zapotec_aloápam
+│       │   ├── zapotec_aloápam.lua
+│       │   └── zapotec_aloápam.sh
+│       ├── zapotec_amatlán
+│       │   ├── zapotec_amatlán.lua
+│       │   └── zapotec_amatlán.sh
+│       ├── zapotec_asunción_mixtepec
+│       │   ├── zapotec_asunción_mixtepec.lua
+│       │   └── zapotec_asunción_mixtepec.sh
+│       ├── zapotec_ayoquezco
+│       │   ├── zapotec_ayoquezco.lua
+│       │   └── zapotec_ayoquezco.sh
+│       ├── zapotec_cajonos
+│       │   ├── zapotec_cajonos.lua
+│       │   └── zapotec_cajonos.sh
+│       ├── zapotec_chichicápam
+│       │   ├── zapotec_chichicápam.lua
+│       │   └── zapotec_chichicápam.sh
+│       ├── zapotec_choápam
+│       │   ├── zapotec_choápam.lua
+│       │   └── zapotec_choápam.sh
+│       ├── zapotec_coatecas
+│       │   ├── zapotec_coatecas.lua
+│       │   └── zapotec_coatecas.sh
+│       ├── zapotec_el_alto
+│       │   ├── zapotec_el_alto.lua
+│       │   └── zapotec_el_alto.sh
+│       ├── zapotec_elotepec
+│       │   ├── zapotec_elotepec.lua
+│       │   └── zapotec_elotepec.sh
+│       ├── zapotec_guelavía
+│       │   ├── zapotec_guelavía.lua
+│       │   └── zapotec_guelavía.sh
+│       ├── zapotec_guevea
+│       │   ├── zapotec_guevea.lua
+│       │   └── zapotec_guevea.sh
+│       ├── zapotec_güilá
+│       │   ├── zapotec_güilá.lua
+│       │   └── zapotec_güilá.sh
+│       ├── zapotec_isthmus
+│       │   ├── zapotec_isthmus.lua
+│       │   └── zapotec_isthmus.sh
+│       ├── zapotec_ixtlán
+│       │   ├── zapotec_ixtlán.lua
+│       │   └── zapotec_ixtlán.sh
+│       ├── zapotec_lachiguiri
+│       │   ├── zapotec_lachiguiri.lua
+│       │   └── zapotec_lachiguiri.sh
+│       ├── zapotec_lachixío
+│       │   ├── zapotec_lachixío.lua
+│       │   └── zapotec_lachixío.sh
+│       ├── zapotec_lapaguía
+│       │   ├── zapotec_lapaguía.lua
+│       │   └── zapotec_lapaguía.sh
+│       ├── zapotec_loxicha
+│       │   ├── zapotec_loxicha.lua
+│       │   └── zapotec_loxicha.sh
+│       ├── zapotec_mazaltepec
+│       │   ├── zapotec_mazaltepec.lua
+│       │   └── zapotec_mazaltepec.sh
+│       ├── zapotec_miahuatlán
+│       │   ├── zapotec_miahuatlán.lua
+│       │   └── zapotec_miahuatlán.sh
+│       ├── zapotec_mitla
+│       │   ├── zapotec_mitla.lua
+│       │   └── zapotec_mitla.sh
+│       ├── zapotec_ocotlán
+│       │   ├── zapotec_ocotlán.lua
+│       │   └── zapotec_ocotlán.sh
+│       ├── zapotec_ozolotepec
+│       │   ├── zapotec_ozolotepec.lua
+│       │   └── zapotec_ozolotepec.sh
+│       ├── zapotec_petapa
+│       │   ├── zapotec_petapa.lua
+│       │   └── zapotec_petapa.sh
+│       ├── zapotec_quiatoni
+│       │   ├── zapotec_quiatoni.lua
+│       │   └── zapotec_quiatoni.sh
+│       ├── zapotec_quiavicuzas
+│       │   ├── zapotec_quiavicuzas.lua
+│       │   └── zapotec_quiavicuzas.sh
+│       ├── zapotec_quiegolani
+│       │   ├── zapotec_quiegolani.lua
+│       │   └── zapotec_quiegolani.sh
+│       ├── zapotec_quioquitani
+│       │   ├── zapotec_quioquitani.lua
+│       │   └── zapotec_quioquitani.sh
+│       ├── zapotec_rincón
+│       │   ├── zapotec_rincón.lua
+│       │   └── zapotec_rincón.sh
+│       ├── zapotec_san_baltázar_loxicha
+│       │   ├── zapotec_san_baltázar_loxicha.lua
+│       │   └── zapotec_san_baltázar_loxicha.sh
+│       ├── zapotec_san_bartolo_yautepec
+│       │   ├── zapotec_san_bartolo_yautepec.lua
+│       │   └── zapotec_san_bartolo_yautepec.sh
+│       ├── zapotec_san_juan_mixtepec
+│       │   ├── zapotec_san_juan_mixtepec.lua
+│       │   └── zapotec_san_juan_mixtepec.sh
+│       ├── zapotec_san_vicente
+│       │   ├── zapotec_san_vicente.lua
+│       │   └── zapotec_san_vicente.sh
+│       ├── zapotec_santa_catarina_albarradas
+│       │   ├── zapotec_santa_catarina_albarradas.lua
+│       │   └── zapotec_santa_catarina_albarradas.sh
+│       ├── zapotec_tabaá
+│       │   ├── zapotec_tabaá.lua
+│       │   └── zapotec_tabaá.sh
+│       ├── zapotec_tejalapan
+│       │   ├── zapotec_tejalapan.lua
+│       │   └── zapotec_tejalapan.sh
+│       ├── zapotec_texmelucan
+│       │   ├── zapotec_texmelucan.lua
+│       │   └── zapotec_texmelucan.sh
+│       ├── zapotec_tilquiapan
+│       │   ├── zapotec_tilquiapan.lua
+│       │   └── zapotec_tilquiapan.sh
+│       ├── zapotec_tlacolulita
+│       │   ├── zapotec_tlacolulita.lua
+│       │   └── zapotec_tlacolulita.sh
+│       ├── zapotec_totomachapan
+│       │   ├── zapotec_totomachapan.lua
+│       │   └── zapotec_totomachapan.sh
+│       ├── zapotec_xadani
+│       │   ├── zapotec_xadani.lua
+│       │   └── zapotec_xadani.sh
+│       ├── zapotec_xanaguía
+│       │   ├── zapotec_xanaguía.lua
+│       │   └── zapotec_xanaguía.sh
+│       ├── zapotec_xánica
+│       │   ├── zapotec_xánica.lua
+│       │   └── zapotec_xánica.sh
+│       ├── zapotec_yalálag
+│       │   ├── zapotec_yalálag.lua
+│       │   └── zapotec_yalálag.sh
+│       ├── zapotec_yatee
+│       │   ├── zapotec_yatee.lua
+│       │   └── zapotec_yatee.sh
+│       ├── zapotec_yatzachi
+│       │   ├── zapotec_yatzachi.lua
+│       │   └── zapotec_yatzachi.sh
+│       ├── zapotec_yatzeche
+│       │   ├── zapotec_yatzeche.lua
+│       │   └── zapotec_yatzeche.sh
+│       ├── zapotec_zaachila
+│       │   ├── zapotec_zaachila.lua
+│       │   └── zapotec_zaachila.sh
+│       ├── zapotec_zaniza
+│       │   ├── zapotec_zaniza.lua
+│       │   └── zapotec_zaniza.sh
+│       └── zapotec_zoogocho
+│           ├── zapotec_zoogocho.lua
+│           └── zapotec_zoogocho.sh
+├── main
+│   ├── go.go
+│   ├── output.txt
+│   ├── translation.go
+│   ├── translation.java
+│   └── translation.py
+├── main.lua
+├── main.sh
+├── tree.txt
+└── work
+    ├── asdf.lua
+    ├── ayo.py
+    ├── fileize.bash
+    ├── go_keyword_list.lua
+    ├── keyword_table_generator.lua
+    ├── language_import.sh
+    ├── phylson.png
+    ├── reserved_words.txt
+    ├── reserved_words_list.json
+    ├── translate.go
+    └── tree.txt
+
+1344 directories, 2690 files
