@@ -29,7 +29,7 @@ equalmyself = function(thing)
 	thing = stringify(thing)
 	return (
 		"\t"
-		..thing..[[ : ]]..thing
+		..thing..[[ = ]]..thing
 		..";"
 		.."\n"
 	)
@@ -62,7 +62,8 @@ luajson = function(file_name)
 				local shouldequalitself = equalmyself(_os)
 				outStr = (
 					outStr
-						..shouldequalitself
+						.."\t"..stringify(_os)..";\n"
+						--..shouldequalitself
 				)
 			end
 

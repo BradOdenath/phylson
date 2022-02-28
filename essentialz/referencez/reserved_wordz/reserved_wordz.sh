@@ -13,11 +13,13 @@ for dir in */; do
 	then
 		echo
 		echo "$dir$(basename -- $dir)_keywords.txt"
-		cat "$dir$(basename -- $dir)_keywords.txt" >> keywordz.txt
+		cat "$dir$(basename -- $dir)_keywords.txt" >> ../../essentialz/referencez/reserved_wordz/keywordz.txt
 		echo
 	fi
 done
 
 #cat keywordz.txt
-lua ./reserved_wordz.lua
+cd ../../essentialz/referencez/reserved_wordz
+ls
+lua reserved_wordz.lua
 #cat keywordz.txt
