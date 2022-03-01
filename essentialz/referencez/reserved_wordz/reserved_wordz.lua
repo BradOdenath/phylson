@@ -179,10 +179,10 @@ stringify = function(str)
 end
 
 equalmyself = function(thing)
-	thing = stringify(thing)
+	--thing = stringify(thing)
 	return (
 		"\t"
-		..thing..[[ : ]]..thing
+		..stringify(obfuscate(thing))..[[ : ]]..stringify(thing)
 		..";"
 		.."\n"
 	)
