@@ -179,10 +179,10 @@ stringify = function(str)
 end
 
 equalmyself = function(thing)
-	--thing = stringify(thing)
+	thing = stringify(thing)
 	return (
 		"\t"
-		..stringify(obfuscate(thing))..[[ : ]]..stringify(thing)
+		..thing..[[ : ]]..thing
 		..";"
 		.."\n"
 	)
@@ -235,7 +235,7 @@ end
 keyword_list_generator = function(file_name)
 	if (file_name) then
 	
-		local generated_keywords_table = (file_name)
+		local generated_keywords_table = luajson(file_name)
 		
 		if (generated_keywords_table) then
 		
@@ -271,9 +271,10 @@ table.find = function(taybl, item)
 		end
 	end
 	
-	if (positions <= 0) then
+	if (#positions <= 0) then
 		positions = nil
 	end
+	
 	return (positions)
 end
 
@@ -308,11 +309,21 @@ file_list_to_union = function(file_name)
 			for line in io.lines(file_name) do
 				if (line) then
 					
-					line = line:gsub("\n","")
+					line = tostring((line:gsub("%s+","")))
+		
+					local el = table.find(outTable,line) 
 					
-					if (not (outTable[line])) then
+					if (line == "true" or line == true) then
+						print('oi')
+					end
+					
+					
+					if (not ( (el) or (outTable[line]) )) then
 						outTable[line] = tostring(line)
-						print('Added: '..outTable[line])
+						print('Added: '..outTable[line]..tostring(#line))
+					else
+						--print('Ignor: '..line..tostring(el))
+
 					end	
 					--print('asdf'..outTable[line])
 				
@@ -329,7 +340,7 @@ file_list_to_union = function(file_name)
 			print(#outTable)
 			
 			for i,v in pairs(outTable) do
-				local _os = v:gsub("\n","")
+				local _os = v:gsub("%s+","")
 				outStr = (
 					outStr
 						.._os
@@ -348,7 +359,7 @@ file_list_to_union = function(file_name)
 end
 
 main = function() 
-	local fyle_naym = "keywordz.txt"
+	local fyle_naym = ("keywordz.txt")
 	file_list_to_union(fyle_naym) 
 	keyword_list_generator(fyle_naym)
 end main() 

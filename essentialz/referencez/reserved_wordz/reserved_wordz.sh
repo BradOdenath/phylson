@@ -7,12 +7,14 @@ check_and_create() {
 	then
 		rm "$1"
 		touch "$1"
-		ls
+		cat "$1"
+		#ls
 	fi
 }
 
 check_and_create keywordz.txt
 check_and_create keywordz_list.json
+
 
 cd ..
 cd ..
@@ -35,4 +37,4 @@ done
 cd ../../essentialz/referencez/reserved_wordz
 ls
 lua reserved_wordz.lua
-#cat keywordz_list.json
+cat keywordz_list.json
