@@ -1,6 +1,19 @@
 #get all files that are reserved word files ending in _keywords and *.txt
 #each file can be found in languages/programming_languages/[language]
 
+
+check_and_create() {
+	if [ -f "$1" ]
+	then
+		rm "$1"
+		touch "$1"
+		ls
+	fi
+}
+
+check_and_create keywordz.txt
+check_and_create keywordz_list.json
+
 cd ..
 cd ..
 cd ..
@@ -22,4 +35,4 @@ done
 cd ../../essentialz/referencez/reserved_wordz
 ls
 lua reserved_wordz.lua
-#cat keywordz.txt
+#cat keywordz_list.json
