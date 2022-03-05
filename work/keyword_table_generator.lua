@@ -1,13 +1,43 @@
 split_string = function(str, delimeter)
-	if (delimeter == nil) then 
-		delimeter = '%s'
+	if ((str) and (delimeter)) then
+		local result = {}
+		if (delimeter == nil) then 
+			delimeter = '%a+'
+		else
+			_ = string.sub(str, #str-#delimeter)
+			while (_ ~= delimeter) do
+				str = (str..delimeter)
+				print('der_value: keyword_table_generator/split_string/arg/delimeter: '..tostring(delimeter))
+			end
+		end
+		status, response = pcall(function()
+			local _
+			for _match in (str):gsub(delimeter) do
+				table.insert(result, _match)
+				print(_match)
+			end
+			print(#result)
+			return result
+		end)
+		if (status) then
+			if (type(response) == "table") then
+				return (response)
+			end
+		else
+			local words = string.gmatch(str, delimeter)
+			for word in words do
+				table.insert(result, word)
+			end
+		end
+	else
+		if (str == nil) then
+			print('nil_value: essentailz/string_split/arg/str')
+		end
+		if (delimeter == nil) then
+			print('nil_value: essentailz/string_split/arg/delimeter')
+		end
 	end
-	local result = {}
-	for match in (str..delimeter):gmatch('(.-)'..delimeter) do
-		table.insert(result, match)
-	end
-	return result
-end
+end split_string('[[ayo]] "ayo" (ayo)', nil)
 
 -- Put quotes arounds a string value
 stringify = function(str)     

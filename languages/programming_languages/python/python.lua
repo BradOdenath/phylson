@@ -33,27 +33,34 @@ python_class = function(class_data)
 	if (class_data) then
 		for i,v in pairs(class_data.class_data) do 
 			local isFnc = false
-			local strLine = ''
+			local strLine = (
+				strLine
+					..'\n'
+					..python_components.comment_statement
+					..' Declare '					
+			)
 			if (v.data_parameters) then
 				strLine = (
 					strLine
-						..'\n'
-						..python_components.comment_statement
-						..' Declare function as '
+						..'function as '
 						..tostring(i)
 						..' with parameters: '
 						..commacommacommacommacomma(i_table(v.data_parameters))
-						..' and return data type "'
-						..v.data_type
-						..'".'
+						..' and return data type '
+						..stringify(v.data_type)
+						..'.'
 						..'\n'
 						..python_components.func
 						..code_components.space
 						..tostring(i)
 						..code_components.space
-						..code_components.left_parenthesis
-						..commacommacommacommacomma(i_table(v.data_parameters))
-						..code_components.right_parenthesis
+						..code_components.parenthesisify(
+							commacommacommacommacomma(
+								i_table(
+									v.data_parameters
+								)
+							)
+						)
 						..code_components.colon
 						..'\n'
 						..v.data_value
@@ -62,13 +69,11 @@ python_class = function(class_data)
 			elseif (type(v.data_value) == 'table') then
 				strLine = (
 					strLine
-						..'\n\t'
-						..python_components.comment_statement
-						..' Declare attribute '
+						..' attribute '
 						..tostring(i)
-						..' as data type"'
-						..v.data_type
-						..'" and initialize the value as "'
+						..' as data type'
+						..stringify(v.data_type)
+						..' and initialize the value as "'
 						..commacommacommacommacomma(v.data_value)
 						..'".'
 						..'\n\t'

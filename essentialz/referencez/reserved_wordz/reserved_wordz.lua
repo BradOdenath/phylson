@@ -22,11 +22,24 @@ end
 
 obfuscate = function(code) --glot.io
 	local outLS = (code:gsub(".", function(_) return ("\\".._:byte()) end) or code)
-	--print(outLS)
-	--print('loadstring("'..tostring(outLS)..'")()')
+	outLS = outLS:gsub('\1','')
+	print(outLS)
+	local outTS, tmpFile
+	
+	tmpFile = io.open("obfuscate.txt","w+")
+	io.output(tmpFile)
+	io.write(outLS)
+	io.close(tmpFile)
+	
+	
 	return outLS
 end
 obfuscate([[print('hi')]])
+
+remove_backslash_uno_from_loadstring = function()
+
+
+end
 
 literally_the_alphabet = {
 	"a";
@@ -245,6 +258,7 @@ keyword_list_generator = function(file_name)
 				io.input(keyword_list_file)
 				
 				io.output(keyword_list_file)
+				print('--asdf')
 				
 				io.write(generated_keywords_table)
 				
@@ -313,12 +327,12 @@ file_list_to_union = function(file_name)
 		
 					local el = table.find(outTable,line) 
 					
-					if (line == "true" or line == true) then
+					if (line == "true") then
 						print('oi')
 					end
 					
 					
-					if (not ( (el) or (outTable[line]) )) then
+					if (not (el)) then
 						outTable[line] = tostring(line)
 						print('Added: '..outTable[line]..tostring(#line))
 					else

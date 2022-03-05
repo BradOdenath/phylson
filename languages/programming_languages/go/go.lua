@@ -23,7 +23,7 @@ local go_parametersersersersers = function(parameterererererer_table)
 		
 		outStr = commacommacommacommacomma(parametersersersersers)
 
-		return outStr
+		return (outStr)
 	else
 		print_debug('nil_value: go/go_parametersersersersers/arg/parametererererer_table')
 	end
