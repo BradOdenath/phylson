@@ -136,7 +136,7 @@ python_class = function(class_data)
 				..class_data.class_name
 				..code_components.colon
 				..outAtr
-			)
+		)
 	else
 		print_debug('python_file_generator/python_class_data/arg/class_data')
 	end 
