@@ -29,7 +29,7 @@ python_commentify = function(oi)
 end
 
 python_class = function(class_data)
-	local outAtr, outFnc = '', ''
+	local strLine, outAtr, outFnc = '', '', ''
 	if (class_data) then
 		for i,v in pairs(class_data.class_data) do 
 			local isFnc = false

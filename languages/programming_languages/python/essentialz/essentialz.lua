@@ -423,7 +423,9 @@ end
 
 first_word_from_statement = function(statement) 
 	if (statement) then
-		
+		if (type(statement) == "string") then
+			return string.match(statement, "(%w+)")
+		end
 	else
 		print_debug('nil_value: essentials/first_word_from_statement/arg/statement')
 	end
