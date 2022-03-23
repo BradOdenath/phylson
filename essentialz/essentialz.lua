@@ -332,6 +332,20 @@ demo_class = {
 	};
 }
 
+<<<<<<< Updated upstream
+=======
+is = function(entity, data_type)
+	return (type(entity) == data_type)
+end
+
+isFunction = function(entity) return (v.data_parameters) end
+
+isTable = function(entity) return (is(entity, "table")) end
+
+isString = function(entity) return (is(entity, "string")) end
+
+isNumeric = function(entity) retur (is(entity, "number")) end
+>>>>>>> Stashed changes
 
 pre_permissions_syntax = function(prublivacte, public_string, private_string)
 	if (prublivacte) then
