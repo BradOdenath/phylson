@@ -1,3 +1,5 @@
+
+
 lua_component = {
 	local_coponent = 'local';
 	function_component = 'function';
@@ -19,8 +21,9 @@ lua_component = {
 	
 	assignment_component = '=';
 	
-	not_component = 'not';
 	
+	
+	not_component = 'not';
 	
 	
 }
